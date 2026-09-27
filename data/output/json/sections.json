@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kringliederen",
+    "title": "Kringliederen",
+    "position": 0,
+    "startPage": 31
+  },
+  {
+    "id": "officiele-liederen",
+    "title": "Officiële liederen",
+    "position": 1,
+    "startPage": 89
+  },
+  {
+    "id": "nederlandstalige-liederen",
+    "title": "Nederlandstalige liederen",
+    "position": 2,
+    "startPage": 101
+  },
+  {
+    "id": "franstalige-liederen",
+    "title": "Franstalige liederen",
+    "position": 3,
+    "startPage": 257
+  },
+  {
+    "id": "duitstalige-liederen",
+    "title": "Duitstalige liederen",
+    "position": 4,
+    "startPage": 413
+  },
+  {
+    "id": "engelstalige-liederen",
+    "title": "Engelstalige liederen",
+    "position": 5,
+    "startPage": 463
+  },
+  {
+    "id": "anderstalige-liederen",
+    "title": "Anderstalige liederen",
+    "position": 6,
+    "startPage": 517
+  }
+]

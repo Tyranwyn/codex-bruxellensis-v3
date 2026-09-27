@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-bruxellensis/schema/song.schema.json",
+  "title": "Song",
+  "description": "One song from the Codex Bruxellensis.",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "section",
+    "language",
+    "pages",
+    "stanzas"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "description": "Stable slug derived from the title, e.g. 'antverpia-lied'. Suffix with -2, -3 on collisions.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "title": {
+      "description": "Title as printed above the song, with accents normalised, e.g. 'À BAS LA CALOTTE'.",
+      "type": "string"
+    },
+    "sortTitle": {
+      "description": "Title as it appears in the book's index, with leading articles moved to the end, e.g. 'SMIDJE, ’T'. Used for alphabetical ordering.",
+      "type": "string"
+    },
+    "section": {
+      "$ref": "#/$defs/sectionId"
+    },
+    "language": {
+      "description": "ISO 639-1 code of the lyrics, guessed from the section or the text. For songs in dialect, use the nearest language.",
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "clubId": {
+      "description": "Only set for songs in the 'kringliederen' or 'officiele-liederen' section. References clubs.json.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pages": {
+      "description": "Printed page numbers (not PDF indexes). A song can span pages.",
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "lyricist": {
+      "description": "Text after 'T:' in the book.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "melody": {
+      "description": "Text after 'M:' in the book: a composer, or the song whose tune is borrowed.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "description": "Other text printed between the title and the lyrics (history, 'Traditional, op de wijze van …', etc.).",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "stanzas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/stanza"
+      }
+    }
+  },
+  "$defs": {
+    "sectionId": {
+      "type": "string",
+      "enum": [
+        "kringliederen",
+        "officiele-liederen",
+        "nederlandstalige-liederen",
+        "franstalige-liederen",
+        "duitstalige-liederen",
+        "engelstalige-liederen",
+        "anderstalige-liederen"
+      ]
+    },
+    "stanza": {
+      "description": "A block of lines separated from the next by a blank line in the book, or a single printed instruction.",
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "description": "'verse' (upright text) and 'chorus' (italic text) carry lines. 'chorus-ref' is a printed 'Refrein …' instruction that repeats the chorus. 'direction' is any other stage direction, e.g. 'Ad fundum'.",
+          "enum": [
+            "verse",
+            "chorus",
+            "chorus-ref",
+            "direction"
+          ]
+        },
+        "lines": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "repeats": {
+          "description": "Repeat markers on lines of this stanza. A marker next to one line covers that line; a bracketed marker covers several lines.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/repeatSpan"
+          }
+        },
+        "repeat": {
+          "description": "How many times the whole stanza is sung, e.g. 'Refrein (BIS)'. Omitted when 1.",
+          "type": "integer",
+          "minimum": 2
+        },
+        "instruction": {
+          "description": "Text of a 'direction', or the extra text of a 'chorus-ref', e.g. 'waarbij ‘zijnen’ door ‘uwen’ vervangen wordt.'",
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "verse",
+                  "chorus"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "lines"
+            ],
+            "properties": {
+              "lines": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "direction"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "instruction"
+            ]
+          }
+        }
+      ]
+    },
+    "repeatSpan": {
+      "type": "object",
+      "required": [
+        "from",
+        "to",
+        "marker"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "description": "Index of the first line covered (0-based, inclusive).",
+          "type": "integer",
+          "minimum": 0
+        },
+        "to": {
+          "description": "Index of the last line covered (inclusive).",
+          "type": "integer",
+          "minimum": 0
+        },
+        "times": {
+          "description": "(BIS) = 2, (TER) = 3, (QUATER) = 4. Absent for non-numeric markers such as '(ULB)'.",
+          "type": "integer",
+          "minimum": 2
+        },
+        "marker": {
+          "description": "The marker as printed, e.g. '(BIS)'.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

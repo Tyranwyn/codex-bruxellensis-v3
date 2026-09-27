@@ -1,0 +1,567 @@
+[
+  {
+    "id": "antverpia",
+    "name": "ANTVERPIA",
+    "motto": null,
+    "description": "Studenten uit Antwerpen",
+    "founded": 1977,
+    "founders": [
+      "Leo Ven"
+    ],
+    "colours": [
+      "rood",
+      "wit",
+      "rood"
+    ]
+  },
+  {
+    "id": "bierkultuur",
+    "name": "BIERKULTUUR",
+    "motto": null,
+    "description": "Studenten met een passie voor bier",
+    "founded": 2005,
+    "founders": [
+      "Igor Michiels",
+      "Tom Lerminiaux",
+      "Debbie Timmermans",
+      "Robin Paulus"
+    ],
+    "colours": [
+      "blond",
+      "blanche",
+      "bruin"
+    ]
+  },
+  {
+    "id": "boves-luci",
+    "name": "BOVES LUCI",
+    "motto": null,
+    "description": "Afdeling Boves Brussel\nOorspronkelijk studenten afkomstig van het\nLimburgs Universitair Centrum\n(Universiteit Hasselt sinds juni 2005)\nGesticht: 1973–1974\nBoves Brussel: 1981–1982",
+    "founded": 1973,
+    "founders": [],
+    "colours": [
+      "oranje",
+      "zwart",
+      "oranje"
+    ]
+  },
+  {
+    "id": "campina",
+    "name": "CAMPINA",
+    "motto": null,
+    "description": "Studenten uit de Kempen\nGesticht begin de jaren 80",
+    "founded": null,
+    "founders": [
+      "Jaroslav Bouda",
+      "Jan Swinnen",
+      "Rudi Versmissen"
+    ],
+    "colours": [
+      "groen",
+      "wit",
+      "groen"
+    ]
+  },
+  {
+    "id": "cercle-omega",
+    "name": "CERCLE OMEGA",
+    "motto": null,
+    "description": "Koninklijke Militaire School\nFaculteit Sociale en Militaire Wetenschappen",
+    "founded": 1994,
+    "founders": [],
+    "colours": [
+      "rood",
+      "geel",
+      "rood"
+    ]
+  },
+  {
+    "id": "commin",
+    "name": "COMMIN@",
+    "motto": null,
+    "description": "Erasmushogeschool Brussel, Departement\nManagement, Media en Maatschappij",
+    "founded": 2002,
+    "founders": [],
+    "colours": [
+      "lila",
+      "grijs",
+      "lila"
+    ]
+  },
+  {
+    "id": "enigma",
+    "name": "ENIGMA",
+    "motto": null,
+    "description": "Erasmushogeschool Brussel, Departement\nDesign en Technologie\nGesticht in 2015, na een opsplitsing van de leden van Technica",
+    "founded": 2015,
+    "founders": [],
+    "colours": [
+      "groen",
+      "zwart",
+      "grijs"
+    ]
+  },
+  {
+    "id": "farmaceutische-kring",
+    "name": "FARMACEUTISCHE KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nStudenten farmacie",
+    "founded": 1968,
+    "founders": [],
+    "colours": [
+      "groen"
+    ]
+  },
+  {
+    "id": "folklore-academie",
+    "name": "FOLKLORE ACADEMIE",
+    "motto": null,
+    "description": "Gesticht in 1981–1982",
+    "founded": 1981,
+    "founders": [
+      "Nick Trachet",
+      "Rikus Daems",
+      "Hugo Van Schandevijl"
+    ],
+    "colours": [
+      "azuur",
+      "goud",
+      "azuur"
+    ]
+  },
+  {
+    "id": "geneeskundige-kring",
+    "name": "GENEESKUNDIGE KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nStudenten geneeskunde\nGesticht op 19 december 1961",
+    "founded": 1961,
+    "founders": [],
+    "colours": [
+      "rood"
+    ]
+  },
+  {
+    "id": "de-gilde-fratres-et-sorores-coniuncti",
+    "name": "DE GILDE: FRATRES ET SORORES CONIUNCTI",
+    "motto": null,
+    "description": null,
+    "founded": 2004,
+    "founders": [],
+    "colours": [
+      "oranje",
+      "blanje",
+      "bleu"
+    ]
+  },
+  {
+    "id": "hesbania",
+    "name": "HESBANIA",
+    "motto": null,
+    "description": "Studenten uit Haspengouw\nGesticht op 25 februari 2002",
+    "founded": 2002,
+    "founders": [
+      "Christian Vanderhaegen",
+      "Peter Clerinx",
+      "Jordy Wildermans"
+    ],
+    "colours": [
+      "blauw",
+      "geel",
+      "rood"
+    ]
+  },
+  {
+    "id": "infogroep",
+    "name": "INFOGROEP",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nStudenten informatica",
+    "founded": null,
+    "founders": [],
+    "colours": []
+  },
+  {
+    "id": "kinneke-baba",
+    "name": "KINNEKE BABA",
+    "motto": null,
+    "description": "Studenten uit Geraardsbergen en\nOost-Vlaanderen",
+    "founded": 1970,
+    "founders": [
+      "Eddy De Hauw",
+      "Carlos Collage",
+      "Jan Vandeputte"
+    ],
+    "colours": [
+      "geel",
+      "rood",
+      "geel"
+    ]
+  },
+  {
+    "id": "kring-der-brusselse-en-brabantse-studenten",
+    "name": "KRING DER BRUSSELSE EN BRABANTSE STUDENTEN",
+    "motto": null,
+    "description": "Studenten uit Brussel en Brabant",
+    "founded": 1988,
+    "founders": [
+      "Frank Taildeman"
+    ],
+    "colours": [
+      "groen",
+      "rood",
+      "groen"
+    ]
+  },
+  {
+    "id": "kring-voor-economische-politieke-en-sociale-wetenschappen",
+    "name": "KRING VOOR ECONOMISCHE, POLITIEKE EN SOCIALE WETENSCHAPPEN",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit van de Economische, Sociale en\nPolitieke Wetenschappen",
+    "founded": 1964,
+    "founders": [],
+    "colours": [
+      "geel"
+    ]
+  },
+  {
+    "id": "letteren-en-wijsbegeerte-kring",
+    "name": "LETTEREN EN WIJSBEGEERTE KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit der Letteren en Wijsbegeerte\nGesticht in 1993 (Fusie tussen Gerrom en\nHistoria-Filosofia)",
+    "founded": 1993,
+    "founders": [],
+    "colours": [
+      "grijs"
+    ]
+  },
+  {
+    "id": "limburgia",
+    "name": "LIMBURGIA",
+    "motto": null,
+    "description": "Studenten uit Limburg\nHeropgericht in 1989",
+    "founded": null,
+    "founders": [
+      "Telat Demirci"
+    ],
+    "colours": [
+      "groen",
+      "wit",
+      "rood"
+    ]
+  },
+  {
+    "id": "manu-juvanta",
+    "name": "MANU JUVANTA",
+    "motto": null,
+    "description": "Erasmushogeschool Brussel\nDepartement Gezondheidszorg",
+    "founded": 1969,
+    "founders": [],
+    "colours": [
+      "rood",
+      "geel",
+      "rood"
+    ]
+  },
+  {
+    "id": "mens-sana-in-corpore-sano",
+    "name": "MENS SANA IN CORPORE SANO",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit Lichamelijke Opvoeding en\nKinesitherapie\nGesticht in 1990 (HILOK), in 2000 van naam veranderd, in opvolging van HILO (1961)",
+    "founded": 1990,
+    "founders": [
+      "Stephan Willems",
+      "Philip van der Veen",
+      "Dirk Boets",
+      "Ann Boon",
+      "Wim De Vos"
+    ],
+    "colours": [
+      "rood"
+    ]
+  },
+  {
+    "id": "moeder-gevaar",
+    "name": "MOEDER GEVAAR",
+    "motto": null,
+    "description": "Studenten met als stamcafé ‘Het Groot\nGevaar’ aan Simonis",
+    "founded": 1992,
+    "founders": [],
+    "colours": [
+      "geel",
+      "zwart",
+      "rood"
+    ]
+  },
+  {
+    "id": "normalia",
+    "name": "NORMALIA",
+    "motto": null,
+    "description": "Erasmushogeschool Brussel\nDepartement lerarenopleiding",
+    "founded": 1998,
+    "founders": [],
+    "colours": [
+      "blauw",
+      "wit",
+      "blauw"
+    ]
+  },
+  {
+    "id": "perskring",
+    "name": "PERSKRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nStudenten Communicatiewetenschappen",
+    "founded": 1980,
+    "founders": [],
+    "colours": [
+      "grijs"
+    ]
+  },
+  {
+    "id": "polytechnic",
+    "name": "POLYTECHNIC",
+    "motto": null,
+    "description": "Koninklijke Militaire School\nFaculteit Toegepaste Wetenschappen\nGesticht: 1981–1982",
+    "founded": 1981,
+    "founders": [],
+    "colours": [
+      "zwart",
+      "rood",
+      "zwart"
+    ]
+  },
+  {
+    "id": "polytechnische-kring",
+    "name": "POLYTECHNISCHE KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit Ingenieurswetenschappen\nGesticht op 14 juli 1966",
+    "founded": 1966,
+    "founders": [
+      "Benedictus Faes",
+      "Maurice Truyens",
+      "Charles Neervoort"
+    ],
+    "colours": [
+      "zwart"
+    ]
+  },
+  {
+    "id": "psychopedagogische-kring",
+    "name": "PSYCHOPEDAGOGISCHE KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit Psychologie en\nEducatiewetenschappen",
+    "founded": null,
+    "founders": [],
+    "colours": [
+      "blauw"
+    ]
+  },
+  {
+    "id": "regionale-kringen",
+    "name": "REGIONALE KRINGEN",
+    "motto": null,
+    "description": "Overkoepelende organisatie der regionale kringen, gesticht in 1992",
+    "founded": null,
+    "founders": [
+      "Geert Depoortere",
+      "Nicole Franssen",
+      "Laurent Rens",
+      "Dominique Defevere",
+      "Francis Moeykens",
+      "Anique Proot"
+    ],
+    "colours": [
+      "zwart",
+      "geel",
+      "rood"
+    ]
+  },
+  {
+    "id": "society-of-weird-and-mad-people",
+    "name": "SOCIETY OF WEIRD AND MAD PEOPLE",
+    "motto": null,
+    "description": "Kring voor spelfanaten van allerlei slag",
+    "founded": 1997,
+    "founders": [],
+    "colours": [
+      "zwart",
+      "rood"
+    ]
+  },
+  {
+    "id": "solvay-kring",
+    "name": "SOLVAY KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nStudenten Handelsingenieur",
+    "founded": 1968,
+    "founders": [],
+    "colours": [
+      "oranje"
+    ]
+  },
+  {
+    "id": "t-vat",
+    "name": "’T VAT",
+    "motto": null,
+    "description": "Brusselse Regionale Studentenkring",
+    "founded": 1969,
+    "founders": [
+      "Renaat Saggaert",
+      "Fernand Crauwels"
+    ],
+    "colours": [
+      "rood",
+      "purper",
+      "groen"
+    ]
+  },
+  {
+    "id": "vilvordia",
+    "name": "VILVORDIA",
+    "motto": null,
+    "description": "Erasmushogeschool Brussel, Departement\nLandschaps- en Tuinarchitectuur\nGesticht: 1955–1956",
+    "founded": 1955,
+    "founders": [],
+    "colours": [
+      "groen",
+      "geel",
+      "groen"
+    ]
+  },
+  {
+    "id": "vlaams-rechtsgenootschap",
+    "name": "VLAAMS RECHTSGENOOTSCHAP",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit der Rechtsgeleerdheid en Criminologische Wetenschappen",
+    "founded": 1948,
+    "founders": [],
+    "colours": [
+      "bordeaux"
+    ]
+  },
+  {
+    "id": "vrijzinnige-studentenkring-mechelen",
+    "name": "VRIJZINNIGE STUDENTENKRING MECHELEN",
+    "motto": null,
+    "description": "Studenten uit Mechelen",
+    "founded": 1921,
+    "founders": [],
+    "colours": [
+      "geel",
+      "rood"
+    ]
+  },
+  {
+    "id": "westland",
+    "name": "WESTLAND",
+    "motto": null,
+    "description": "Studenten uit West-Vlaanderen met de juiste mentaliteit!\nGesticht op 17 december 1970",
+    "founded": 1970,
+    "founders": [
+      "Geert De Baenst",
+      "Louis Vanderberghe",
+      "Walter Francois"
+    ],
+    "colours": [
+      "rood",
+      "geel",
+      "wit"
+    ]
+  },
+  {
+    "id": "west-vlaamse-universitaire-kring",
+    "name": "WEST-VLAAMSE UNIVERSITAIRE KRING",
+    "motto": null,
+    "description": "Studenten uit de regio Brugge-Oostende\nGesticht in 2004, door de fusie van de Ostensche Ploate en de Brugse StudentenKring",
+    "founded": 2004,
+    "founders": [],
+    "colours": [
+      "geel",
+      "rood",
+      "lichtblauw"
+    ]
+  },
+  {
+    "id": "wetenschappelijke-kring",
+    "name": "WETENSCHAPPELIJKE KRING",
+    "motto": null,
+    "description": "Vrije Universiteit Brussel\nFaculteit Wetenschappen en\nBio-ingenieurswetenschappen",
+    "founded": 1949,
+    "founders": [],
+    "colours": [
+      "paars"
+    ]
+  },
+  {
+    "id": "woltje",
+    "name": "WOLTJE",
+    "motto": null,
+    "description": "Regionale studentenkring om het Brussels dialect en folklore in ere te houden",
+    "founded": 2006,
+    "founders": [
+      "Michaël Heiremans",
+      "Gregory Uytterhaegen"
+    ],
+    "colours": [
+      "rood",
+      "groen",
+      "rood"
+    ]
+  },
+  {
+    "id": "zatte-wijvenkring",
+    "name": "ZATTE WIJVENKRING",
+    "motto": null,
+    "description": "Zatte wijven van overal",
+    "founded": 1988,
+    "founders": [
+      "Ann Van Grijseghem",
+      "Iris Merveille",
+      "Karen Daniels"
+    ],
+    "colours": [
+      "blauw",
+      "wit",
+      "blauw"
+    ]
+  },
+  {
+    "id": "zennevallei",
+    "name": "ZENNEVALLEI",
+    "motto": null,
+    "description": "Studenten uit Halle en de Zennevallei\nGesticht in 1993, heropgericht in 2008",
+    "founded": 1993,
+    "founders": [
+      "Gunther Kemps",
+      "Dirk Van Heymbeeck"
+    ],
+    "colours": [
+      "blauw",
+      "wit",
+      "blauw"
+    ]
+  },
+  {
+    "id": "brussels-studentengenootschap",
+    "name": "BRUSSELS STUDENTENGENOOTSCHAP",
+    "motto": "“GEEN TAAL GEEN VRIJHEID”",
+    "description": "Lied van de vrijzinnige student te Brussel\nGesticht in 1856 als het Taalminnend Studentengenootschap “Schild ende Vriend”",
+    "founded": 1856,
+    "founders": [],
+    "colours": [
+      "oranje",
+      "blanje",
+      "bleu"
+    ]
+  },
+  {
+    "id": "brussels-seniorenkonvent",
+    "name": "BRUSSELS SENIORENKONVENT",
+    "motto": null,
+    "description": "Overkoepelende studentenkring voor\nBrusselse vrijzinnige Hogeschoolstudenten en de Koninklijke Militaire School",
+    "founded": 1978,
+    "founders": [],
+    "colours": [
+      "rood",
+      "groen"
+    ]
+  }
+]

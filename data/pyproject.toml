@@ -1,0 +1,25 @@
+[project]
+name = "codex-data"
+version = "0.1.0"
+description = "Converts the Codex Bruxellensis songbook PDF into JSON and SQL"
+readme = "README.md"
+authors = [
+    { name = "Sammi Fux", email = "sammi.fux@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pdfplumber>=0.11.10",
+]
+
+[project.scripts]
+codex-data = "codex_data:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jsonschema>=4.26.0",
+    "pytest>=9.1.1",
+]

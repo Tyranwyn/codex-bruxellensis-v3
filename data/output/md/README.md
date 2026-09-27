@@ -1,0 +1,388 @@
+# Codex Bruxellensis
+
+## Kringliederen
+
+- [ACADEMIE LIED](kringliederen/academie-lied.md) — p. 43
+- [ANTVERPIA LIED](kringliederen/antverpia-lied.md) — p. 33
+- [APOTHEKERSLIED](kringliederen/apothekerslied.md) — p. 43
+- [BIERKULTUUR KREET](kringliederen/bierkultuur-kreet.md) — p. 34
+- [BIERKULTUUR LIED](kringliederen/bierkultuur-lied.md) — p. 34
+- [BLAUW-WIT VAN NORMALIA, HET](kringliederen/het-blauw-wit-van-normalia.md) — p. 63
+- [BOURGEOIS VÉREUX](kringliederen/bourgeois-vereux.md) — p. 82
+- [BOVES LUCI CLUBLIED](kringliederen/boves-luci-clublied.md) — p. 36
+- [CAMPINA-KREET](kringliederen/campina-kreet.md) — p. 36
+- [CAMPINALIED](kringliederen/campinalied.md) — p. 37
+- [CHANSON DU CERCLE OMEGA](kringliederen/chanson-du-cercle-omega.md) — p. 38
+- [CHANT DE MEDECINE](kringliederen/chant-de-medecine.md) — p. 44
+- [CHANT DE PHILO](kringliederen/chant-de-philo.md) — p. 56
+- [CHANT DE SOLVAY](kringliederen/chant-de-solvay.md) — p. 72
+- [COMMIN@-KREET](kringliederen/commin-kreet.md) — p. 39
+- [COMMIN@-LIED](kringliederen/commin-lied.md) — p. 40
+- [CRI DE GUERRE DU CP](kringliederen/cri-de-guerre-du-cp.md) — p. 68
+- [DE VRUCHTBARE HENGST](kringliederen/de-vruchtbare-hengst.md) — p. 49
+- [ENIGMALIED, HET](kringliederen/het-enigmalied.md) — p. 41
+- [HILOK-LIED](kringliederen/hilok-lied.md) — p. 61
+- [INFOGROEP CLUBLIED](kringliederen/infogroep-clublied.md) — p. 51
+- [INFOGROEP KREET](kringliederen/infogroep-kreet.md) — p. 50
+- [KBS-KREET](kringliederen/kbs-kreet.md) — p. 53
+- [KEPS-KREET](kringliederen/keps-kreet.md) — p. 54
+- [KEPS-LIED](kringliederen/keps-lied.md) — p. 55
+- [KINNEKE BABA-KREET](kringliederen/kinneke-baba-kreet.md) — p. 51
+- [KINNEKE BABA-LIED](kringliederen/kinneke-baba-lied.md) — p. 52
+- [LEUKE REGIONALEN, DE](kringliederen/de-leuke-regionalen.md) — p. 70
+- [LIED VAN DE BRUSSELSE GEUS](kringliederen/lied-van-de-brusselse-geus.md) — p. 53
+- [LIMBURG ALLEIN](kringliederen/limburg-allein.md) — p. 57
+- [LIMBURGS VOLKSLIED](kringliederen/limburgs-volkslied.md) — p. 58
+- [MAD GAMER, THE](kringliederen/the-mad-gamer.md) — p. 71
+- [MANU JUVANTA CLUBLIED](kringliederen/manu-juvanta-clublied.md) — p. 59
+- [MESACOSA-CLUBLIED](kringliederen/mesacosa-clublied.md) — p. 60
+- [MESACOSA-KREET](kringliederen/mesacosa-kreet.md) — p. 60
+- [MOEDER GEVAAR-LIED](kringliederen/moeder-gevaar-lied.md) — p. 62
+- [MOEDER WESTLAND](kringliederen/moeder-westland.md) — p. 80
+- [PERS-LIED](kringliederen/pers-lied.md) — p. 65
+- [PERSKREET](kringliederen/perskreet.md) — p. 64
+- [PK-KREET](kringliederen/pk-kreet.md) — p. 67
+- [PK-LIED](kringliederen/pk-lied.md) — p. 67
+- [PPK-KREET](kringliederen/ppk-kreet.md) — p. 68
+- [PPK-LIED](kringliederen/ppk-lied.md) — p. 69
+- [SOLVAY, C’EST DU CHAMPAGNE](kringliederen/solvay-c-est-du-champagne.md) — p. 72
+- [SPREKT A MOOJERTOÊL](kringliederen/sprekt-a-moojertoel.md) — p. 84
+- [SWAMP-KREET](kringliederen/swamp-kreet.md) — p. 71
+- [VATKREET, DE](kringliederen/de-vatkreet.md) — p. 74
+- [VATLIED, HET](kringliederen/het-vatlied.md) — p. 74
+- [VILVORDIA CLUBLIED](kringliederen/vilvordia-clublied.md) — p. 76
+- [VIVE LE GUEUX](kringliederen/vive-le-gueux.md) — p. 47
+- [VIVE LES POLYTECHS](kringliederen/vive-les-polytechs.md) — p. 66
+- [VRG-KREET](kringliederen/vrg-kreet.md) — p. 77
+- [VRG-LIED](kringliederen/vrg-lied.md) — p. 77
+- [VSKM KREET](kringliederen/vskm-kreet.md) — p. 78
+- [VSKM LIED](kringliederen/vskm-lied.md) — p. 79
+- [WESTLAND KREET](kringliederen/westland-kreet.md) — p. 79
+- [WK-KREET](kringliederen/wk-kreet.md) — p. 82
+- [WK-LIED](kringliederen/wk-lied.md) — p. 83
+- [WUK ZEG’D JE](kringliederen/wuk-zeg-d-je.md) — p. 81
+- [ZENNEVALLEI LIED](kringliederen/zennevallei-lied.md) — p. 86
+- [ZWK-KREET](kringliederen/zwk-kreet.md) — p. 85
+- [ZWK-LIED](kringliederen/zwk-lied.md) — p. 85
+
+## Officiële liederen
+
+- [AVE CONFRATER](officiele-liederen/ave-confrater.md) — p. 94
+- [BSK-LIED](officiele-liederen/bsk-lied.md) — p. 92
+- [GAUDEAMUS IGITUR](officiele-liederen/gaudeamus-igitur.md) — p. 92
+- [IO VIVAT](officiele-liederen/io-vivat.md) — p. 95
+- [LIED VAN GEEN TAAL](officiele-liederen/lied-van-geen-taal.md) — p. 91
+- [OUDE ROLDERSKLACHT](officiele-liederen/oude-roldersklacht.md) — p. 96
+- [SEMEUR, LE](officiele-liederen/le-semeur.md) — p. 99
+- [TSJECHISCH DRINKLIED](officiele-liederen/tsjechisch-drinklied.md) — p. 96
+
+## Nederlandstalige liederen
+
+- [AAN DE OEVERS VAN DE ZENNE](nederlandstalige-liederen/aan-de-oevers-van-de-zenne.md) — p. 103
+- [ACH LIEFLIJKE MEISJES](nederlandstalige-liederen/ach-lieflijke-meisjes.md) — p. 104
+- [AD FUNDUM PER JAAR](nederlandstalige-liederen/ad-fundum-per-jaar.md) — p. 105
+- [ADHEMAR](nederlandstalige-liederen/adhemar.md) — p. 106
+- [AGE QUOD AGIS](nederlandstalige-liederen/age-quod-agis.md) — p. 107
+- [AL DIE WILLEN TE KAAP’REN VAREN](nederlandstalige-liederen/al-die-willen-te-kaap-ren-varen.md) — p. 109
+- [AL VAN DEN DROGEN HARING](nederlandstalige-liederen/al-van-den-drogen-haring.md) — p. 109
+- [ALLEN DIE WILLEN NAAR ISLAND GAAN](nederlandstalige-liederen/allen-die-willen-naar-island-gaan.md) — p. 111
+- [ALONDER DE BLAUWE HEMEL](nederlandstalige-liederen/alonder-de-blauwe-hemel.md) — p. 112
+- [ALS DE KERELS TE GARE ZIJN](nederlandstalige-liederen/als-de-kerels-te-gare-zijn.md) — p. 113
+- [BEIAARDLIED](nederlandstalige-liederen/beiaardlied.md) — p. 114
+- [BELEG VAN BERG-OP-ZOOM, HET](nederlandstalige-liederen/het-beleg-van-berg-op-zoom.md) — p. 116
+- [BIEREN VAN BRUSSEL, DE](nederlandstalige-liederen/de-bieren-van-brussel.md) — p. 117
+- [BIERVAT, ’T](nederlandstalige-liederen/t-biervat.md) — p. 118
+- [BLAUWVOET, DE](nederlandstalige-liederen/de-blauwvoet.md) — p. 122
+- [BOERENKERMIS](nederlandstalige-liederen/boerenkermis.md) — p. 123
+- [CHICAGO SONG](nederlandstalige-liederen/chicago-song.md) — p. 124
+- [DAAR WAS E WUF DIE SPON](nederlandstalige-liederen/daar-was-e-wuf-die-spon.md) — p. 126
+- [DIS IN LUCHT](nederlandstalige-liederen/dis-in-lucht.md) — p. 126
+- [DISCO ROLLING](nederlandstalige-liederen/disco-rolling.md) — p. 128
+- [DOCHTER VAN DE PACHTER, DE](nederlandstalige-liederen/de-dochter-van-de-pachter.md) — p. 130
+- [DRIE SCHUINTAMBOERS](nederlandstalige-liederen/drie-schuintamboers.md) — p. 132
+- [DRIE VRIENDEN](nederlandstalige-liederen/drie-vrienden.md) — p. 133
+- [DRONKEMANSPRAATJE](nederlandstalige-liederen/dronkemanspraatje.md) — p. 136
+- [ER WAREN DRIE STUDENTJES](nederlandstalige-liederen/er-waren-drie-studentjes.md) — p. 137
+- [ERGO BIBAMUS](nederlandstalige-liederen/ergo-bibamus.md) — p. 138
+- [FIERE GEUZENLIED, HET](nederlandstalige-liederen/het-fiere-geuzenlied.md) — p. 139
+- [FILIA HOSPITALIS](nederlandstalige-liederen/filia-hospitalis.md) — p. 141
+- [FOLKLORE](nederlandstalige-liederen/folklore.md) — p. 143
+- [GEDACHTEN ZIJN VRIJ, DE](nederlandstalige-liederen/de-gedachten-zijn-vrij.md) — p. 144
+- [GEUZENLIED](nederlandstalige-liederen/geuzenlied.md) — p. 146
+- [GILDE VIERT, DE](nederlandstalige-liederen/de-gilde-viert.md) — p. 148
+- [GROENINGHE](nederlandstalige-liederen/groeninghe.md) — p. 149
+- [HET WAREN TWEE CONINCSKINDEREN](nederlandstalige-liederen/het-waren-twee-conincskinderen.md) — p. 150
+- [IK BEN EEN BOEMELAAR](nederlandstalige-liederen/ik-ben-een-boemelaar.md) — p. 151
+- [IK BEN OP EEN AVOND MET EEN MEISJE](nederlandstalige-liederen/ik-ben-op-een-avond-met-een-meisje.md) — p. 153
+- [IK DRINK](nederlandstalige-liederen/ik-drink.md) — p. 154
+- [IK ZAG CECILIA KOMEN](nederlandstalige-liederen/ik-zag-cecilia-komen.md) — p. 155
+- [IK ZOU ZO GRAAG EENS VOGELEN](nederlandstalige-liederen/ik-zou-zo-graag-eens-vogelen.md) — p. 155
+- [IN DE STAD VAN BRUSSEL](nederlandstalige-liederen/in-de-stad-van-brussel.md) — p. 156
+- [JAN BROEDER](nederlandstalige-liederen/jan-broeder.md) — p. 157
+- [JAN KLAASSEN DE TROMPETTER](nederlandstalige-liederen/jan-klaassen-de-trompetter.md) — p. 159
+- [JEROME](nederlandstalige-liederen/jerome.md) — p. 160
+- [JUCHEIDI](nederlandstalige-liederen/jucheidi.md) — p. 162
+- [KAERELSLIED, HET](nederlandstalige-liederen/het-kaerelslied.md) — p. 163
+- [KALINKA](nederlandstalige-liederen/kalinka.md) — p. 165
+- [KEMPENLAND](nederlandstalige-liederen/kempenland.md) — p. 166
+- [KLEIN MARLEENTJE](nederlandstalige-liederen/klein-marleentje.md) — p. 167
+- [KLOKKE ROELAND](nederlandstalige-liederen/klokke-roeland.md) — p. 168
+- [KOEKOEKSLIED, HET](nederlandstalige-liederen/het-koekoekslied.md) — p. 169
+- [KOMT, VRIENDEN, IN HET RONDE](nederlandstalige-liederen/komt-vrienden-in-het-ronde.md) — p. 170
+- [KRAMBAMBOULI](nederlandstalige-liederen/krambambouli.md) — p. 172
+- [LAND VAN HAWAÏ, HET](nederlandstalige-liederen/het-land-van-hawai.md) — p. 174
+- [LIED DER DEKADENTIE](nederlandstalige-liederen/lied-der-dekadentie.md) — p. 174
+- [LIED DER VLAMINGEN, HET](nederlandstalige-liederen/het-lied-der-vlamingen.md) — p. 175
+- [LIED VAN ANTOON](nederlandstalige-liederen/lied-van-antoon.md) — p. 176
+- [LIED VAN HERTOG JAN, HET](nederlandstalige-liederen/het-lied-van-hertog-jan.md) — p. 179
+- [LIED VAN KOPPELSTOCK DE VEERMAN, HET](nederlandstalige-liederen/het-lied-van-koppelstock-de-veerman.md) — p. 183
+- [LIEREMAN, DE](nederlandstalige-liederen/de-liereman.md) — p. 184
+- [LINDENMEISJE, HET](nederlandstalige-liederen/het-lindenmeisje.md) — p. 185
+- [LOZE VISSERTJE, HET](nederlandstalige-liederen/het-loze-vissertje.md) — p. 187
+- [LUIAARDSGILD, HET](nederlandstalige-liederen/het-luiaardsgild.md) — p. 188
+- [ME MOEDER KOCHT NEN HERING](nederlandstalige-liederen/me-moeder-kocht-nen-hering.md) — p. 190
+- [MERLIJN DE GROTE VOGELAAR](nederlandstalige-liederen/merlijn-de-grote-vogelaar.md) — p. 191
+- [MIE DE APPELTRUT](nederlandstalige-liederen/mie-de-appeltrut.md) — p. 192
+- [MOORSOLDATEN, DE](nederlandstalige-liederen/de-moorsoldaten.md) — p. 193
+- [NAAR OOSTLAND](nederlandstalige-liederen/naar-oostland.md) — p. 194
+- [NIEMAND VERSLAAT DE SAINT-V](nederlandstalige-liederen/niemand-verslaat-de-saint-v.md) — p. 195
+- [NOOIT MET KRIJT](nederlandstalige-liederen/nooit-met-krijt.md) — p. 197
+- [NOOIT STERFT HET STUDENTENRAS](nederlandstalige-liederen/nooit-sterft-het-studentenras.md) — p. 198
+- [O NEDERLAND! LET OP UW ZAAK](nederlandstalige-liederen/o-nederland-let-op-uw-zaak.md) — p. 199
+- [OMDAT IK VLAMING BEN](nederlandstalige-liederen/omdat-ik-vlaming-ben.md) — p. 200
+- [OP DE PURP’REN HEI](nederlandstalige-liederen/op-de-purp-ren-hei.md) — p. 201
+- [OUD TAFELLIED](nederlandstalige-liederen/oud-tafellied.md) — p. 201
+- [OUWE ZAKKEN](nederlandstalige-liederen/ouwe-zakken.md) — p. 202
+- [PIETER BREUGHEL IN BRUSSEL](nederlandstalige-liederen/pieter-breughel-in-brussel.md) — p. 205
+- [REUZENLIED](nederlandstalige-liederen/reuzenlied.md) — p. 207
+- [ROLDERS IN DE NACHT, DE](nederlandstalige-liederen/de-rolders-in-de-nacht.md) — p. 208
+- [ROS BEYAARD, ’T](nederlandstalige-liederen/t-ros-beyaard.md) — p. 210
+- [RUE DES BOUCHERS](nederlandstalige-liederen/rue-des-bouchers.md) — p. 211
+- [RUITERSLIED](nederlandstalige-liederen/ruiterslied.md) — p. 213
+- [SCHOON LIEF, HOE LIGT GY HIER EN SLAEPT](nederlandstalige-liederen/schoon-lief-hoe-ligt-gy-hier-en-slaept.md) — p. 214
+- [SCHOON LIEVEKEN WAAR WAARDE GIJ](nederlandstalige-liederen/schoon-lieveken-waar-waarde-gij.md) — p. 216
+- [SLAAT OP DEN TROMMELE](nederlandstalige-liederen/slaat-op-den-trommele.md) — p. 217
+- [SMIDJE, ’T](nederlandstalige-liederen/t-smidje.md) — p. 218
+- [STOOMPRUIM, DE](nederlandstalige-liederen/de-stoompruim.md) — p. 219
+- [TINNEKE VAN HEULEN](nederlandstalige-liederen/tinneke-van-heulen.md) — p. 219
+- [TOEN IK IN BRUSSEL KWAM](nederlandstalige-liederen/toen-ik-in-brussel-kwam.md) — p. 221
+- [VENDEL, HET](nederlandstalige-liederen/het-vendel.md) — p. 222
+- [VERBROEDERING TE BRUSSEL](nederlandstalige-liederen/verbroedering-te-brussel.md) — p. 223
+- [VERLOPEN STUDENT, DE](nederlandstalige-liederen/de-verlopen-student.md) — p. 225
+- [VIER WEVERKENS](nederlandstalige-liederen/vier-weverkens.md) — p. 226
+- [VIVE LA COMPANEIA](nederlandstalige-liederen/vive-la-companeia.md) — p. 227
+- [VIVE, VIVE LE GEUS](nederlandstalige-liederen/vive-vive-le-geus.md) — p. 229
+- [VLAAMSE LEEUW, DE](nederlandstalige-liederen/de-vlaamse-leeuw.md) — p. 231
+- [VLAAMSE MEISJES, DE](nederlandstalige-liederen/de-vlaamse-meisjes.md) — p. 233
+- [VLIEGERKE, ’T](nederlandstalige-liederen/t-vliegerke.md) — p. 235
+- [VOOR OUTER EN HEERD](nederlandstalige-liederen/voor-outer-en-heerd.md) — p. 237
+- [VORIGE PASTOOR VAN ELSENE, DE](nederlandstalige-liederen/de-vorige-pastoor-van-elsene.md) — p. 239
+- [VOYAGEUR, DE](nederlandstalige-liederen/de-voyageur.md) — p. 241
+- [VRESELIJKE MOORD VAN SLISSEN, DE](nederlandstalige-liederen/de-vreselijke-moord-van-slissen.md) — p. 242
+- [VROLIJK LENTELIED, EEN](nederlandstalige-liederen/een-vrolijk-lentelied.md) — p. 242
+- [WAAR HET HART VAN VOL IS, LOOPT DE MOND VAN OVER](nederlandstalige-liederen/waar-het-hart-van-vol-is-loopt-de-mond-van-over.md) — p. 243
+- [WAT ZULLEN WE DRINKEN](nederlandstalige-liederen/wat-zullen-we-drinken.md) — p. 245
+- [WIE ANDERS](nederlandstalige-liederen/wie-anders.md) — p. 247
+- [WIJ ZIJN AL BIJEEN](nederlandstalige-liederen/wij-zijn-al-bijeen.md) — p. 248
+- [WIJN, DE](nederlandstalige-liederen/de-wijn.md) — p. 249
+- [WILHELMUS, HET](nederlandstalige-liederen/het-wilhelmus.md) — p. 250
+- [ZEEMANSLIED](nederlandstalige-liederen/zeemanslied.md) — p. 252
+- [ZILVERVLOOT, DE](nederlandstalige-liederen/de-zilvervloot.md) — p. 252
+- [ZWARTBRUINE BIER, HET](nederlandstalige-liederen/het-zwartbruine-bier.md) — p. 254
+- [ZWIEN, ’T](nederlandstalige-liederen/t-zwien.md) — p. 255
+
+## Franstalige liederen
+
+- [AH! QUE NOS PERES ÉTAIENT HEUREUX](franstalige-liederen/ah-que-nos-peres-etaient-heureux.md) — p. 261
+- [AIMABLE FANCHON, L’](franstalige-liederen/l-aimable-fanchon.md) — p. 264
+- [ALI ALO POUR MASCHERO](franstalige-liederen/ali-alo-pour-maschero.md) — p. 265
+- [ALOHA](franstalige-liederen/aloha.md) — p. 266
+- [AU TRENTE ET UN DU MOIS D’AOÛT](franstalige-liederen/au-trente-et-un-du-mois-d-aout.md) — p. 268
+- [AUPRÈS DE MA BLONDE](franstalige-liederen/aupres-de-ma-blonde.md) — p. 267
+- [BALLADE DES BRAVES GUEUX, LA](franstalige-liederen/la-ballade-des-braves-gueux.md) — p. 269
+- [BALLADE DES COCUS, LA](franstalige-liederen/la-ballade-des-cocus.md) — p. 270
+- [BALLADE DU MUTANT, LA](franstalige-liederen/la-ballade-du-mutant.md) — p. 272
+- [BANDAIS-TU?](franstalige-liederen/bandais-tu.md) — p. 273
+- [BEN LADEN](franstalige-liederen/ben-laden.md) — p. 275
+- [BITE A DUDULE, LA](franstalige-liederen/la-bite-a-dudule.md) — p. 278
+- [BIÈRE, LA](franstalige-liederen/la-biere.md) — p. 276
+- [BORDEL A FERMÉ SES VOLETS, LE](franstalige-liederen/le-bordel-a-ferme-ses-volets.md) — p. 280
+- [BOUDINS ET TEQUILA](franstalige-liederen/boudins-et-tequila.md) — p. 282
+- [BOURGUIGNONNE, LA](franstalige-liederen/la-bourguignonne.md) — p. 284
+- [BRABANÇONNE D’UNE PUTAIN, LA](franstalige-liederen/la-brabanconne-d-une-putain.md) — p. 286
+- [BRUXELLES](franstalige-liederen/bruxelles.md) — p. 287
+- [BUITEN DIE WALEN](franstalige-liederen/buiten-die-walen.md) — p. 289
+- [CACA HOLA](franstalige-liederen/caca-hola.md) — p. 291
+- [CAROLINE, LA PUTAIN](franstalige-liederen/caroline-la-putain.md) — p. 292
+- [CEINTURE, LA](franstalige-liederen/la-ceinture.md) — p. 294
+- [CHANSON DE BICÊTRE](franstalige-liederen/chanson-de-bicetre.md) — p. 299
+- [CHANSON DU ROI ALBERT, LA](franstalige-liederen/la-chanson-du-roi-albert.md) — p. 301
+- [CHANSON À BOIRE](franstalige-liederen/chanson-a-boire.md) — p. 298
+- [CHANT DES BRAVES GUEUX](franstalige-liederen/chant-des-braves-gueux.md) — p. 302
+- [CHANT DES PARTISANS, LE](franstalige-liederen/le-chant-des-partisans.md) — p. 303
+- [CHANTONS POUR PASSER LE TEMPS](franstalige-liederen/chantons-pour-passer-le-temps.md) — p. 304
+- [CHARLOTTE](franstalige-liederen/charlotte.md) — p. 306
+- [CHEVALIERS DE LA TABLE RONDE](franstalige-liederen/chevaliers-de-la-table-ronde.md) — p. 307
+- [CORDONNIER PAMPHYLE, LE](franstalige-liederen/le-cordonnier-pamphyle.md) — p. 309
+- [CORRIDA, LA](franstalige-liederen/la-corrida.md) — p. 311
+- [CUL DE MA BLONDE, LE](franstalige-liederen/le-cul-de-ma-blonde.md) — p. 312
+- [C’ÉTAIT AU TEMPS QUE BRUXELLES GUINDAILLAIT](franstalige-liederen/c-etait-au-temps-que-bruxelles-guindaillait.md) — p. 295
+- [DE PROFUNDIS MORPIONIBUS](franstalige-liederen/de-profundis-morpionibus.md) — p. 315
+- [DIGUE DU CUL, LA](franstalige-liederen/la-digue-du-cul.md) — p. 316
+- [DUC DE BORDEAUX, LE](franstalige-liederen/le-duc-de-bordeaux.md) — p. 318
+- [ELEPHANT STORY](franstalige-liederen/elephant-story.md) — p. 319
+- [EN DESCENDANT LA RUE TRONCHET](franstalige-liederen/en-descendant-la-rue-tronchet.md) — p. 321
+- [EN PASSANT PAR LA LORRAINE](franstalige-liederen/en-passant-par-la-lorraine.md) — p. 322
+- [EN REVENANT DE LA FOIRE](franstalige-liederen/en-revenant-de-la-foire.md) — p. 323
+- [EN REVENANT DU PIÉMONT](franstalige-liederen/en-revenant-du-piemont.md) — p. 324
+- [FEMME DU ROULIER, LA](franstalige-liederen/la-femme-du-roulier.md) — p. 325
+- [FEMME DU VIDANGEUR, LA](franstalige-liederen/la-femme-du-vidangeur.md) — p. 328
+- [FILLE DE LA BOUCHÈRE, LA](franstalige-liederen/la-fille-de-la-bouchere.md) — p. 329
+- [FILLES DE CAMARET, LES](franstalige-liederen/les-filles-de-camaret.md) — p. 331
+- [FILLES DE LA ROCHELLE, LES](franstalige-liederen/les-filles-de-la-rochelle.md) — p. 333
+- [FILLES DES FORGES, LES](franstalige-liederen/les-filles-des-forges.md) — p. 335
+- [FRAISES ET LES FRAMBOISES, LES](franstalige-liederen/les-fraises-et-les-framboises.md) — p. 336
+- [GILDE HALEWYN](franstalige-liederen/gilde-halewyn.md) — p. 339
+- [GRAND MÉTINGUE DU MÉTROPOLITAIN, LE](franstalige-liederen/le-grand-metingue-du-metropolitain.md) — p. 340
+- [HOMME AU PUISSANT BRAQUEMART, L’](franstalige-liederen/l-homme-au-puissant-braquemart.md) — p. 342
+- [HUSSARD DE LA GARDE, LE](franstalige-liederen/le-hussard-de-la-garde.md) — p. 343
+- [IL FAUT BOIRE](franstalige-liederen/il-faut-boire.md) — p. 346
+- [JE BAISE AVEC MA PINE](franstalige-liederen/je-baise-avec-ma-pine.md) — p. 348
+- [JE CHERCHE FORTUNE](franstalige-liederen/je-cherche-fortune.md) — p. 350
+- [JEANNETON](franstalige-liederen/jeanneton.md) — p. 352
+- [JEUNE FILLE DU MÉTRO, LA](franstalige-liederen/la-jeune-fille-du-metro.md) — p. 353
+- [JOUEUR DE LUTH, LE](franstalige-liederen/le-joueur-de-luth.md) — p. 355
+- [J’AI CHOPPÉ LA DIARRHÉE](franstalige-liederen/j-ai-choppe-la-diarrhee.md) — p. 347
+- [KYRIÉ DES MOINES, LE](franstalige-liederen/le-kyrie-des-moines.md) — p. 357
+- [LÉGIONNAIRES, LES](franstalige-liederen/les-legionnaires.md) — p. 359
+- [MA FEMME EST MORTE](franstalige-liederen/ma-femme-est-morte.md) — p. 360
+- [MA MÈRE M’A DONNÉ CENT SOUS](franstalige-liederen/ma-mere-m-a-donne-cent-sous.md) — p. 362
+- [MARCHE AMÉRICAINE](franstalige-liederen/marche-americaine.md) — p. 363
+- [MARCHE DES ÉTUDIANTS, LA](franstalige-liederen/la-marche-des-etudiants.md) — p. 365
+- [MARSEILLAISE ANTICLÉRICALE, LA](franstalige-liederen/la-marseillaise-anticlericale.md) — p. 367
+- [MARTEAUX, LES](franstalige-liederen/les-marteaux.md) — p. 369
+- [MAUVAISE RÉPUTATION, LA](franstalige-liederen/la-mauvaise-reputation.md) — p. 372
+- [MOINES DE SAINT-BERNARDIN, LES](franstalige-liederen/les-moines-de-saint-bernardin.md) — p. 374
+- [MÈRE GASPARD, LA](franstalige-liederen/la-mere-gaspard.md) — p. 374
+- [NINI-PEAU-D’CHIEN](franstalige-liederen/nini-peau-d-chien.md) — p. 376
+- [ODE À UNE FÉMINISTE](franstalige-liederen/ode-a-une-feministe.md) — p. 378
+- [PARCOURS SANTÉ](franstalige-liederen/parcours-sante.md) — p. 380
+- [PLAISIR DES DIEUX, LE](franstalige-liederen/le-plaisir-des-dieux.md) — p. 384
+- [PÈRE ADAM, LE](franstalige-liederen/le-pere-adam.md) — p. 382
+- [QUAND ON A UNE GUEUL’ COMME ÇA](franstalige-liederen/quand-on-a-une-gueul-comme-ca.md) — p. 386
+- [QUATRE-VINGTS CHASSEURS, LES](franstalige-liederen/les-quatre-vingts-chasseurs.md) — p. 386
+- [QUILLE, LA](franstalige-liederen/la-quille.md) — p. 388
+- [ROMANCE DU 14 JUILLET, LA](franstalige-liederen/la-romance-du-14-juillet.md) — p. 391
+- [RÉPONSE D’UNE FÉMINISTE](franstalige-liederen/reponse-d-une-feministe.md) — p. 389
+- [SAINT NICOLAS](franstalige-liederen/saint-nicolas.md) — p. 393
+- [SALOPE, LA](franstalige-liederen/la-salope.md) — p. 396
+- [SI J’ T’ENCULE](franstalige-liederen/si-j-t-encule.md) — p. 397
+- [STANCES À SOPHIE, LES](franstalige-liederen/les-stances-a-sophie.md) — p. 399
+- [SUR LES BORDS DE LA LOIRE](franstalige-liederen/sur-les-bords-de-la-loire.md) — p. 401
+- [SUR LES BORDS DE LA TAMISE](franstalige-liederen/sur-les-bords-de-la-tamise.md) — p. 402
+- [TOUR DE LONDRES, LA](franstalige-liederen/la-tour-de-londres.md) — p. 403
+- [TOURDION, LE](franstalige-liederen/le-tourdion.md) — p. 404
+- [TROIS ORFÈVRES, LES](franstalige-liederen/les-trois-orfevres.md) — p. 405
+- [TROUBADOUR, LE](franstalige-liederen/le-troubadour.md) — p. 407
+- [VIVRE POUR VIVRE](franstalige-liederen/vivre-pour-vivre.md) — p. 408
+- [ZOBI D’ALI PACHA, LE](franstalige-liederen/le-zobi-d-ali-pacha.md) — p. 410
+- [À BAS LA CALOTTE](franstalige-liederen/a-bas-la-calotte.md) — p. 259
+- [À FOND LIÈGEOIS](franstalige-liederen/a-fond-liegeois.md) — p. 260
+
+## Duitstalige liederen
+
+- [ALLE FISCHE SCHWIMMEN](duitstalige-liederen/alle-fische-schwimmen.md) — p. 415
+- [ALT HEIDELBERG](duitstalige-liederen/alt-heidelberg.md) — p. 415
+- [BIER HER!](duitstalige-liederen/bier-her.md) — p. 416
+- [BUMS VALDERA](duitstalige-liederen/bums-valdera.md) — p. 417
+- [BURSCHEN, HERAUS](duitstalige-liederen/burschen-heraus.md) — p. 419
+- [DONAUSTRUDEL](duitstalige-liederen/donaustrudel.md) — p. 421
+- [ERIKA](duitstalige-liederen/erika.md) — p. 422
+- [ES LEBEN DIE STUDENTEN](duitstalige-liederen/es-leben-die-studenten.md) — p. 426
+- [GEDANKEN SIND FREI, DIE](duitstalige-liederen/die-gedanken-sind-frei.md) — p. 429
+- [GOLD UND SILBER](duitstalige-liederen/gold-und-silber.md) — p. 430
+- [GUTE KAMERAD, DER](duitstalige-liederen/der-gute-kamerad.md) — p. 432
+- [HAMBORGER VEERMASTER, DE](duitstalige-liederen/de-hamborger-veermaster.md) — p. 433
+- [HEUTE IST HEUT](duitstalige-liederen/heute-ist-heut.md) — p. 434
+- [ICH HAB’ MEIN HERZ IN HEIDELBERG VERLOREN](duitstalige-liederen/ich-hab-mein-herz-in-heidelberg-verloren.md) — p. 435
+- [IM TIEFEN KELLER](duitstalige-liederen/im-tiefen-keller.md) — p. 437
+- [IN MÜNCHEN STEHT EIN HOFBRÄUHAUS](duitstalige-liederen/in-munchen-steht-ein-hofbrauhaus.md) — p. 438
+- [KURFÜRST FRIEDRICH VON DER PFALZ](duitstalige-liederen/kurfurst-friedrich-von-der-pfalz.md) — p. 439
+- [LILI MARLEEN](duitstalige-liederen/lili-marleen.md) — p. 440
+- [LORE, DIE](duitstalige-liederen/die-lore.md) — p. 442
+- [LUSTIG IST DAS ZIGEUNERLEBEN](duitstalige-liederen/lustig-ist-das-zigeunerleben.md) — p. 443
+- [MOORSOLDATEN, DIE](duitstalige-liederen/die-moorsoldaten.md) — p. 444
+- [O ALTE BURSCHENHERLICHKEIT](duitstalige-liederen/o-alte-burschenherlichkeit.md) — p. 446
+- [PAPPENHEIMER, DER](duitstalige-liederen/der-pappenheimer.md) — p. 448
+- [POLENKIND, DAS](duitstalige-liederen/das-polenkind.md) — p. 449
+- [PROSIT, EIN](duitstalige-liederen/ein-prosit.md) — p. 450
+- [ROTE HUSAREN](duitstalige-liederen/rote-husaren.md) — p. 451
+- [RÖSLEIN AUF DER HEIDEN](duitstalige-liederen/roslein-auf-der-heiden.md) — p. 450
+- [SCHIFFLEIN SAH ICH FAHREN, EIN](duitstalige-liederen/ein-schifflein-sah-ich-fahren.md) — p. 452
+- [SCHWARZBRAUN IST DIE HASELNUSS](duitstalige-liederen/schwarzbraun-ist-die-haselnuss.md) — p. 453
+- [SEEFAHRT, EINE](duitstalige-liederen/eine-seefahrt.md) — p. 454
+- [STUDIO AUF EINER REIS’](duitstalige-liederen/studio-auf-einer-reis.md) — p. 456
+- [TRINK, TRINK, BRÜDERLEIN, TRINK](duitstalige-liederen/trink-trink-bruderlein-trink.md) — p. 457
+- [TUNKE](duitstalige-liederen/tunke.md) — p. 458
+- [WENN ALLE UNTREU WERDEN](duitstalige-liederen/wenn-alle-untreu-werden.md) — p. 460
+- [WESTERWALDLIED](duitstalige-liederen/westerwaldlied.md) — p. 460
+- [WUNDERBARES MÄDELEIN](duitstalige-liederen/wunderbares-madelein.md) — p. 462
+- [ÇA, ÇA GESCHMAUSET](duitstalige-liederen/ca-ca-geschmauset.md) — p. 420
+- [’S GIBT KEIN SCHÖNER LEBEN ALS STUDENTENLEBEN](duitstalige-liederen/s-gibt-kein-schoner-leben-als-studentenleben.md) — p. 425
+
+## Engelstalige liederen
+
+- [ALL AROUND MY HAT](engelstalige-liederen/all-around-my-hat.md) — p. 465
+- [ANOTHER IRISH DRINKING SONG](engelstalige-liederen/another-irish-drinking-song.md) — p. 466
+- [BALL OF KERRYMUIR, THE](engelstalige-liederen/the-ball-of-kerrymuir.md) — p. 468
+- [BANANABOAT SONG, THE](engelstalige-liederen/the-bananaboat-song.md) — p. 470
+- [BARNACLE BILL](engelstalige-liederen/barnacle-bill.md) — p. 471
+- [BRICKLAYER’S LAMENT, THE](engelstalige-liederen/the-bricklayer-s-lament.md) — p. 474
+- [BRITISH GRENADIERS, THE](engelstalige-liederen/the-british-grenadiers.md) — p. 477
+- [CLEMENTINE](engelstalige-liederen/clementine.md) — p. 479
+- [COCKLES AND MUSSELS](engelstalige-liederen/cockles-and-mussels.md) — p. 480
+- [COTTON FIELDS](engelstalige-liederen/cotton-fields.md) — p. 481
+- [DONNA DONNA](engelstalige-liederen/donna-donna.md) — p. 481
+- [DRUNK SCOTSMAN, THE](engelstalige-liederen/the-drunk-scotsman.md) — p. 483
+- [FLOWER OF SCOTLAND, THE](engelstalige-liederen/the-flower-of-scotland.md) — p. 485
+- [HOME ON THE RANGE](engelstalige-liederen/home-on-the-range.md) — p. 486
+- [IT’S A LONG WAY TO TIPPERARY](engelstalige-liederen/it-s-a-long-way-to-tipperary.md) — p. 487
+- [KINGSTONTOWN](engelstalige-liederen/kingstontown.md) — p. 488
+- [LEAVE HER, JOHNNY](engelstalige-liederen/leave-her-johnny.md) — p. 489
+- [LION SLEEPS TONIGHT, THE](engelstalige-liederen/the-lion-sleeps-tonight.md) — p. 490
+- [LOCH LOMON’](engelstalige-liederen/loch-lomon.md) — p. 490
+- [MY BONNIE](engelstalige-liederen/my-bonnie.md) — p. 492
+- [OH SUSANNA](engelstalige-liederen/oh-susanna.md) — p. 493
+- [PICK A BALE OF COTTON](engelstalige-liederen/pick-a-bale-of-cotton.md) — p. 494
+- [RANDY DANDY-OH](engelstalige-liederen/randy-dandy-oh.md) — p. 495
+- [RED RIVER VALLEY](engelstalige-liederen/red-river-valley.md) — p. 496
+- [ROCKY ROAD TO DUBLIN, THE](engelstalige-liederen/the-rocky-road-to-dublin.md) — p. 497
+- [ROLL THE OLD CHARIOT ALONG](engelstalige-liederen/roll-the-old-chariot-along.md) — p. 499
+- [SCOTLAND THE BRAVE](engelstalige-liederen/scotland-the-brave.md) — p. 500
+- [SONG FOR YE JACOBITES](engelstalige-liederen/song-for-ye-jacobites.md) — p. 502
+- [STONECUTTERS SONG, THE](engelstalige-liederen/the-stonecutters-song.md) — p. 503
+- [TAVERN IN THE TOWN, A](engelstalige-liederen/a-tavern-in-the-town.md) — p. 504
+- [TOM DOOLEY](engelstalige-liederen/tom-dooley.md) — p. 505
+- [TONIGHT](engelstalige-liederen/tonight.md) — p. 506
+- [WALTZING MATILDA](engelstalige-liederen/waltzing-matilda.md) — p. 506
+- [WELLERMAN, THE](engelstalige-liederen/the-wellerman.md) — p. 507
+- [WHAT SHALL WE DO WITH THE DRUNKEN SAILOR](engelstalige-liederen/what-shall-we-do-with-the-drunken-sailor.md) — p. 509
+- [WHEN JOHNNY COMES MARCHING HOME](engelstalige-liederen/when-johnny-comes-marching-home.md) — p. 509
+- [WHISKEY IN THE JAR](engelstalige-liederen/whiskey-in-the-jar.md) — p. 511
+- [WILD ROVER, THE](engelstalige-liederen/the-wild-rover.md) — p. 513
+- [YANKEE DOODLE](engelstalige-liederen/yankee-doodle.md) — p. 514
+
+## Anderstalige liederen
+
+- [A, A, A, VALETE STUDIA](anderstalige-liederen/a-a-a-valete-studia.md) — p. 519
+- [BELLA CIAO](anderstalige-liederen/bella-ciao.md) — p. 520
+- [FILIA PASTORIS](anderstalige-liederen/filia-pastoris.md) — p. 521
+- [GERTJIE](anderstalige-liederen/gertjie.md) — p. 522
+- [HAVA NAGIELA](anderstalige-liederen/hava-nagiela.md) — p. 523
+- [KAT KWAM WEER, DIE](anderstalige-liederen/die-kat-kwam-weer.md) — p. 524
+- [MARCHA DE LA UNIDAD POPULAR](anderstalige-liederen/marcha-de-la-unidad-popular.md) — p. 526
+- [NUMMERLIEKE](anderstalige-liederen/nummerlieke.md) — p. 527
+- [PASO DEL EBRO, EL](anderstalige-liederen/el-paso-del-ebro.md) — p. 528
+- [SARIE MARAIS](anderstalige-liederen/sarie-marais.md) — p. 529
+- [STELLENBOSCHE KERLS, DIE](anderstalige-liederen/die-stellenbosche-kerls.md) — p. 530
+- [STUDENTELIED](anderstalige-liederen/studentelied.md) — p. 532

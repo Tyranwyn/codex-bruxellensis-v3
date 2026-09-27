@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://codex-bruxellensis/schema/club.schema.json",
+  "title": "Club",
+  "description": "A student club (kring) whose header appears above its songs in the book.",
+  "type": "object",
+  "required": ["id", "name"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "description": "Slug of the name, e.g. 'antverpia'.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": { "type": "string" },
+    "motto": {
+      "description": "Second heading line, if any, e.g. '“GEEN TAAL GEEN VRIJHEID”'.",
+      "type": ["string", "null"]
+    },
+    "description": {
+      "description": "Free text such as 'Studenten uit Antwerpen'.",
+      "type": ["string", "null"]
+    },
+    "founded": {
+      "description": "Year from 'Gesticht in …'.",
+      "type": ["integer", "null"]
+    },
+    "founders": {
+      "description": "From 'Stichter:' / 'Stichters (o.a.):'.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "colours": {
+      "description": "From 'Kleuren:', split on dashes, e.g. ['rood', 'wit', 'rood'].",
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
