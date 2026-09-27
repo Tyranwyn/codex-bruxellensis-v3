@@ -114,3 +114,24 @@ def test_markdown_files(extracted, tmp_path):
     assert escape("* De keuze") == "\\* De keuze"
     assert escape("1. Levate") == "1\\. Levate"
     assert escape("- ja") == "\\- ja"
+
+
+def test_html_files(extracted, tmp_path):
+    from codex_data.export_html import write_html
+
+    data = extracted[0]
+    write_html(data, tmp_path)
+    assert len(list(tmp_path.glob("*/*.html"))) == len(data["songs"])
+    assert (tmp_path / "style.css").exists()
+
+    # Nested repeats: one-line markers inline, the 3-line one as a bracket.
+    kreet = (tmp_path / "kringliederen" / "wk-kreet.html").read_text()
+    assert 'Oeaaaah! <span class="mark">(BIS)</span>' in kreet
+    assert 'class="bracket" style="grid-row:2/5;grid-column:2"' in kreet
+    assert 'href="bourgeois-vereux.html"' in kreet
+
+    chorus = (tmp_path / "nederlandstalige-liederen" / "ach-lieflijke-meisjes.html").read_text()
+    assert '<div class="stanza chorus">' in chorus
+
+    index = (tmp_path / "index.html").read_text()
+    assert 'href="kringliederen/antverpia-lied.html"' in index

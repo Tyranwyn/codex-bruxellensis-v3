@@ -6,6 +6,7 @@ PDF_PATH = DATA_DIR / "source" / "codex2022.pdf"
 JSON_DIR = DATA_DIR / "output" / "json"
 SQL_DIR = DATA_DIR / "output" / "sql"
 MD_DIR = DATA_DIR / "output" / "md"
+HTML_DIR = DATA_DIR / "output" / "html"
 SCHEMA_SQL = DATA_DIR / "schema" / "schema.sql"
 
 
@@ -16,11 +17,12 @@ def main() -> None:
     dump = sub.add_parser("dump", help="print the typed lines of PDF pages (for debugging)")
     dump.add_argument("pages", nargs="+", type=int, help="1-based PDF page numbers")
 
-    sub.add_parser("extract", help="convert the PDF into output/json, output/sql and output/md")
+    sub.add_parser("extract", help="convert the PDF into output/json, output/sql, output/md and output/html")
 
     args = parser.parse_args()
 
     if args.command == "extract":
+        from .export_html import write_html
         from .export_md import write_md
         from .export_sql import write_sql
         from .extract import extract, write_json
@@ -29,6 +31,7 @@ def main() -> None:
         write_json(data, JSON_DIR)
         write_sql(data, SCHEMA_SQL, SQL_DIR)
         write_md(data, MD_DIR)
+        write_html(data, HTML_DIR)
         for w in warnings:
             print("warning:", w)
         print(

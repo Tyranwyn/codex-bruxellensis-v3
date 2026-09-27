@@ -19,7 +19,7 @@ The source PDF is **not** in git and must stay out of it (`.gitignore` covers `d
 Run these from `data/`:
 
 ```sh
-uv run codex-data extract        # PDF → output/json/*.json, output/sql/codex.sql, output/md/<section>/<song-id>.md
+uv run codex-data extract        # PDF → output/json/*.json, output/sql/codex.sql, output/{md,html}/<section>/<song-id>.*
 uv run codex-data dump 35 129    # print the typed lines of PDF pages (role, x, y, text); use it to debug parsing
 uv run pytest                    # ~7 s: runs a full extraction once, then checks it
 uv run pytest tests/test_layout.py::test_bracketed_repeats   # a single test
@@ -73,6 +73,13 @@ uv run pytest tests/test_layout.py::test_bracketed_repeats   # a single test
    - Choruses are blockquotes, and each line ends in `\` for a hard break.
    - Repeat markers go on the last line they cover, e.g. `(BIS, 4 regels)`.
    - It deletes and rewrites `output/md/` on every run.
+
+   **`export_html.py`** writes a static site, `output/html/`. It has one page per song, plus `index.html` (with an accent-insensitive search) and `style.css`. It works from `file://`.
+   - Choruses are italic and indented.
+   - A one-line repeat marker goes inline, at the end of its line.
+   - A multi-line marker becomes a bracket beside its lines, drawn as a CSS grid cell. Nested or overlapping brackets get their own lanes (columns).
+   - Club songs show a card with the club's info. Each song page links to the previous and next song in book order.
+   - Like the Markdown export, it deletes and rewrites `output/html/` on every run.
 
 Invariants that the tests check:
 - All 366 index entries match exactly one song.
