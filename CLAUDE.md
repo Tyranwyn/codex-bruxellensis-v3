@@ -10,7 +10,9 @@ The project has three parts, and data flows one way through them: **data → bac
 - `backend/`: serves the data. Its tech stack is not decided yet.
 - `frontend/`: presents the songbook. Its tech stack is not decided yet.
 
-Git remote: `git@github.com:Tyranwyn/codex-bruxellensis-v3.git` (branch `main`). The generated `data/output/` and the source PDF are committed.
+Git remote: `git@github.com:Tyranwyn/codex-bruxellensis-v3.git` (branch `main`). The generated `data/output/` is committed.
+
+The source PDF is **not** in git and must stay out of it (`.gitignore` covers `data/source/*.pdf`). It isn't meant for public distribution, and it was removed from history. Extraction and tests need a local copy at `data/source/codex2022.pdf`.
 
 ## Data commands
 

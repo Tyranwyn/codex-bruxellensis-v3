@@ -16,3 +16,9 @@ dist/
 .venv/
 __pycache__/
 .pytest_cache/
+
+# Source PDF: not redistributable, keep it local only
+data/source/*.pdf
+
+# Editors
+*.swp

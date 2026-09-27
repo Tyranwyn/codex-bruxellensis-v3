@@ -7,7 +7,7 @@ uv run codex-data extract   # regenerate output/
 uv run pytest               # check the output
 ```
 
-- `source/`: the original input (`codex2022.pdf`). Treat it as read-only.
+- `source/`: the original input. It isn't in git, so place `codex2022.pdf` here yourself before running anything.
 - `src/codex_data/`: the extraction pipeline (pdfplumber).
 - `schema/`: the data model (JSON Schema and SQL) plus an example song.
 - `output/json/`: `songs.json`, `clubs.json` and `sections.json`.
