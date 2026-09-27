@@ -10,7 +10,7 @@ The project has three parts, and data flows one way through them: **data → bac
 - `backend/`: serves the data. Its tech stack is not decided yet.
 - `frontend/`: presents the songbook. Its tech stack is not decided yet.
 
-The directory is not a git repository yet.
+Git remote: `git@github.com:Tyranwyn/codex-bruxellensis-v3.git` (branch `main`). The generated `data/output/` and the source PDF are committed.
 
 ## Data commands
 
