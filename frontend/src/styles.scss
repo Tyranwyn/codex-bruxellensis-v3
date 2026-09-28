@@ -433,6 +433,13 @@ main {
   flex-grow: 80;
   display: flex;
   justify-content: space-between;
+  gap: 1em;
+}
+
+// A long title wraps; the page number keeps its width and stays on one line.
+.song-page {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .song-info:focus {
@@ -462,6 +469,10 @@ main {
   display: flex;
   justify-content: space-between;
   color: var(--codex-strong);
+
+  .page {
+    white-space: nowrap;
+  }
 }
 
 .song-detail {
