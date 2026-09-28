@@ -45,10 +45,11 @@ pnpm lint                  # angular-eslint
 
 - Standalone components, zoneless change detection, signals. There is no NgRx: state lives in `core/auth.service.ts` (Firebase Auth), `core/user-data.service.ts` (role and favorites) and `songs/song.service.ts`.
 - Firebase is used through the plain SDK plus `rxfire`, provided in `core/firebase.ts`. `@angular/fire` has no release for Angular 22 yet.
-- The Firebase client config (`src/app/firebase-config.ts`) is **not in git**; it is gitignored. Locally, copy `firebase-config.example.ts` to `firebase-config.ts` and fill in the values. In CI, `pipeline.yml` writes the file from the `((firebase-config))` secret before building. Never commit real values.
-- `environments/environment*.ts` pick the Firestore collections: `songs-test`/`user-data-test` in dev, `songs`/`user-data` in production.
+- The Firebase client config comes from `FIREBASE_*` environment variables. Locally, copy `.env.example` to `.env` (gitignored) and fill in the values. `scripts/write-firebase-config.mjs` turns them into `src/app/firebase-config.ts` and `src/environment.ts`, which are both generated and gitignored. `pnpm start`, `build` and `build:prd` run it first and fail if a variable is missing; `pnpm test` runs it with `--allow-missing`. Never commit real values.
+- There are three targets: `local` (`pnpm start`), `beta` (`pnpm build`, `deploy`) and `prd` (`pnpm build:prd`, `deploy:prd`). The script takes `--target=`, and the target picks the `FIRESTORE_SONGS_COLLECTION_<TARGET>` and `FIRESTORE_USER_DATA_COLLECTION_<TARGET>` variables, which end up in `environment.databases`. `environment.production` is true only for `prd`. The defaults are `songs-test`/`user-data-test` for local and beta, and `songs`/`user-data` for prd.
 - Styling is Bulma 1, configured in `src/styles.scss`.
-- `deploy.js` uploads `dist/` to S3. `serverless.yml` and `pipeline.yml` are the old deploy setup, kept unchanged.
+- `pnpm deploy` / `pnpm deploy:prd` build and then run `node deploy.js beta|prd`. It uploads `dist/` to S3, then deletes files that are no longer in the build (`--dry-run` shows what it would do). The buckets come from `S3_BUCKET_BETA`/`S3_BUCKET_PRD` and the region from `AWS_REGION` in `.env`; credentials use the standard AWS chain.
+- `pipeline.yml` is the old deploy setup, kept unchanged. It predates the `.env` setup: it writes `firebase-config.ts` from a secret, which the build now overwrites, so it would need `FIREBASE_*` params to be revived. The S3 buckets (`codex.brussels`, `beta.codex.brussels`, eu-west-3) were created by hand, so there is no infrastructure config for them in the repo.
 
 ## Data model (`data/schema/`)
 

@@ -14,7 +14,7 @@ import {collectionData, docData} from 'rxfire/firestore';
 import {Observable} from 'rxjs';
 
 import {FIRESTORE} from '../core/firebase';
-import {environment} from '../../environments/environment';
+import {environment} from '../../environment';
 import {Song, SongData} from './models/song';
 
 @Injectable({providedIn: 'root'})

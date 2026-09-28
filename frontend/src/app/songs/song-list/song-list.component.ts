@@ -10,7 +10,7 @@ import {faSearch, faStar as faStarSolid} from '@fortawesome/free-solid-svg-icons
 
 import {AuthService} from '../../core/auth.service';
 import {UserDataService} from '../../core/user-data.service';
-import {environment} from '../../../environments/environment';
+import {environment} from '../../../environment';
 import {Song} from '../models/song';
 import {SongFormComponent} from '../song-form/song-form.component';
 import {SongService} from '../song.service';

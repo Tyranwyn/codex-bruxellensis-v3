@@ -24,5 +24,9 @@ data/source/*.pdf
 *.swp
 .angular/
 
-# Firebase client config: injected at build time, never committed
+# Firebase client config: generated from .env at build time, never committed
 frontend/src/app/firebase-config.ts
+frontend/src/environment.ts
+.env
+.env.*
+!.env.example

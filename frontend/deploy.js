@@ -1,82 +1,96 @@
-const fs = require('fs');
-const path = require('path');
-const AWS = require('aws-sdk');
-const readdir = require('recursive-readdir');
+// Uploads dist/ to the S3 bucket of a target and removes files that are no longer part of the build.
+// Usage: node deploy.js <beta|prd> [--dry-run]
+// Settings come from the environment or frontend/.env: S3_BUCKET_BETA, S3_BUCKET_PRD (or S3_BUCKET),
+// AWS_REGION (default eu-west-3) and the standard AWS credentials.
+const fs = require('node:fs');
+const path = require('node:path');
 const mime = require('mime-types');
+const {
+  S3Client,
+  PutObjectCommand,
+  ListObjectsV2Command,
+  DeleteObjectsCommand
+} = require('@aws-sdk/client-s3');
 
-const BUCKET = process.env.S3_BUCKET;
-const rootFolder = path.resolve(__dirname, './');
-const uploadFolder = './dist';
-const s3 = new AWS.S3({
-  signatureVersion: 'v4',
-  region: "eu-west-3"
-});
-
-function getFiles(dirPath) {
-  return fs.existsSync(dirPath) ? readdir(dirPath) : [];
+try {
+  process.loadEnvFile(path.resolve(__dirname, '.env'));
+} catch (err) {
+  if (err.code !== 'ENOENT') throw err;
 }
 
-if (!BUCKET) {
-  throw new Error('you must provide env. variables: [S3_BUCKET]');
+const BUCKET_VARIABLES = {beta: 'S3_BUCKET_BETA', prd: 'S3_BUCKET_PRD'};
+const DIST = path.resolve(__dirname, 'dist');
+// The service worker and its manifest must never be served stale.
+const NO_CACHE = new Set(['index.html', 'ngsw.json']);
+
+function resolveBucket(target) {
+  const variable = BUCKET_VARIABLES[target];
+  if (!variable) {
+    throw new Error(`usage: node deploy.js <${Object.keys(BUCKET_VARIABLES).join('|')}> [--dry-run]`);
+  }
+  const bucket = process.env[variable] || process.env.S3_BUCKET;
+  if (!bucket) {
+    throw new Error(`you must provide env. variable ${variable} (or S3_BUCKET)`);
+  }
+  return bucket;
 }
 
-async function getBucketItems() {
-  return new Promise((resolve, reject) => {
-    s3.listObjectsV2({Bucket: BUCKET}, (err, data) => {
-      if (err) {
-        return reject(new Error(err));
-      }
-      resolve(data);
-    })
-  })
+function listBuild() {
+  if (!fs.existsSync(DIST)) {
+    throw new Error('dist/ does not exist, build first');
+  }
+  return fs.readdirSync(DIST, {recursive: true, withFileTypes: true})
+    .filter(entry => entry.isFile())
+    .map(entry => path.relative(DIST, path.join(entry.parentPath, entry.name)).split(path.sep).join('/'));
 }
 
-async function clearBucketItems(items) {
-  let map = items.map(item => ({Key: item.Key}));
-  await s3.deleteObjects({Bucket: BUCKET, Delete: {Objects: map}}, err => {
-    if (err) {
-      console.error(err, err.message);
-      process.exit(1);
-    } else {
-      console.log("Bucket cleared");
+async function listKeys(s3, bucket) {
+  const keys = [];
+  let ContinuationToken;
+  do {
+    const page = await s3.send(new ListObjectsV2Command({Bucket: bucket, ContinuationToken}));
+    keys.push(...(page.Contents ?? []).map(item => item.Key));
+    ContinuationToken = page.NextContinuationToken;
+  } while (ContinuationToken);
+  return keys;
+}
+
+async function deploy(target, dryRun) {
+  const bucket = resolveBucket(target);
+  const s3 = new S3Client({region: process.env.AWS_REGION || 'eu-west-3'});
+  const files = listBuild();
+  const prefix = dryRun ? '[dry run] ' : '';
+
+  for (const key of files) {
+    console.log(`${prefix}uploading: [${key}]`);
+    if (dryRun) continue;
+    await s3.send(new PutObjectCommand({
+      Bucket: bucket,
+      Key: key,
+      Body: fs.readFileSync(path.join(DIST, key)),
+      ContentType: mime.lookup(key) || 'application/octet-stream',
+      ...(NO_CACHE.has(key) && {CacheControl: 'no-cache'})
+    }));
+  }
+
+  // Removed last, so the site is never empty in the middle of a deploy.
+  const uploaded = new Set(files);
+  const stale = (await listKeys(s3, bucket)).filter(key => !uploaded.has(key));
+  for (let i = 0; i < stale.length; i += 1000) {
+    const batch = stale.slice(i, i + 1000).map(Key => ({Key}));
+    console.log(`${prefix}deleting ${batch.length} stale file(s)`);
+    if (!dryRun) {
+      await s3.send(new DeleteObjectsCommand({Bucket: bucket, Delete: {Objects: batch}}));
     }
-  }).promise();
+  }
+  if (!stale.length) console.log('Nothing to delete');
 }
 
-async function deploy(upload) {
-  let bucketItems = await getBucketItems();
+const [target] = process.argv.slice(2).filter(arg => !arg.startsWith('--'));
 
-  if (bucketItems.Contents.length !== 0) {
-    await clearBucketItems(bucketItems.Contents);
-  } else {
-    console.log("Nothing to delete");
-  }
-
-  const filesToUpload = await getFiles(path.resolve(__dirname, upload));
-
-  for (let file of filesToUpload) {
-    const Key = file.replace(`${rootFolder}/dist/`, '');
-    console.log(`uploading: [${Key}]`);
-    await s3.putObject({
-      Key,
-      Bucket: BUCKET,
-      Body: fs.readFileSync(file),
-      ContentType: mime.lookup(file)
-    }, (err) => {
-      if (err) {
-        console.error(err, err.stack);
-        process.exit(1);
-      } else console.log(Key + " succesfully uploaded");
-    }).promise();
-  }
-}
-
-deploy(uploadFolder)
-  .then(() => {
-    console.log('task complete');
-    process.exit(0);
-  })
-  .catch((err) => {
+deploy(target, process.argv.includes('--dry-run'))
+  .then(() => console.log('task complete'))
+  .catch(err => {
     console.error(err.message);
     process.exit(1);
   });

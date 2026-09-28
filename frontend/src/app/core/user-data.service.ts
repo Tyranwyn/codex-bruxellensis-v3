@@ -4,7 +4,7 @@ import {arrayRemove, arrayUnion, collection, CollectionReference, doc, setDoc, u
 import {docData} from 'rxfire/firestore';
 import {map, Observable, of, switchMap, tap} from 'rxjs';
 
-import {environment} from '../../environments/environment';
+import {environment} from '../../environment';
 import {SongService} from '../songs/song.service';
 import {Role, UserData, UserDataDoc} from '../user/user';
 import {AuthService} from './auth.service';
