@@ -27,8 +27,11 @@ const DISTRIBUTION_VARIABLES = {
   prd: 'CLOUDFRONT_DISTRIBUTION_ID_PRD'
 };
 const DIST = path.resolve(__dirname, 'dist');
-// The service worker and its manifest must never be served stale.
-const NO_CACHE = new Set(['index.html', 'ngsw.json']);
+// Only files with a content hash in their name (chunk-XXXXXXXX.js, main-XXXXXXXX.js, ...) may be
+// cached by browsers. Everything else (index.html, ngsw.json, and main.js/styles.css of the unhashed
+// beta build) is revalidated on every load, or a browser could mix an old bundle with a new one.
+const HASHED = /-[A-Z0-9]{8}\.(js|css|woff2?|ttf|svg|png|jpe?g|gif)$/;
+const cacheControl = key => HASHED.test(key) ? {} : {CacheControl: 'no-cache'};
 
 function resolveBucket(target) {
   const variable = BUCKET_VARIABLES[target];
@@ -81,7 +84,7 @@ async function deploy(target, dryRun) {
       Key: key,
       Body: fs.readFileSync(path.join(DIST, key)),
       ContentType: mime.lookup(key) || 'application/octet-stream',
-      ...(NO_CACHE.has(key) && {CacheControl: 'no-cache'})
+      ...cacheControl(key)
     }));
   }
 
