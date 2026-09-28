@@ -1,7 +1,9 @@
-// Uploads dist/ to the S3 bucket of a target and removes files that are no longer part of the build.
+// Uploads dist/ to the S3 bucket of a target, removes files that are no longer part of the
+// build, then invalidates the target's CloudFront distribution.
 // Usage: node deploy.js <beta|prd> [--dry-run]
 // Settings come from the environment or frontend/.env: S3_BUCKET_BETA, S3_BUCKET_PRD (or S3_BUCKET),
-// AWS_REGION (default eu-west-3) and the standard AWS credentials.
+// CLOUDFRONT_DISTRIBUTION_ID_BETA, CLOUDFRONT_DISTRIBUTION_ID_PRD, AWS_REGION (default eu-west-3)
+// and the standard AWS credentials.
 const fs = require('node:fs');
 const path = require('node:path');
 const mime = require('mime-types');
@@ -11,6 +13,7 @@ const {
   ListObjectsV2Command,
   DeleteObjectsCommand
 } = require('@aws-sdk/client-s3');
+const {CloudFrontClient, CreateInvalidationCommand} = require('@aws-sdk/client-cloudfront');
 
 try {
   process.loadEnvFile(path.resolve(__dirname, '.env'));
@@ -19,6 +22,10 @@ try {
 }
 
 const BUCKET_VARIABLES = {beta: 'S3_BUCKET_BETA', prd: 'S3_BUCKET_PRD'};
+const DISTRIBUTION_VARIABLES = {
+  beta: 'CLOUDFRONT_DISTRIBUTION_ID_BETA',
+  prd: 'CLOUDFRONT_DISTRIBUTION_ID_PRD'
+};
 const DIST = path.resolve(__dirname, 'dist');
 // The service worker and its manifest must never be served stale.
 const NO_CACHE = new Set(['index.html', 'ngsw.json']);
@@ -33,6 +40,11 @@ function resolveBucket(target) {
     throw new Error(`you must provide env. variable ${variable} (or S3_BUCKET)`);
   }
   return bucket;
+}
+
+function resolveDistribution(target) {
+  const variable = DISTRIBUTION_VARIABLES[target];
+  return process.env[variable] || null;
 }
 
 function listBuild() {
@@ -84,6 +96,23 @@ async function deploy(target, dryRun) {
     }
   }
   if (!stale.length) console.log('Nothing to delete');
+
+  const distributionId = resolveDistribution(target);
+  if (!distributionId) {
+    console.log('No CloudFront distribution id configured, skipping invalidation');
+    return;
+  }
+  console.log(`${prefix}invalidating CloudFront distribution [${distributionId}]`);
+  if (dryRun) return;
+  const cloudfront = new CloudFrontClient({region: process.env.AWS_REGION || 'eu-west-3'});
+  const {Invalidation} = await cloudfront.send(new CreateInvalidationCommand({
+    DistributionId: distributionId,
+    InvalidationBatch: {
+      Paths: {Quantity: 1, Items: ['/*']},
+      CallerReference: `deploy-${Date.now()}`
+    }
+  }));
+  console.log(`invalidation created: ${Invalidation.Id} (${Invalidation.Status})`);
 }
 
 const [target] = process.argv.slice(2).filter(arg => !arg.startsWith('--'));
