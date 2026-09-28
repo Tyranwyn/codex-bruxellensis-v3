@@ -45,6 +45,7 @@ pnpm lint                  # angular-eslint
 
 - Standalone components, zoneless change detection, signals. There is no NgRx: state lives in `core/auth.service.ts` (Firebase Auth), `core/user-data.service.ts` (role and favorites) and `songs/song.service.ts`.
 - Firebase is used through the plain SDK plus `rxfire`, provided in `core/firebase.ts`. `@angular/fire` has no release for Angular 22 yet.
+- The Firebase client config (`src/app/firebase-config.ts`) is **not in git**; it is gitignored. Locally, copy `firebase-config.example.ts` to `firebase-config.ts` and fill in the values. In CI, `pipeline.yml` writes the file from the `((firebase-config))` secret before building. Never commit real values.
 - `environments/environment*.ts` pick the Firestore collections: `songs-test`/`user-data-test` in dev, `songs`/`user-data` in production.
 - Styling is Bulma 1, configured in `src/styles.scss`.
 - `deploy.js` uploads `dist/` to S3. `serverless.yml` and `pipeline.yml` are the old deploy setup, kept unchanged.

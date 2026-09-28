@@ -23,3 +23,6 @@ data/source/*.pdf
 # Editors
 *.swp
 .angular/
+
+# Firebase client config: injected at build time, never committed
+frontend/src/app/firebase-config.ts
