@@ -66,6 +66,14 @@ CREATE TABLE repeat_span (
     CHECK (to_line >= from_line)
 );
 
+-- Printed below the lyrics, with their marker, e.g. '* De keuze wordt overgelaten aan de zanger.'.
+CREATE TABLE footnote (
+    song_id     TEXT NOT NULL REFERENCES song(id) ON DELETE CASCADE,
+    position    INTEGER NOT NULL,          -- 0-based order within the song
+    text        TEXT NOT NULL,
+    PRIMARY KEY (song_id, position)
+);
+
 CREATE INDEX song_section_idx ON song(section_id);
 CREATE INDEX song_club_idx    ON song(club_id);
 CREATE INDEX song_sort_idx    ON song(sort_title);
@@ -1578,41 +1586,35 @@ INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-rolder
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 9, 2, 'Wie dacht ooit dat een schurk zo fijn');
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 9, 3, 'Zou zo pedant geworden zijn?');
 INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 10, 'chorus-ref', 1, NULL);
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 11, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 11, 0, '* In de originele vertaling gaat het hier om het “Werchters”');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 11, 1, 'bier, met name Jack-Op, dat in het begin van de vorige eeuw');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 11, 2, 'heel populair was bij de Leuvense studenten. Het wordt sinds');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 11, 3, '1869 gebrouwen door brouwerij Felix van Roost te Werchter');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 11, 4, 'in de stoombrouwerij ’De Palmboom’. Tegenwoordig wordt');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 11, 5, 'het gebrouwen in de brouwerij ’Belle-Vue’.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 12, 'direction', 1, 'Studenten genees- en tandheelkunde, verpleegkunde, sport en kine staan recht.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 13, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 13, 0, 'Een dokter preekt de matigheid,');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 13, 1, 'En was een grote rolder;');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 14, 'direction', 1, 'Bestuursleden staan recht.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 15, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 15, 0, 'Ministers gaan met statigheid,');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 15, 1, 'En woonden hier op zolder;');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 16, 'direction', 1, 'Studenten rechten en criminologie staan recht.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 17, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 17, 0, 'De rechter straft nu drankmisbruik');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 17, 1, 'En vroeger sliep hij met de kruik!');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 18, 'chorus-ref', 1, NULL);
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 19, 'direction', 1, 'Het licht gaat aan. Gans de corona staat recht en men reikt elkaar met gekruiste armen de handen, terwijl men nu met vol enthousiasme verderzingt.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 20, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 20, 0, 'Sa vrienden reikt elkaar de hand,');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 20, 1, 'Opdat hij zich vernauwe:');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 20, 2, 'Der trouwe vriendschap heil’ge band.');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 20, 3, 'De heil’ge band der trouwe.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 21, 'direction', 1, 'De glazen worden geheven en geklonken.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 22, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 22, 0, 'Klinkt aan en heft omhoog het glas.');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 22, 1, 'Nog leeft het oud studentenras!');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 23, 'chorus', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 23, 0, 'Laatste Refrein:');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 23, 1, 'Bibamus laeti merum;');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 23, 2, 'Non est mutatio rerum!');
-INSERT INTO repeat_span (song_id, stanza_position, from_line, to_line, times, marker) VALUES ('oude-roldersklacht', 23, 1, 2, 2, '(BIS)');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 11, 'direction', 1, 'Studenten genees- en tandheelkunde, verpleegkunde, sport en kine staan recht.');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 12, 'verse', 1, NULL);
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 12, 0, 'Een dokter preekt de matigheid,');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 12, 1, 'En was een grote rolder;');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 13, 'direction', 1, 'Bestuursleden staan recht.');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 14, 'verse', 1, NULL);
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 14, 0, 'Ministers gaan met statigheid,');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 14, 1, 'En woonden hier op zolder;');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 15, 'direction', 1, 'Studenten rechten en criminologie staan recht.');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 16, 'verse', 1, NULL);
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 16, 0, 'De rechter straft nu drankmisbruik');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 16, 1, 'En vroeger sliep hij met de kruik!');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 17, 'chorus-ref', 1, NULL);
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 18, 'direction', 1, 'Het licht gaat aan. Gans de corona staat recht en men reikt elkaar met gekruiste armen de handen, terwijl men nu met vol enthousiasme verderzingt.');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 19, 'verse', 1, NULL);
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 19, 0, 'Sa vrienden reikt elkaar de hand,');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 19, 1, 'Opdat hij zich vernauwe:');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 19, 2, 'Der trouwe vriendschap heil’ge band.');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 19, 3, 'De heil’ge band der trouwe.');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 20, 'direction', 1, 'De glazen worden geheven en geklonken.');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 21, 'verse', 1, NULL);
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 21, 0, 'Klinkt aan en heft omhoog het glas.');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 21, 1, 'Nog leeft het oud studentenras!');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('oude-roldersklacht', 22, 'chorus', 1, NULL);
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 22, 0, 'Laatste Refrein:');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 22, 1, 'Bibamus laeti merum;');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('oude-roldersklacht', 22, 2, 'Non est mutatio rerum!');
+INSERT INTO repeat_span (song_id, stanza_position, from_line, to_line, times, marker) VALUES ('oude-roldersklacht', 22, 1, 2, 2, '(BIS)');
+INSERT INTO footnote (song_id, position, text) VALUES ('oude-roldersklacht', 0, '* In de originele vertaling gaat het hier om het “Werchters” bier, met name Jack-Op, dat in het begin van de vorige eeuw heel populair was bij de Leuvense studenten. Het wordt sinds 1869 gebrouwen door brouwerij Felix van Roost te Werchter in de stoombrouwerij ’De Palmboom’. Tegenwoordig wordt het gebrouwen in de brouwerij ’Belle-Vue’.');
 INSERT INTO song (id, title, sort_title, section_id, language, club_id, page_start, page_end, lyricist, melody, notes) VALUES ('le-semeur', 'LE SEMEUR', 'SEMEUR, LE', 'officiele-liederen', 'fr', 'brussels-seniorenkonvent', 99, 100, 'Georges Garnir, 1890', 'Charles Mélant', NULL);
 INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('le-semeur', 0, 'verse', 1, NULL);
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('le-semeur', 0, 0, 'Semeurs vaillants du rêve,');
@@ -3179,17 +3181,16 @@ INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 2,
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 2, 6, 'Word toch maar een ekonoom,');
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 2, 7, 'Want die schiet een zoon!');
 INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('jerome', 3, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 0, '* De keuze wordt overgelaten aan de zanger.');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('jerome', 4, 'verse', 1, NULL);
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 0, 'Toen ik een jaar of twintig was');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 1, 'Vroeg ik mijn moeder wat zal ik zijn?');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 2, 'Word ik een dopper of voyageur?');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 3, '’t Is wat ze zei tot mij');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 4, 'O Jean-Claude, Jean-Claude,');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 5, 'Een dopper die poept zich dood');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 6, 'Word toch maar een voyageur,');
-INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 4, 7, 'Want die pakt ze van veur!');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('jerome', 5, 'direction', 1, 'Verdere versies kunnen aan de inspiratie van de corona overgelaten worden');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 0, 'Toen ik een jaar of twintig was');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 1, 'Vroeg ik mijn moeder wat zal ik zijn?');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 2, 'Word ik een dopper of voyageur?');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 3, '’t Is wat ze zei tot mij');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 4, 'O Jean-Claude, Jean-Claude,');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 5, 'Een dopper die poept zich dood');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 6, 'Word toch maar een voyageur,');
+INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jerome', 3, 7, 'Want die pakt ze van veur!');
+INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('jerome', 4, 'direction', 1, 'Verdere versies kunnen aan de inspiratie van de corona overgelaten worden');
+INSERT INTO footnote (song_id, position, text) VALUES ('jerome', 0, '* De keuze wordt overgelaten aan de zanger.');
 INSERT INTO song (id, title, sort_title, section_id, language, club_id, page_start, page_end, lyricist, melody, notes) VALUES ('jucheidi', 'JUCHEIDI', 'JUCHEIDI', 'nederlandstalige-liederen', 'nl', NULL, 162, 163, NULL, '‘Studio auf seiner Reis’', NULL);
 INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('jucheidi', 0, 'verse', 1, NULL);
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('jucheidi', 0, 0, 'De student is vrolijk man,');
@@ -8582,7 +8583,7 @@ INSERT INTO line (song_id, stanza_position, position, text) VALUES ('marche-amer
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('marche-americaine', 0, 14, 'Quelle jouissance!');
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('marche-americaine', 0, 15, 'Ah nom de Dieu! Ah nom de Dieu!');
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('marche-americaine', 0, 16, 'Qu’on recommence!');
-INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('marche-americaine', 1, 'direction', 1, '* De jongens zingen wat er staat, de meisjes: “Cette fois je sens bien que tu m’ l’as mis!”');
+INSERT INTO footnote (song_id, position, text) VALUES ('marche-americaine', 0, '* De jongens zingen wat er staat, de meisjes: “Cette fois je sens bien que tu m’ l’as mis!”');
 INSERT INTO song (id, title, sort_title, section_id, language, club_id, page_start, page_end, lyricist, melody, notes) VALUES ('la-marche-des-etudiants', 'LA MARCHE DES ÉTUDIANTS', 'MARCHE DES ÉTUDIANTS, LA', 'franstalige-liederen', 'fr', NULL, 365, 366, 'Paul Vanderborght, 1919', '‘Les Gueux’', NULL);
 INSERT INTO stanza (song_id, position, kind, repeat, instruction) VALUES ('la-marche-des-etudiants', 0, 'verse', 1, NULL);
 INSERT INTO line (song_id, stanza_position, position, text) VALUES ('la-marche-des-etudiants', 0, 0, 'Nous sommes ceux qu’anime la folie');

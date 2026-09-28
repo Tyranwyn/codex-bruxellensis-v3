@@ -77,6 +77,8 @@ def to_sql(data: dict[str, list], schema_sql: str) -> str:
                     "times": r.get("times"),
                     "marker": r["marker"],
                 }))
+        for i, text in enumerate(s["footnotes"]):
+            out.append(_insert("footnote", {"song_id": s["id"], "position": i, "text": text}))
     out.append("COMMIT;")
     return "\n".join(out) + "\n"
 

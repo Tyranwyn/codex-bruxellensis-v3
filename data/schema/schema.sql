@@ -64,6 +64,14 @@ CREATE TABLE repeat_span (
     CHECK (to_line >= from_line)
 );
 
+-- Printed below the lyrics, with their marker, e.g. '* De keuze wordt overgelaten aan de zanger.'.
+CREATE TABLE footnote (
+    song_id     TEXT NOT NULL REFERENCES song(id) ON DELETE CASCADE,
+    position    INTEGER NOT NULL,          -- 0-based order within the song
+    text        TEXT NOT NULL,
+    PRIMARY KEY (song_id, position)
+);
+
 CREATE INDEX song_section_idx ON song(section_id);
 CREATE INDEX song_club_idx    ON song(club_id);
 CREATE INDEX song_sort_idx    ON song(sort_title);

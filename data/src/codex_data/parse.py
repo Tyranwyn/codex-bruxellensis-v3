@@ -31,6 +31,9 @@ WRAP_X1 = 395.0
 
 CLUB_KEYS = re.compile(r"^(Gesticht|Kleur|Stichter)", re.I)
 REFRAIN = re.compile(r"^refrein\b[\s:]*", re.I)
+# Footnotes sit at the foot of the page and start with the marker used in the
+# lyrics ("Brussels* bier"). They are set in the lyric or the direction font.
+FOOTNOTE = re.compile(r"^\*\s")
 
 
 def slugify(text: str) -> str:
@@ -110,6 +113,7 @@ class Song:
     melody: str | None = None
     notes: list[str] = field(default_factory=list)
     stanzas: list[Stanza] = field(default_factory=list)
+    footnotes: list[str] = field(default_factory=list)
     sort_title: str | None = None
     id: str = ""
 
@@ -129,6 +133,7 @@ class Song:
             "melody": self.melody,
             "notes": "\n".join(self.notes) or None,
             "stanzas": [s.to_json() for s in self.stanzas],
+            "footnotes": self.footnotes,
         }
 
 
@@ -190,9 +195,17 @@ class Parser:
                 self._start_heading(heading, meta, page.number, followed_by_heading)
             elif ln.role is Role.DIRECTION:
                 block = self._take_block(lines, i, {Role.DIRECTION})
-                self._add_direction(block, page.number)
+                if FOOTNOTE.match(ln.text):
+                    self._add_footnote(block, page.number)
+                else:
+                    self._add_direction(block, page.number)
                 i += len(block)
             elif ln.role in (Role.VERSE, Role.CHORUS):
+                if FOOTNOTE.match(ln.text):
+                    block = self._take_block(lines, i, {Role.VERSE, Role.CHORUS})
+                    self._add_footnote(block, page.number)
+                    i += len(block)
+                    continue
                 # A few "Refrein" instructions are set in the lyric font.
                 if REFRAIN.match(ln.text) and len(ln.text) < 40:
                     self._add_direction([ln], page.number)
@@ -362,6 +375,16 @@ class Parser:
         if rep is not None and rep.times:
             st.repeat = rep.times
         self.song.stanzas.append(st)
+        self.song.page_end = page
+        self.stanza = None
+        self.last_lyric = None
+
+    def _add_footnote(self, block: list[Line], page: int) -> None:
+        if self.song is None:
+            self.warnings.append(f"p{page}: footnote outside a song: {block[0].text!r}")
+            return
+        # Footnotes are prose, wrapped by hand to the lyric column.
+        self.song.footnotes.append(join_wrapped([b.text for b in block]))
         self.song.page_end = page
         self.stanza = None
         self.last_lyric = None

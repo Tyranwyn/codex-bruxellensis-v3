@@ -147,6 +147,8 @@ def render_song(
     if song["notes"]:
         body += [f'<p class="note">{escape(p)}</p>' for p in song["notes"].split("\n")]
     body += [_stanza(st) for st in song["stanzas"]]
+    if song["footnotes"]:
+        body.append('<aside class="footnotes">' + "".join(f"<p>{escape(n)}</p>" for n in song["footnotes"]) + "</aside>")
     body += [
         "</main>",
         '<nav class="pager">'
@@ -220,7 +222,7 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1 { font-size: 1.6rem; letter-spacing: .04em; margin: .5rem 0 0; line-height: 1.2; }
 h2 { font-size: 1.1rem; letter-spacing: .04em; }
-.crumbs, .pages, .toc, .pager, .meta, .direction, .chorus-ref, .club, .note, .pg, .mark, .bracket, #q {
+.crumbs, .pages, .toc, .pager, .meta, .direction, .chorus-ref, .club, .note, .footnotes, .pg, .mark, .bracket, #q {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: .85rem;
 }
 .crumbs, .pages, .pg { color: var(--muted); }
@@ -236,6 +238,7 @@ h2 { font-size: 1.1rem; letter-spacing: .04em; }
 .club dt { color: var(--muted); }
 .club dd { margin: 0; }
 .note { font-style: italic; color: var(--muted); }
+.footnotes { color: var(--muted); border-top: 1px solid var(--rule); margin-top: 1.5rem; padding-top: .5rem; }
 .stanza { margin: 0 0 1.25rem; }
 .chorus { font-style: italic; padding-left: 1.5rem; }
 .chorus-ref { font-style: italic; padding-left: 1.5rem; color: var(--muted); }

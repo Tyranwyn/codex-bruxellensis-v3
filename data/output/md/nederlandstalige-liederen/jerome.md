@@ -39,8 +39,6 @@ een dokter die vingert niet bien\
 Word toch maar een ekonoom,\
 Want die schiet een zoon!
 
-\* De keuze wordt overgelaten aan de zanger.
-
 Toen ik een jaar of twintig was\
 Vroeg ik mijn moeder wat zal ik zijn?\
 Word ik een dopper of voyageur?\
@@ -51,3 +49,7 @@ Word toch maar een voyageur,\
 Want die pakt ze van veur!
 
 *Verdere versies kunnen aan de inspiratie van de corona overgelaten worden*
+
+---
+
+<small>\* De keuze wordt overgelaten aan de zanger.</small>

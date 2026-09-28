@@ -56,6 +56,25 @@ def test_chorus_ref_with_instruction(songs):
     assert refs[-1]["instruction"] == "waarbij ‘zijnen’ door ‘uwen’ vervangen wordt."
 
 
+@pytest.mark.parametrize(
+    "song_id, footnote",
+    [
+        # Set in the lyric font, wrapped over six lines (p97).
+        ("oude-roldersklacht", "* In de originele vertaling gaat het hier om het “Werchters” bier, met name Jack-Op,"),
+        # In the lyric font, at the foot of the song's first page (p160).
+        ("jerome", "* De keuze wordt overgelaten aan de zanger."),
+        # Set in the direction font (p363).
+        ("marche-americaine", "* De jongens zingen wat er staat, de meisjes:"),
+    ],
+)
+def test_footnotes(songs, song_id, footnote):
+    song = songs[song_id]
+    assert len(song["footnotes"]) == 1
+    assert song["footnotes"][0].startswith(footnote)
+    text = json.dumps(song["stanzas"], ensure_ascii=False)
+    assert footnote[2:30] not in text
+
+
 def test_bracket_repeat_spans_lines(songs):
     # p129: a (BIS) next to a rule covering four lines, not "Tarara,".
     st = songs["disco-rolling"]["stanzas"][4]

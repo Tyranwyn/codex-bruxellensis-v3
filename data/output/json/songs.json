@@ -45,7 +45,8 @@
           "De rest trekken wij ons niet aan!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bierkultuur-kreet",
@@ -73,7 +74,8 @@
           "Van BK en bier"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bierkultuur-lied",
@@ -138,7 +140,8 @@
           "In de liefde voor het bier"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "boves-luci-clublied",
@@ -177,7 +180,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "campina-kreet",
@@ -205,7 +209,8 @@
           "Olé"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "campinalied",
@@ -311,7 +316,8 @@
         "kind": "direction",
         "instruction": "Ad fundum"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chanson-du-cercle-omega",
@@ -366,7 +372,8 @@
           "Chattes, moules, migeoles et cramouilles, mais ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "commin-kreet",
@@ -390,7 +397,8 @@
           "Waar blijft nu dat volgend vat?!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "commin-lied",
@@ -499,7 +507,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-enigmalied",
@@ -588,7 +597,8 @@
           "Dat is sinds ’t jaar 0111 1101 1111"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "apothekerslied",
@@ -618,7 +628,8 @@
           "Maar ’s anderendaags zijn zij weer daar om te studeren."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "academie-lied",
@@ -662,7 +673,8 @@
           "Wij zijn d’Academie"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chant-de-medecine",
@@ -833,7 +845,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vive-le-gueux",
@@ -934,7 +947,8 @@
           "Vive le Geus!!!!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-vruchtbare-hengst",
@@ -1002,7 +1016,8 @@
           "Leve de vruchtbare hengst!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "infogroep-kreet",
@@ -1028,7 +1043,8 @@
           "Eerst een pint en dan der oep!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "infogroep-clublied",
@@ -1058,7 +1074,8 @@
           "Gamen wij all day, all night"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kinneke-baba-kreet",
@@ -1101,7 +1118,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kinneke-baba-lied",
@@ -1153,7 +1171,8 @@
           "Voor Geraardszoon getapt."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kbs-kreet",
@@ -1195,7 +1214,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "lied-van-de-brusselse-geus",
@@ -1257,7 +1277,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "keps-kreet",
@@ -1284,7 +1305,8 @@
           "We are the KEPS-bandidos."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "keps-lied",
@@ -1319,7 +1341,8 @@
           "Dus sluit aan bij de KEPS."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chant-de-philo",
@@ -1375,7 +1398,8 @@
           "On est peu d’ poils mais on est bons!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "limburg-allein",
@@ -1431,7 +1455,8 @@
           "en nörgens e baeter vinj."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "limburgs-volkslied",
@@ -1496,7 +1521,8 @@
           "’t Hart des volks bekoort."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "manu-juvanta-clublied",
@@ -1567,7 +1593,8 @@
           "In onze ochtendpis."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "mesacosa-kreet",
@@ -1593,7 +1620,8 @@
           "De MESACOSA doet altijd mee!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "mesacosa-clublied",
@@ -1660,7 +1688,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "hilok-lied",
@@ -1704,7 +1733,8 @@
           "Dan ga ik naar ’t café en zuip ik mij weeral pottoe"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "moeder-gevaar-lied",
@@ -1755,7 +1785,8 @@
           "Het zuipen dat is onze dagelijkse strijd."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-blauw-wit-van-normalia",
@@ -1818,7 +1849,8 @@
           "Aan die kleuren, die dorsten naar het bier."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "perskreet",
@@ -1849,7 +1881,8 @@
           "alco’ol, alco’ol en dan weer seks."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "pers-lied",
@@ -1896,7 +1929,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vive-les-polytechs",
@@ -1946,7 +1980,8 @@
           "Et chasse les Tatas ... Comme des petits pois"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "pk-kreet",
@@ -1994,7 +2029,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "pk-lied",
@@ -2022,7 +2058,8 @@
           "Allons remplir les cons!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "cri-de-guerre-du-cp",
@@ -2070,7 +2107,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ppk-kreet",
@@ -2112,7 +2150,8 @@
           "We are C, we are Ψ, we are fucking dynamite!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ppk-lied",
@@ -2159,7 +2198,8 @@
           "’t Wordt een heerlijk groots jaar."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-leuke-regionalen",
@@ -2226,7 +2266,8 @@
           "Wij zijn de leuke regionalen"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "swamp-kreet",
@@ -2252,7 +2293,8 @@
           "Die krijgt slaag!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-mad-gamer",
@@ -2294,7 +2336,8 @@
           "I don’t care what you think, I like gaming the best."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "solvay-c-est-du-champagne",
@@ -2324,7 +2367,8 @@
           "Du champagne et de l’humour."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chant-de-solvay",
@@ -2396,7 +2440,8 @@
           "Gaiement nous la quitterons.”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-vatkreet",
@@ -2419,7 +2464,8 @@
           "GELEK AS DE ... BIESTE!!! (Minimum TER)"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-vatlied",
@@ -2506,7 +2552,8 @@
           "En van de heer Gambrinus"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vilvordia-clublied",
@@ -2556,7 +2603,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vrg-kreet",
@@ -2581,7 +2629,8 @@
           "Het VRG, het VRG doet mee"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vrg-lied",
@@ -2682,7 +2731,8 @@
           "Aan het heil der mensheid."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vskm-kreet",
@@ -2708,7 +2758,8 @@
           "VSKM"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vskm-lied",
@@ -2765,7 +2816,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "westland-kreet",
@@ -2796,7 +2848,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "moeder-westland",
@@ -2855,7 +2908,8 @@
           "In dichten bond"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wuk-zeg-d-je",
@@ -2902,7 +2956,8 @@
           "met al West-Vlamingen de café’s kunnen bezetten"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wk-kreet",
@@ -2954,7 +3009,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bourgeois-vereux",
@@ -3005,7 +3061,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wk-lied",
@@ -3072,7 +3129,8 @@
           "Krijgt men de WK er niet uit."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "sprekt-a-moojertoel",
@@ -3134,7 +3192,8 @@
           "LE BRUXELLOIS!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "zwk-kreet",
@@ -3160,7 +3219,8 @@
           "Wie is het vat? — ZWK!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "zwk-lied",
@@ -3211,7 +3271,8 @@
           "Blote blote-te blote tetten tette!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "zennevallei-lied",
@@ -3284,7 +3345,8 @@
           "Santé, student, santé."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "lied-van-geen-taal",
@@ -3337,7 +3399,8 @@
           "“Geen Talers” blijven wij."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bsk-lied",
@@ -3367,7 +3430,8 @@
           "Den BSK-student"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "gaudeamus-igitur",
@@ -3545,7 +3609,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ave-confrater",
@@ -3618,7 +3683,8 @@
           "1+2Ave confrater"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "io-vivat",
@@ -3659,7 +3725,8 @@
           "Nobiscum amet gaudia."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "tsjechisch-drinklied",
@@ -3706,7 +3773,8 @@
           "Drink op het vrolijk wederzien!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "oude-roldersklacht",
@@ -3799,17 +3867,6 @@
         "kind": "chorus-ref"
       },
       {
-        "kind": "verse",
-        "lines": [
-          "* In de originele vertaling gaat het hier om het “Werchters”",
-          "bier, met name Jack-Op, dat in het begin van de vorige eeuw",
-          "heel populair was bij de Leuvense studenten. Het wordt sinds",
-          "1869 gebrouwen door brouwerij Felix van Roost te Werchter",
-          "in de stoombrouwerij ’De Palmboom’. Tegenwoordig wordt",
-          "het gebrouwen in de brouwerij ’Belle-Vue’."
-        ]
-      },
-      {
         "kind": "direction",
         "instruction": "Studenten genees- en tandheelkunde, verpleegkunde, sport en kine staan recht."
       },
@@ -3885,6 +3942,9 @@
           }
         ]
       }
+    ],
+    "footnotes": [
+      "* In de originele vertaling gaat het hier om het “Werchters” bier, met name Jack-Op, dat in het begin van de vorige eeuw heel populair was bij de Leuvense studenten. Het wordt sinds 1869 gebrouwen door brouwerij Felix van Roost te Werchter in de stoombrouwerij ’De Palmboom’. Tegenwoordig wordt het gebrouwen in de brouwerij ’Belle-Vue’."
     ]
   },
   {
@@ -3954,7 +4014,8 @@
           "Contre la papauté!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "aan-de-oevers-van-de-zenne",
@@ -4016,7 +4077,8 @@
           "En daarmee is het lied gedaan!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ach-lieflijke-meisjes",
@@ -4100,7 +4162,8 @@
           "Aan de universiteit."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ad-fundum-per-jaar",
@@ -4193,7 +4256,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "adhemar",
@@ -4330,7 +4394,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "age-quod-agis",
@@ -4399,7 +4464,8 @@
           "folklore gaat mee met zen tijd!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "al-die-willen-te-kaap-ren-varen",
@@ -4463,7 +4529,8 @@
           "Allen die dood en duivel niet duchten"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "al-van-den-drogen-haring",
@@ -4516,7 +4583,8 @@
           "’t Is van den drogen haring!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "allen-die-willen-naar-island-gaan",
@@ -4603,7 +4671,8 @@
           "Tot drie-en-dertig reyzen zyn wy nog niet moe."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "alonder-de-blauwe-hemel",
@@ -4647,7 +4716,8 @@
           "En het vet liep van de vloer."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "als-de-kerels-te-gare-zijn",
@@ -4779,7 +4849,8 @@
           "Storm op zee! Storm op zee!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "beiaardlied",
@@ -4864,7 +4935,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-beleg-van-berg-op-zoom",
@@ -4932,7 +5004,8 @@
           "Trouw’lyck doen bewaren."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-bieren-van-brussel",
@@ -4985,7 +5058,8 @@
           "Santé, Brussel de schoonste stad."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "t-biervat",
@@ -5093,7 +5167,8 @@
           "Zal er nooit weg geraken."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-blauwvoet",
@@ -5191,7 +5266,8 @@
           "Leve Geus en Vlaanderland!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "boerenkermis",
@@ -5242,7 +5318,8 @@
           "De jonkheid kiest een liefje uit."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chicago-song",
@@ -5314,7 +5391,8 @@
           "En haar kut is naar de maan!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "daar-was-e-wuf-die-spon",
@@ -5404,7 +5482,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "dis-in-lucht",
@@ -5508,7 +5587,8 @@
           "Zit op stoel"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "disco-rolling",
@@ -5667,7 +5747,8 @@
           "Tatarataaa tarataratatatatataaa, HOI!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-dochter-van-de-pachter",
@@ -5730,7 +5811,8 @@
           "Want ik had een kapootke aan."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "drie-schuintamboers",
@@ -5897,7 +5979,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "drie-vrienden",
@@ -6035,7 +6118,8 @@
           "Als ge naar de maskes gaat."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "dronkemanspraatje",
@@ -6094,7 +6178,8 @@
           "’k Ga weer naar de herberg en ’k drink mij daar scheel."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "er-waren-drie-studentjes",
@@ -6225,7 +6310,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ergo-bibamus",
@@ -6305,7 +6391,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-fiere-geuzenlied",
@@ -6381,7 +6468,8 @@
           "We zijn de fiere Geuzen van de VUB"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "filia-hospitalis",
@@ -6503,7 +6591,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "folklore",
@@ -6656,7 +6745,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-gedachten-zijn-vrij",
@@ -6725,7 +6815,8 @@
           "De gedachten zijn vrij!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "geuzenlied",
@@ -6842,7 +6933,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-gilde-viert",
@@ -6913,7 +7005,8 @@
           "Met droge keel te ronken."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "groeninghe",
@@ -6981,7 +7074,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-waren-twee-conincskinderen",
@@ -7050,7 +7144,8 @@
           "Ic vare naer ’t hemelryck.”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ik-ben-een-boemelaar",
@@ -7143,7 +7238,8 @@
           "Joedelaa, joedelee!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ik-ben-op-een-avond-met-een-meisje",
@@ -7236,7 +7332,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ik-drink",
@@ -7282,7 +7379,8 @@
           "Ik zucht en ik ween, want mijn hart is failliet."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ik-zag-cecilia-komen",
@@ -7323,7 +7421,8 @@
           "Hun sporen draagt Cecilia op heuren bitt’ren mond."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ik-zou-zo-graag-eens-vogelen",
@@ -7435,7 +7534,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "in-de-stad-van-brussel",
@@ -7475,7 +7575,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "jan-broeder",
@@ -7588,7 +7689,8 @@
           "Hopsasa ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "jan-klaassen-de-trompetter",
@@ -7652,7 +7754,8 @@
           "Maar alle kinderen kennen hem; hij is niet dood, hij leeft!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "jerome",
@@ -7711,12 +7814,6 @@
       {
         "kind": "verse",
         "lines": [
-          "* De keuze wordt overgelaten aan de zanger."
-        ]
-      },
-      {
-        "kind": "verse",
-        "lines": [
           "Toen ik een jaar of twintig was",
           "Vroeg ik mijn moeder wat zal ik zijn?",
           "Word ik een dopper of voyageur?",
@@ -7731,6 +7828,9 @@
         "kind": "direction",
         "instruction": "Verdere versies kunnen aan de inspiratie van de corona overgelaten worden"
       }
+    ],
+    "footnotes": [
+      "* De keuze wordt overgelaten aan de zanger."
     ]
   },
   {
@@ -7841,7 +7941,8 @@
           "’t Gildeleven, ’t Gildelied."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-kaerelslied",
@@ -7932,7 +8033,8 @@
           "Wi weter hoe ghi dan vaert!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kalinka",
@@ -7988,7 +8090,8 @@
           "’k Ben hier het schijtrekord aan ’t kloppen."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kempenland",
@@ -8058,7 +8161,8 @@
           "Maar een volk moet blijven."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "klein-marleentje",
@@ -8115,7 +8219,8 @@
           "Mijn ruikerderuik, mijn krullebol."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "klokke-roeland",
@@ -8177,7 +8282,8 @@
           "Luide triomf in Vlaanderland!”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-koekoekslied",
@@ -8227,7 +8333,8 @@
           "Onze lever moet eraan"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "komt-vrienden-in-het-ronde",
@@ -8338,7 +8445,8 @@
           "Daar heb ik kost voor niemendal."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "krambambouli",
@@ -8455,7 +8563,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-land-van-hawai",
@@ -8481,7 +8590,8 @@
           "Tot dat g’er niet meer af kunt blijven!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "lied-der-dekadentie",
@@ -8557,7 +8667,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-lied-der-vlamingen",
@@ -8616,7 +8727,8 @@
           "Het vrije Vaderland"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "lied-van-antoon",
@@ -8731,7 +8843,8 @@
           "Geen kinderspelen is."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-lied-van-hertog-jan",
@@ -8856,7 +8969,8 @@
           "Daar staat hij dag en nacht"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-lied-van-koppelstock-de-veerman",
@@ -8953,7 +9067,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-liereman",
@@ -9054,7 +9169,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-lindenmeisje",
@@ -9185,7 +9301,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-loze-vissertje",
@@ -9263,7 +9380,8 @@
         "kind": "chorus-ref",
         "instruction": "waarbij ‘zijnen’ door ‘uwen’ vervangen wordt."
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-luiaardsgild",
@@ -9347,7 +9465,8 @@
           "Aan wilde avonturen"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "me-moeder-kocht-nen-hering",
@@ -9406,7 +9525,8 @@
           "En den hèring blète mee."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "merlijn-de-grote-vogelaar",
@@ -9487,7 +9607,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "mie-de-appeltrut",
@@ -9530,7 +9651,8 @@
           "Op uwen hol zal staan."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-moorsoldaten",
@@ -9582,7 +9704,8 @@
           "“Land van mij, gij zijt weer vrij.”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "naar-oostland",
@@ -9639,7 +9762,8 @@
           "Daar woont mijn zoete lief."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "niemand-verslaat-de-saint-v",
@@ -9732,7 +9856,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "nooit-met-krijt",
@@ -9796,7 +9921,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "nooit-sterft-het-studentenras",
@@ -9842,7 +9968,8 @@
           "Nooit sterft ’t studentenras!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "o-nederland-let-op-uw-zaak",
@@ -9898,7 +10025,8 @@
           "Dat hy op u mach letten."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "omdat-ik-vlaming-ben",
@@ -9969,7 +10097,8 @@
           "Omdat ik Vlaming ben!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "op-de-purp-ren-hei",
@@ -10028,7 +10157,8 @@
           "Lach ik op ons kindje op zijn moeders schoot."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "oud-tafellied",
@@ -10100,7 +10230,8 @@
         "kind": "direction",
         "instruction": "koers = les (cfr. cours in ’t Frans)"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ouwe-zakken",
@@ -10206,7 +10337,8 @@
       {
         "kind": "chorus-ref"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "pieter-breughel-in-brussel",
@@ -10331,7 +10463,8 @@
         "kind": "direction",
         "instruction": "En daarop stond geschilderd Ne Vlaming in den val De val van zijn kompleksen ’t Fanatisme staat erbij aan zijn zij Zo geraakt hem nooit nie vrij!"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "reuzenlied",
@@ -10395,7 +10528,8 @@
           "De Reus is zat."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-rolders-in-de-nacht",
@@ -10472,7 +10606,8 @@
         "kind": "direction",
         "instruction": "Margot Weissgerber, baatte in de jaren ’70 de kroeg “Chez Margot - Au Student” uit op de hoek van de Lentestraat en de Kroonlaan. In de oorspronkelijke versie van het lied heeft men het over ‘Marraine’, de ‘Moeder’ der Vlaamse studenten, tot 1968 uitbaatster van een café op de Leuvense Oude Markt."
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "t-ros-beyaard",
@@ -10552,7 +10687,8 @@
           "Alles voor zijn groot geweld!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "rue-des-bouchers",
@@ -10637,7 +10773,8 @@
           "Den es den oen al on ’t kroie"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ruiterslied",
@@ -10760,7 +10897,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "schoon-lief-hoe-ligt-gy-hier-en-slaept",
@@ -10822,7 +10960,8 @@
           "Zyn zoete liedekens zingen."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "schoon-lieveken-waar-waarde-gij",
@@ -10883,7 +11022,8 @@
           "Met den mei zal hij wederom schieten.”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "slaat-op-den-trommele",
@@ -10936,7 +11076,8 @@
           "Of laat intijds, weest geen rebel!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "t-smidje",
@@ -11009,7 +11150,8 @@
           "En mij stellen uit gevaar"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-stoompruim",
@@ -11044,7 +11186,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "tinneke-van-heulen",
@@ -11110,7 +11253,8 @@
           "Tinneke ons maartje in haar hemd."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "toen-ik-in-brussel-kwam",
@@ -11195,7 +11339,8 @@
           "En ne piet tot op de grond!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-vendel",
@@ -11254,7 +11399,8 @@
           "Marsjeer, landsknecht, marsjeer!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "verbroedering-te-brussel",
@@ -11372,7 +11518,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-verlopen-student",
@@ -11454,7 +11601,8 @@
           "Veul liever zoun ik sterven”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vier-weverkens",
@@ -11523,7 +11671,8 @@
           "En het grafke zal rooskens dragen."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vive-la-companeia",
@@ -11619,7 +11768,8 @@
         "kind": "direction",
         "instruction": "Men blijft deze strofe verder zingen tot de pint terug bij de praeses is. De laatste commilito vòòr de praeses drinkt wat overblijft ad fundum."
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vive-vive-le-geus",
@@ -11706,7 +11856,8 @@
           "Glorie, lof, prijs en eer!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-vlaamse-leeuw",
@@ -11805,7 +11956,8 @@
           "Op ’s vijands trillend lijk."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-vlaamse-meisjes",
@@ -12038,7 +12190,8 @@
           "Heeft wie dit lied niet zingen kan"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "t-vliegerke",
@@ -12137,7 +12290,8 @@
           "Da zal ’k onthouden, mijn leven lang!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "voor-outer-en-heerd",
@@ -12208,7 +12362,8 @@
           "In ’t hart van ’t volk gebrand"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-vorige-pastoor-van-elsene",
@@ -12383,7 +12538,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-voyageur",
@@ -12434,7 +12590,8 @@
           "Hij es goen vliege met de winch."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-vreselijke-moord-van-slissen",
@@ -12495,7 +12652,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "een-vrolijk-lentelied",
@@ -12548,7 +12706,8 @@
           "En de klokken vertrekken naar Rome ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "waar-het-hart-van-vol-is-loopt-de-mond-van-over",
@@ -12656,7 +12815,8 @@
           "Hip hip hoera vrijzinnigheid!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wat-zullen-we-drinken",
@@ -12793,7 +12953,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wie-anders",
@@ -12882,7 +13043,8 @@
           "Dan is’t nog de schuld van’t BSG!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wij-zijn-al-bijeen",
@@ -12981,7 +13143,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-wijn",
@@ -13048,7 +13211,8 @@
           "O wijn, weest welkom wijn"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-wilhelmus",
@@ -13130,7 +13294,8 @@
           "Tsal hier haest syn ghedaen."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "zeemanslied",
@@ -13176,7 +13341,8 @@
           "Mijn vrij bestaan, als koning op mijn schuit!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-zilvervloot",
@@ -13269,7 +13435,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "het-zwartbruine-bier",
@@ -13349,7 +13516,8 @@
         "kind": "direction",
         "instruction": "Naargelang de inspiratie van de corona worden er vrije versies gezongen!"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "t-zwien",
@@ -13434,7 +13602,8 @@
           "Maar geef mi een brokske van ’t zwien."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "a-bas-la-calotte",
@@ -13492,7 +13661,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "a-fond-liegeois",
@@ -13599,7 +13769,8 @@
           "Il sortira par le trou, ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ah-que-nos-peres-etaient-heureux",
@@ -13778,7 +13949,8 @@
           "L’avenir est à nous."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "l-aimable-fanchon",
@@ -13864,7 +14036,8 @@
           "Sur le museau du camarade."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ali-alo-pour-maschero",
@@ -13921,7 +14094,8 @@
           "Il nous laissera que la peau sur les os ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "aloha",
@@ -14004,7 +14178,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "aupres-de-ma-blonde",
@@ -14074,7 +14249,8 @@
           "... Et ma jolie colombe qui chante jour et nuit."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "au-trente-et-un-du-mois-d-aout",
@@ -14245,7 +14421,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-ballade-des-braves-gueux",
@@ -14398,7 +14575,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-ballade-des-cocus",
@@ -14633,7 +14811,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-ballade-du-mutant",
@@ -14695,7 +14874,8 @@
           "Et sa couille unique avait l’air d’un ballon."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bandais-tu",
@@ -14798,7 +14978,8 @@
           "On verrait les log’s se garnir de pines."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ben-laden",
@@ -14888,7 +15069,8 @@
           "Et moi j’nique Double-U"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-biere",
@@ -14968,7 +15150,8 @@
           "Pour le bonheur de tout le genre humain."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-bite-a-dudule",
@@ -15053,7 +15236,8 @@
           "Et qu’est-ce que je vois ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-bordel-a-ferme-ses-volets",
@@ -15147,7 +15331,8 @@
           "Et l’bordel a monté des bidets."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "boudins-et-tequila",
@@ -15282,7 +15467,8 @@
         "kind": "direction",
         "instruction": "Bij de laatste herhaling wordt “Tequila” vervangen door “gueule de bois”."
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-bourguignonne",
@@ -15381,7 +15567,8 @@
           "Le nez sous l’robin."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-brabanconne-d-une-putain",
@@ -15461,7 +15648,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bruxelles",
@@ -15539,7 +15727,8 @@
           "En laat deze nacht nooit een einde zijn."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "buiten-die-walen",
@@ -15642,7 +15831,8 @@
           "Dus neemt uw pint ter hand en drinkt in eigen land"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "caca-hola",
@@ -15718,7 +15908,8 @@
           "Ce sont des constipés."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "caroline-la-putain",
@@ -15840,7 +16031,8 @@
           "Ils entonnèr’nt cette chanson ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-ceinture",
@@ -15934,7 +16126,8 @@
           "Et depuis, la ceintur’, c’est lui qui s’la mettait."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "c-etait-au-temps-que-bruxelles-guindaillait",
@@ -16024,7 +16217,8 @@
           "C’était au temps où le folklore vivait!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chanson-a-boire",
@@ -16093,7 +16287,8 @@
           "Qui dedira son compangnon."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chanson-de-bicetre",
@@ -16174,7 +16369,8 @@
           "Aux pauvres vieux, le coup est cher ... et rare."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-chanson-du-roi-albert",
@@ -16279,7 +16475,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chant-des-braves-gueux",
@@ -16316,7 +16513,8 @@
           "Qui nous ont déclaré la guerre."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-chant-des-partisans",
@@ -16385,7 +16583,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chantons-pour-passer-le-temps",
@@ -16477,7 +16676,8 @@
           "Ou t’auras pas ta ration dans l’bedon"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "charlotte",
@@ -16570,7 +16770,8 @@
           "Baise, baise jusqu’ à demain."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "chevaliers-de-la-table-ronde",
@@ -16719,7 +16920,8 @@
           "Est qu’il faut, oui, oui, oui ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-cordonnier-pamphyle",
@@ -16831,7 +17033,8 @@
           "Et il la dégueula ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-corrida",
@@ -16934,7 +17137,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-cul-de-ma-blonde",
@@ -17080,7 +17284,8 @@
           "Et mourir dans le cul ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-profundis-morpionibus",
@@ -17184,7 +17389,8 @@
           "Piquons une charge au trou du cul”."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-digue-du-cul",
@@ -17279,7 +17485,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-duc-de-bordeaux",
@@ -17375,7 +17582,8 @@
           "C’était la p’tit’ bonn’ qui l’avait dans le cul."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "elephant-story",
@@ -17444,7 +17652,8 @@
           "Et mourut d’une indigestion."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "en-descendant-la-rue-tronchet",
@@ -17611,7 +17820,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "en-passant-par-la-lorraine",
@@ -17706,7 +17916,8 @@
           "S’il y meurt, je perds ma peine."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "en-revenant-de-la-foire",
@@ -17862,7 +18073,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "en-revenant-du-piemont",
@@ -18096,7 +18308,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-femme-du-roulier",
@@ -18265,7 +18478,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-femme-du-vidangeur",
@@ -18331,7 +18545,8 @@
           "Cré nom de dieu, je l’aurais enculé!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-fille-de-la-bouchere",
@@ -18420,7 +18635,8 @@
         "kind": "chorus-ref",
         "instruction": "ad libitum"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-filles-de-camaret",
@@ -18773,7 +18989,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-filles-de-la-rochelle",
@@ -18954,7 +19171,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-filles-des-forges",
@@ -19081,7 +19299,8 @@
           "La-la-la, lalala ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-fraises-et-les-framboises",
@@ -19202,7 +19421,8 @@
           "Le rendit à la vie."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "gilde-halewyn",
@@ -19263,7 +19483,8 @@
           "Gris et bleu ... Bier en Geus"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-grand-metingue-du-metropolitain",
@@ -19389,7 +19610,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "l-homme-au-puissant-braquemart",
@@ -19514,7 +19736,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-hussard-de-la-garde",
@@ -19650,7 +19873,8 @@
           "Ont dégueulé."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "il-faut-boire",
@@ -19814,7 +20038,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "j-ai-choppe-la-diarrhee",
@@ -19881,7 +20106,8 @@
           "J’vais mourir asphyxié"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "je-baise-avec-ma-pine",
@@ -20032,7 +20258,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "je-cherche-fortune",
@@ -20211,7 +20438,8 @@
           "Dans l’ bénitier."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "jeanneton",
@@ -20312,7 +20540,8 @@
           "C’est qu’ils font des p’tits cochons!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-jeune-fille-du-metro",
@@ -20389,7 +20618,8 @@
           "Même aux gens très godiches."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-joueur-de-luth",
@@ -20594,7 +20824,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-kyrie-des-moines",
@@ -20664,7 +20895,8 @@
           "... Nous ne pouvons que nous entreculer ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-legionnaires",
@@ -20735,7 +20967,8 @@
           "Puisqu’on est tous des réprouvés, des réprouvés?"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ma-femme-est-morte",
@@ -20918,7 +21151,8 @@
           "Ta guenon, ta poison, n’est pas morte!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ma-mere-m-a-donne-cent-sous",
@@ -20995,7 +21229,8 @@
           "“Tu baises bien la mienne!”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "marche-americaine",
@@ -21033,11 +21268,10 @@
           "Ah nom de Dieu! Ah nom de Dieu!",
           "Qu’on recommence!"
         ]
-      },
-      {
-        "kind": "direction",
-        "instruction": "* De jongens zingen wat er staat, de meisjes: “Cette fois je sens bien que tu m’ l’as mis!”"
       }
+    ],
+    "footnotes": [
+      "* De jongens zingen wat er staat, de meisjes: “Cette fois je sens bien que tu m’ l’as mis!”"
     ]
   },
   {
@@ -21139,7 +21373,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-marseillaise-anticlericale",
@@ -21290,7 +21525,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-marteaux",
@@ -21396,7 +21632,8 @@
           "Et qu’on paye à coups d’ marteaux. Oh!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-mauvaise-reputation",
@@ -21481,7 +21718,8 @@
           "Sauf les aveugles, bien entendu."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-mere-gaspard",
@@ -21523,7 +21761,8 @@
         "kind": "direction",
         "instruction": "Tijdens het zingen van deze regels klinkt iemand met de commilito links van hem, deze op zijn beurt met die links van hem en zo heel de corona (of om het even welke groep commilitones) rond. Diegene die aangeklonken wordt bij “tard” drinkt zijn glas ad fundum, terwijl de rest het woord “plein” blijft herhalen, totdat zijn glas leeg is. De commilito die gedronken heeft zet het klinken opnieuw in gang, en trekt zich dan terug uit de corona/groep. Dit geheel wordt herhaald tot er maar twee commilitones overblijven, die dan samen een ad fundum drinken. Dit liedje wordt typisch gezongen bij het einde van een activiteit, voor iedereen huiswaarts keert."
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-moines-de-saint-bernardin",
@@ -21694,7 +21933,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "nini-peau-d-chien",
@@ -21777,7 +22017,8 @@
           "Nini l’a dans l’sang"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ode-a-une-feministe",
@@ -21938,7 +22179,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "parcours-sante",
@@ -22015,7 +22257,8 @@
           "En pensant que j’ les nique"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-pere-adam",
@@ -22150,7 +22393,8 @@
           "C’est d’avoir trop joué avec leur ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-plaisir-des-dieux",
@@ -22293,7 +22537,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "quand-on-a-une-gueul-comme-ca",
@@ -22319,7 +22564,8 @@
           "On la ferme et on s’en va!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-quatre-vingts-chasseurs",
@@ -22452,7 +22698,8 @@
           "... Et qui n’ avaient pas peur!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-quille",
@@ -22523,7 +22770,8 @@
           "J’étais tout seul à l’enterrement."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "reponse-d-une-feministe",
@@ -22684,7 +22932,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-romance-du-14-juillet",
@@ -22788,7 +23037,8 @@
           "Marinette a cru au bonheur."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "saint-nicolas",
@@ -22955,7 +23205,8 @@
           "Mais il avait toujours sa quéquette."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-salope",
@@ -23035,7 +23286,8 @@
           "Nous recommencerions."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "si-j-t-encule",
@@ -23128,7 +23380,8 @@
           "Son père l’avait bien!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-stances-a-sophie",
@@ -23261,7 +23514,8 @@
           "Ce n’ sera jamais que mon pied dans l’ cul!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "sur-les-bords-de-la-loire",
@@ -23374,7 +23628,8 @@
           "“Sans ça, toutes les filles trouv’raient à se marier ...”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "sur-les-bords-de-la-tamise",
@@ -23421,7 +23676,8 @@
           "Y avait tous les anglais ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "la-tour-de-londres",
@@ -23509,7 +23765,8 @@
           "Sans avoir du papier."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-tourdion",
@@ -23594,7 +23851,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "les-trois-orfevres",
@@ -23680,7 +23938,8 @@
           "Repousseront les ennemis."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-troubadour",
@@ -23749,7 +24008,8 @@
           "Pour mettre à ton chapeau."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "vivre-pour-vivre",
@@ -23837,7 +24097,8 @@
           "Entre le cul des filles et le cul des bouteilles"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "le-zobi-d-ali-pacha",
@@ -23927,7 +24188,8 @@
       {
         "kind": "chorus-ref"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "alle-fische-schwimmen",
@@ -24032,7 +24294,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "alt-heidelberg",
@@ -24112,7 +24375,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bier-her",
@@ -24168,7 +24432,8 @@
           "Oder ich spiel ab!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bums-valdera",
@@ -24217,7 +24482,8 @@
           "Bums valdera, bis morgen früh."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "burschen-heraus",
@@ -24270,7 +24536,8 @@
           "Burschen, heraus!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ca-ca-geschmauset",
@@ -24382,7 +24649,8 @@
           "Sie kehrt nicht wieder, die goldne Zeit!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "donaustrudel",
@@ -24468,7 +24736,8 @@
           "Fuhr mit ihr in des Strudels Grund!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "erika",
@@ -24524,7 +24793,8 @@
           "Und das heißt ... Erika."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "s-gibt-kein-schoner-leben-als-studentenleben",
@@ -24593,7 +24863,8 @@
           "Als ein kreuzfideler Studio."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "es-leben-die-studenten",
@@ -24692,7 +24963,8 @@
           "Sollt immer Festtag sein."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "die-gedanken-sind-frei",
@@ -24745,7 +25017,8 @@
           "Und denken dabei: Die Gedanken sind frei!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "gold-und-silber",
@@ -24888,7 +25161,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "der-gute-kamerad",
@@ -24959,7 +25233,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "de-hamborger-veermaster",
@@ -25041,7 +25316,8 @@
           "De Lüüd für dat Schipp weern ok bloß schangheit."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "heute-ist-heut",
@@ -25138,7 +25414,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ich-hab-mein-herz-in-heidelberg-verloren",
@@ -25230,7 +25507,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "im-tiefen-keller",
@@ -25286,7 +25564,8 @@
           "Ich trinke, trinke, trinke, ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "in-munchen-steht-ein-hofbrauhaus",
@@ -25344,7 +25623,8 @@
           "Die wissen besser Bescheid."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kurfurst-friedrich-von-der-pfalz",
@@ -25469,7 +25749,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "lili-marleen",
@@ -25586,7 +25867,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "die-lore",
@@ -25705,7 +25987,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "lustig-ist-das-zigeunerleben",
@@ -25758,7 +26041,8 @@
           "Faria, faria, faria, faria, faria, faria"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "die-moorsoldaten",
@@ -25859,7 +26143,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "o-alte-burschenherlichkeit",
@@ -25997,7 +26282,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "der-pappenheimer",
@@ -26071,7 +26357,8 @@
           "“... unterm Tisch”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "das-polenkind",
@@ -26172,7 +26459,8 @@
         "kind": "direction",
         "instruction": "Na de laatste strofe geen refrein meer!"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ein-prosit",
@@ -26199,7 +26487,8 @@
           "Eins, Zwei, Saufen!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "roslein-auf-der-heiden",
@@ -26253,7 +26542,8 @@
           "Musst’es eben leiden."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "rote-husaren",
@@ -26323,7 +26613,8 @@
           "Ja die sind schön."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "ein-schifflein-sah-ich-fahren",
@@ -26420,7 +26711,8 @@
           "Da wird sie der Teufel schon holen."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "schwarzbraun-ist-die-haselnuss",
@@ -26488,7 +26780,8 @@
           "So muss sie sein wie ich."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "eine-seefahrt",
@@ -26595,7 +26888,8 @@
           "Kinder bringt der Weihnachtsmann."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "studio-auf-einer-reis",
@@ -26674,7 +26968,8 @@
           "Seufzt dabei ein stilles “Ach!”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "trink-trink-bruderlein-trink",
@@ -26749,7 +27044,8 @@
           "Ja wisst ihr denn auch wie es heißt?"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "tunke",
@@ -26830,7 +27126,8 @@
           "Du bist ein Bierkanal, ja Bierkanal!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wenn-alle-untreu-werden",
@@ -26883,7 +27180,8 @@
           "woll’n predigen und sprechen vom heil’gen Deutschen Reich."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "westerwaldlied",
@@ -26960,7 +27258,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "wunderbares-madelein",
@@ -27049,7 +27348,8 @@
         "kind": "direction",
         "instruction": "Naargelang de inspiratie van de corona worden er vrije versies gezongen!"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "all-around-my-hat",
@@ -27108,7 +27408,8 @@
       {
         "kind": "chorus-ref"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "another-irish-drinking-song",
@@ -27186,7 +27487,8 @@
           "He kills the cast of Riverdance, and Michael Flatley too!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-ball-of-kerrymuir",
@@ -27320,7 +27622,8 @@
           "But the fucking was the best"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-bananaboat-song",
@@ -27414,7 +27717,8 @@
           "Day-o, day-ay-ay-o, daylight ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "barnacle-bill",
@@ -27557,7 +27861,8 @@
           "Said Barnacle Bill the Sailor."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-bricklayer-s-lament",
@@ -27691,7 +27996,8 @@
           "Why I am not at work today"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-british-grenadiers",
@@ -27773,7 +28079,8 @@
           "For the British Grenadiers."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "clementine",
@@ -27871,7 +28178,8 @@
           "And forgot my Clementine."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "cockles-and-mussels",
@@ -27934,7 +28242,8 @@
           "Through streets broad and narrow"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "cotton-fields",
@@ -27994,7 +28303,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "donna-donna",
@@ -28057,7 +28367,8 @@
           "Like the swallow you’ve learned to fly."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-drunk-scotsman",
@@ -28151,7 +28462,8 @@
           "But I see you won first prize”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-flower-of-scotland",
@@ -28214,7 +28526,8 @@
           "Yer wee bit hill and glen"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "home-on-the-range",
@@ -28276,7 +28589,8 @@
           "For all of the cities so bright."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "it-s-a-long-way-to-tipperary",
@@ -28341,7 +28655,8 @@
           "Hoping you’re the same!”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "kingstontown",
@@ -28403,7 +28718,8 @@
           "And when I reached Jamaica I made a stop."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "leave-her-johnny",
@@ -28465,7 +28781,8 @@
           "And it’s time for us to leave her."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-lion-sleeps-tonight",
@@ -28516,7 +28833,8 @@
           "The lion sleeps tonight"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "loch-lomon",
@@ -28570,7 +28888,8 @@
           "And the world doesn’t know how we’re greeting."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "my-bonnie",
@@ -28632,7 +28951,8 @@
           "And brought back my Bonnie to me."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "oh-susanna",
@@ -28705,7 +29025,8 @@
           "Susanna, don’t you cry"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "pick-a-bale-of-cotton",
@@ -28760,7 +29081,8 @@
           "Well, get on your knees and pick a ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "randy-dandy-oh",
@@ -28850,7 +29172,8 @@
           "Get crackin’ m’lads, ’tis a hell o’ a way."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "red-river-valley",
@@ -28903,7 +29226,8 @@
           "And the love we exchanged ’mid the flowers."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-rocky-road-to-dublin",
@@ -29016,7 +29340,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "roll-the-old-chariot-along",
@@ -29097,7 +29422,8 @@
         "kind": "direction",
         "instruction": "Naargelang de inspiratie van de corona worden er vrije versies gezongen!"
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "scotland-the-brave",
@@ -29154,7 +29480,8 @@
         "kind": "chorus-ref",
         "instruction": "wordt tweemaal gezongen."
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "song-for-ye-jacobites",
@@ -29223,7 +29550,8 @@
           "And leave a man undone to his fate."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-stonecutters-song",
@@ -29285,7 +29613,8 @@
           "We do! We do!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "a-tavern-in-the-town",
@@ -29343,7 +29672,8 @@
           "To signify I died of love."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "tom-dooley",
@@ -29410,7 +29740,8 @@
           "A-hanging from a white oak tree."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "tonight",
@@ -29463,7 +29794,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "waltzing-matilda",
@@ -29533,7 +29865,8 @@
           "“You’ll come a-waltzing Matilda with me!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-wellerman",
@@ -29617,7 +29950,8 @@
           "To encourage the captain, crew and all."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "what-shall-we-do-with-the-drunken-sailor",
@@ -29713,7 +30047,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "when-johnny-comes-marching-home",
@@ -29782,7 +30117,8 @@
           "marching home, home."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "whiskey-in-the-jar",
@@ -29893,7 +30229,8 @@
           "In the morning bright and early"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "the-wild-rover",
@@ -29953,7 +30290,8 @@
           "Then I never will play the wild rover no more."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "yankee-doodle",
@@ -30096,7 +30434,8 @@
           "They scampered like the nation."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "a-a-a-valete-studia",
@@ -30166,7 +30505,8 @@
           "Om te slapen of te dromen, ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "bella-ciao",
@@ -30237,7 +30577,8 @@
           "morto per la libertà!”"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "filia-pastoris",
@@ -30322,7 +30663,8 @@
           "O wonderbaarste meisje van de stad!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "gertjie",
@@ -30393,7 +30735,8 @@
           "En jy kan na Sarie vry, vry, vry."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "hava-nagiela",
@@ -30443,7 +30786,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "die-kat-kwam-weer",
@@ -30567,7 +30911,8 @@
           "Droom hij altijd weer van ..."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "marcha-de-la-unidad-popular",
@@ -30660,7 +31005,8 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "nummerlieke",
@@ -30722,7 +31068,8 @@
           "2000800 16 1000 0"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "el-paso-del-ebro",
@@ -30801,7 +31148,8 @@
           "Prometemos resistir"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "sarie-marais",
@@ -30897,7 +31245,8 @@
           "Want Sarie Marijs pakt de pil."
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "die-stellenbosche-kerls",
@@ -30986,7 +31335,8 @@
           "Hoera! Vir die jollie Bobbejaan!"
         ]
       }
-    ]
+    ],
+    "footnotes": []
   },
   {
     "id": "studentelied",
@@ -31070,6 +31420,7 @@
           }
         ]
       }
-    ]
+    ],
+    "footnotes": []
   }
 ]

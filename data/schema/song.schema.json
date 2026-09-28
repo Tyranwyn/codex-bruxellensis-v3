@@ -88,6 +88,13 @@
       "items": {
         "$ref": "#/$defs/stanza"
       }
+    },
+    "footnotes": {
+      "description": "Footnotes printed below the lyrics, with their marker, e.g. '* De keuze wordt overgelaten aan de zanger.'. The marker also appears in the lyrics.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "$defs": {

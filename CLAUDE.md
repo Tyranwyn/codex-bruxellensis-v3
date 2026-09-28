@@ -71,6 +71,7 @@ pnpm lint                  # angular-eslint
 
 ## Extraction pipeline (`data/src/codex_data/`)
 
+- `footnotes` holds the footnotes printed below a song, with their `*` marker, which also appears in the lyrics. `parse.py` recognises them by a leading `* `, in either the lyric or the direction font. There are three in this edition.
 1. **`layout.py`** turns one pdfplumber page into typed `Line`s. It relies on the fonts, not on the text layer. The book is LaTeX, so each Computer Modern font marks a role (the full table is in the module docstring):
    - CMB10 is a heading.
    - CMR9 is a verse.

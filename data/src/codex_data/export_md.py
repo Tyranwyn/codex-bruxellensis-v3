@@ -92,6 +92,11 @@ def render_song(song: dict, club: dict | None) -> str:
         else:  # direction
             out.append(f"*{escape(st['instruction'])}*{times}")
         out.append("")
+
+    if song["footnotes"]:
+        out += ["---", ""]
+        for note in song["footnotes"]:
+            out += [f"<small>{escape(note)}</small>", ""]
     return "\n".join(out)
 
 

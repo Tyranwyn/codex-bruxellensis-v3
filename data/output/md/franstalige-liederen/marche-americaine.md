@@ -30,4 +30,6 @@ Quelle jouissance!\
 Ah nom de Dieu! Ah nom de Dieu!\
 Qu’on recommence!
 
-*\* De jongens zingen wat er staat, de meisjes: “Cette fois je sens bien que tu m’ l’as mis!”*
+---
+
+<small>\* De jongens zingen wat er staat, de meisjes: “Cette fois je sens bien que tu m’ l’as mis!”</small>

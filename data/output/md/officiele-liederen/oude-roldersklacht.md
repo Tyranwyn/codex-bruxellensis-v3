@@ -51,13 +51,6 @@ Zou zo pedant geworden zijn?
 
 > *Refrein*
 
-\* In de originele vertaling gaat het hier om het “Werchters”\
-bier, met name Jack-Op, dat in het begin van de vorige eeuw\
-heel populair was bij de Leuvense studenten. Het wordt sinds\
-1869 gebrouwen door brouwerij Felix van Roost te Werchter\
-in de stoombrouwerij ’De Palmboom’. Tegenwoordig wordt\
-het gebrouwen in de brouwerij ’Belle-Vue’.
-
 *Studenten genees- en tandheelkunde, verpleegkunde, sport en kine staan recht.*
 
 Een dokter preekt de matigheid,\
@@ -90,3 +83,7 @@ Nog leeft het oud studentenras!
 > Laatste Refrein:\
 > Bibamus laeti merum;\
 > Non est mutatio rerum! (BIS, 2 regels)
+
+---
+
+<small>\* In de originele vertaling gaat het hier om het “Werchters” bier, met name Jack-Op, dat in het begin van de vorige eeuw heel populair was bij de Leuvense studenten. Het wordt sinds 1869 gebrouwen door brouwerij Felix van Roost te Werchter in de stoombrouwerij ’De Palmboom’. Tegenwoordig wordt het gebrouwen in de brouwerij ’Belle-Vue’.</small>
