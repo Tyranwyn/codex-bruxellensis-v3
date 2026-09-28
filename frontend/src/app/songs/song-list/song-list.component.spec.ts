@@ -45,6 +45,8 @@ describe('song list items', () => {
   });
 });
 
+const USER = {uid: 'u', displayName: null, email: null};
+
 describe('SongListComponent', () => {
   let fixture: ComponentFixture<SongListComponent>;
   let component: SongListComponent;
@@ -55,8 +57,10 @@ describe('SongListComponent', () => {
       providers: [
         provideRouter([]),
         {provide: SongService, useValue: {all$: of(SONGS), clubs$: of(CLUBS)}},
-        {provide: AuthService, useValue: {uid: signal(null)}},
-        {provide: UserDataService, useValue: {isFavorite: () => false}}
+        {provide: AuthService, useValue: {user: signal(USER), uid: signal('u')}},
+        {provide: UserDataService, useValue: {
+          data: signal({favorites: ['a', 'c']}), favorites: signal(new Set(['a', 'c'])), isFavorite: () => false
+        }}
       ]
     }).compileComponents();
     fixture = TestBed.createComponent(SongListComponent);
@@ -82,5 +86,10 @@ describe('SongListComponent', () => {
     expect(ids()).toEqual(['k', 'c']);
     component.filter.set('');
     expect(ids()).toEqual(['k', 'c', 'a', 'b']);
+  });
+
+  it('shows only favorite songs, without club headers', () => {
+    fixture.componentRef.setInput('favorites', true);
+    expect(ids()).toEqual(['c', 'a']);
   });
 });

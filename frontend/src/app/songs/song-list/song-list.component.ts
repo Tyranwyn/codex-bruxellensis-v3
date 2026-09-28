@@ -55,17 +55,17 @@ export function listItems(songs: readonly Song[], clubs: ReadonlyMap<string, Clu
   return items;
 }
 
-/** Where the reader left the list, per section filter, so going back to it lands on the same spot. */
+/** Where the reader left the list, per list (all songs, a section, favorites), so going back to it lands on the same spot. */
 @Injectable({providedIn: 'root'})
 export class SongListState {
   private readonly saved = new Map<string, {filter: string, offset: number}>();
 
-  get(section: string | undefined): {filter: string, offset: number} | undefined {
-    return this.saved.get(section ?? '');
+  get(list: string): {filter: string, offset: number} | undefined {
+    return this.saved.get(list);
   }
 
-  set(section: string | undefined, filter: string, offset: number): void {
-    this.saved.set(section ?? '', {filter, offset});
+  set(list: string, filter: string, offset: number): void {
+    this.saved.set(list, {filter, offset});
   }
 }
 
@@ -84,6 +84,9 @@ export class SongListComponent {
 
   /** `?section=` query parameter. */
   readonly section = input<string>();
+  /** Route data: only the reader's favorite songs, without club headers. */
+  readonly favorites = input(false);
+  private readonly listKey = computed(() => `${this.favorites() ? 'favorites' : ''}/${this.section() ?? ''}`);
   readonly filter = signal('');
   private readonly scroller = viewChild<ElementRef<HTMLElement>>('scroller');
 
@@ -92,7 +95,18 @@ export class SongListComponent {
   readonly items = computed(() => {
     const songs = this.songs();
     const clubs = this.clubs();
-    return songs && clubs ? listItems(songs, clubs) : undefined;
+    if (!songs || !clubs) {
+      return undefined;
+    }
+    if (!this.favorites()) {
+      return listItems(songs, clubs);
+    }
+    // Wait for Firebase to restore the session, then for the user's data (`null` until loaded).
+    if (this.auth.user() === undefined || (this.loggedIn() && this.userData.data() === null)) {
+      return undefined;
+    }
+    const favorites = this.userData.favorites();
+    return listItems(songs, clubs).filter(item => item.kind === 'song' && favorites.has(item.id));
   });
   readonly visibleItems = computed(() => {
     const section = this.section();
@@ -122,7 +136,7 @@ export class SongListComponent {
         onCleanup(() => element.removeEventListener('scroll', track));
       }
     });
-    inject(DestroyRef).onDestroy(() => this.state.set(this.section(), this.filter(), offset));
+    inject(DestroyRef).onDestroy(() => this.state.set(this.listKey(), this.filter(), offset));
   }
 
   isFavorite(item: ListItem): boolean {
@@ -135,7 +149,7 @@ export class SongListComponent {
 
   /** Puts back the saved filter, then the scroll offset once the list is rendered at full height. */
   private restore(): void {
-    const saved = this.state.get(untracked(this.section));
+    const saved = this.state.get(untracked(this.listKey));
     if (!saved) {
       return;
     }

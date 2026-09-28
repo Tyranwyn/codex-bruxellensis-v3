@@ -8,7 +8,15 @@
 </div>
 
 <div class="container">
-  @if (items()) {
+  @if (favorites() && items()?.length === 0) {
+    <div class="favorites-empty">
+      @if (loggedIn()) {
+        <p>No favorites yet. Tap the star next to a song to add it here.</p>
+      } @else {
+        <p><a routerLink="/login">Log in</a> to keep your favorite songs.</p>
+      }
+    </div>
+  } @else if (items()) {
     <div class="song-list">
       <div #scroller class="song-scroll">
         @for (item of visibleItems(); track item.kind + '/' + item.id) {
