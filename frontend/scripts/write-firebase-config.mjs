@@ -37,7 +37,7 @@ const FIREBASE = {
   appId: 'FIREBASE_APP_ID'
 };
 const DATABASES = {
-  songs: `FIRESTORE_SONGS_COLLECTION_${suffix}`,
+  codex: `FIRESTORE_CODEX_COLLECTION_${suffix}`,
   userData: `FIRESTORE_USER_DATA_COLLECTION_${suffix}`
 };
 

@@ -160,7 +160,7 @@ nav {
   font-weight: 700;
 }
 
-.nav-title h2 {
+.nav-title h2, .nav-title h3 {
   color: $main-grey;
   font-weight: 500;
 }
@@ -353,19 +353,8 @@ main {
   color: $main;
 }
 
-.song-edit {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.song-delete {
-  color: red;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  text-decoration: underline;
-  display: block;
+.club-element .song-name {
+  font-weight: 700;
 }
 
 /*** SONG DETAIL  ***/
@@ -389,7 +378,6 @@ main {
   width: 590px;
   margin: 0 auto;
   margin-top: 2em;
-  white-space: pre-line;
   max-width: $width-desktop;
   @media only screen and (max-width: $breakpoint-desktop) {
     max-width: $width-tablet;
@@ -421,15 +409,118 @@ main {
   margin-bottom: 0.5em !important;
 }
 
-.song-subtitle {
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: 0.7em !important;
+.song-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15em 0.6em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+
+  dt {
+    font-weight: 700;
+    color: $main-grey;
+  }
 }
 
-.song-text {
-  font-size: 1em;
-  font-weight: 300;
+.song-notes {
+  font-size: 0.9em;
+  font-style: italic;
+  color: $main-grey;
+  white-space: pre-line;
+  margin-bottom: 1.25em;
+}
+
+.song-footnotes {
+  font-size: 0.85em;
+  color: $main-grey;
+  border-top: 1px solid $main-background;
+  padding-top: 0.75em;
+  margin-top: 1.5em;
+
+  p + p {
+    margin-top: 0.5em;
+  }
+}
+
+.club-card {
+  background-color: $main-background;
+  border-radius: 10px;
+  padding: 0.75em 1em;
+  margin-bottom: 1.5em;
+
+  .club-name {
+    font-weight: 700;
+    color: $main;
+  }
+
+  .club-motto {
+    font-style: italic;
+  }
+
+  .club-description {
+    white-space: pre-line;
+    margin: 0.25em 0;
+  }
+
+  .song-meta {
+    margin: 0.5em 0 0;
+  }
+}
+
+.club-songs li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.3em 0;
+  border-bottom: 1px dotted $main-grey;
+}
+
+/*** STANZAS ***/
+
+.stanza {
+  margin-bottom: 1.25em;
+}
+
+.stanza.chorus, .stanza.chorus-ref {
+  font-style: italic;
+  padding-left: 1.5em;
+}
+
+.stanza.chorus-ref, .stanza.direction {
+  font-size: 0.9em;
+  color: $main-grey;
+}
+
+.stanza .lines {
+  display: grid;
+  grid-template-columns: minmax(0, max-content);
+  column-gap: 0.75em;
+}
+
+.stanza .line {
+  grid-column: 1;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
+
+.stanza .mark, .stanza .bracket {
+  font-style: normal;
+  font-size: 0.85em;
+  color: $main-grey;
+  white-space: nowrap;
+}
+
+.stanza .mark {
+  margin-left: 0.4em;
+}
+
+.stanza .bracket {
+  border-left: 1px solid $main-grey;
+  padding-left: 0.4em;
+  // Keeps brackets on adjacent lines apart.
+  margin: 0.2em 0;
+  display: flex;
+  align-items: center;
 }
 
 /*** LOGIN ***/

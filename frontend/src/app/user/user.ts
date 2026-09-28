@@ -11,14 +11,15 @@ export enum Role {
   ADMIN = 'ADMIN'
 }
 
-export interface UserData {
-  role: Role;
-  /** Ids of the user's favorite songs. */
-  favorites: string[];
-}
-
-/** A user-data document as stored in Firestore. */
+/**
+ * A user-data document as stored in Firestore. Favorites are song ids, which are the same in every edition.
+ * Favorites saved by older versions of the app are references to documents in the old songs collection.
+ */
 export interface UserDataDoc {
   role: Role;
-  favorites: DocumentReference[];
+  favorites: (string | DocumentReference)[];
+}
+
+export function favoriteId(favorite: string | DocumentReference): string {
+  return typeof favorite === 'string' ? favorite : favorite.id;
 }

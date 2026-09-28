@@ -18,7 +18,10 @@
     "deploy": "pnpm build && node deploy.js beta",
     "deploy:prd": "pnpm build:prd && node deploy.js prd",
     "test": "node scripts/write-firebase-config.mjs --target=local --allow-missing && ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "import:local": "node scripts/import-edition.mjs --target=local --edition=7 --year=2022",
+    "import:beta": "node scripts/import-edition.mjs --target=beta --edition=7 --year=2022",
+    "import:prd": "node scripts/import-edition.mjs --target=prd --edition=7 --year=2022"
   },
   "dependencies": {
     "@angular/cdk": "^22.2.0",
@@ -50,6 +53,7 @@
     "@types/jasmine": "^6.0.0",
     "angular-eslint": "^22.5.0",
     "eslint": "^10.11.0",
+    "firebase-admin": "^14.5.0",
     "http-server": "^14.1.1",
     "jasmine-core": "^6.3.0",
     "karma": "^6.4.4",

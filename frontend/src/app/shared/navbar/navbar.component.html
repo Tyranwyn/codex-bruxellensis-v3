@@ -5,6 +5,9 @@
       <div class="nav-title">
         <h1>Codex Bruxellensis</h1>
         <h2>Vivat, Crescat, Floreat</h2>
+        @if (current(); as edition) {
+          <h3 class="nav-edition">Edition {{ edition.number }} ({{ edition.year }})</h3>
+        }
       </div>
     </a>
 
@@ -34,11 +37,30 @@
          [routerLinkActiveOptions]="exactMatch" (click)="closeMenu()">
         Home
       </a>
-      @for (category of categories; track category) {
-        <a class="navbar-item" routerLink="/" [queryParams]="{category}" routerLinkActive="is-active"
-           [routerLinkActiveOptions]="exactMatch" (click)="closeMenu()">
-          {{ category | capitalize }}
-        </a>
+      @if (sections().length) {
+        <div class="navbar-item has-dropdown is-hoverable">
+          <span class="navbar-link">Sections</span>
+          <div class="navbar-dropdown is-right">
+            @for (section of sections(); track section.id) {
+              <a class="navbar-item" routerLink="/" [queryParams]="{section: section.id}" routerLinkActive="is-active"
+                 [routerLinkActiveOptions]="exactMatch" (click)="closeMenu()">
+                {{ section.title }}
+              </a>
+            }
+          </div>
+        </div>
+      }
+
+      @if ((editions()?.length ?? 0) > 1) {
+        <div class="navbar-item">
+          <div class="select is-small">
+            <select aria-label="Codex edition" [value]="current()?.number" (change)="selectEdition($any($event.target).value)">
+              @for (edition of editions(); track edition.number) {
+                <option [value]="edition.number">Edition {{ edition.number }} ({{ edition.year }})</option>
+              }
+            </select>
+          </div>
+        </div>
       }
 
       @if (user()) {

@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 The project has two parts:
 
 - `data/`: a Python (uv) project that converts the songbook PDF into JSON, SQL and Markdown.
-- `frontend/`: the Codex Bruxellensis PWA (Angular + Firebase), managed with pnpm. It still reads songs from Firestore with its own flat song model, not yet from `data/output/`.
+- `frontend/`: the Codex Bruxellensis PWA (Angular + Firebase), managed with pnpm. It reads the songs of `data/output/json/`, which `frontend/scripts/import-edition.mjs` loads into Firestore, one Codex edition at a time.
 
 There is no backend for now.
 
@@ -41,12 +41,21 @@ pnpm build                 # development build (beta, test collections) → dist
 pnpm build:prd             # production build with service worker → dist/
 pnpm test --watch=false    # Karma + Jasmine
 pnpm lint                  # angular-eslint
+pnpm import:local          # load data/output/json into Firestore as edition 7 (also import:beta, import:prd)
 ```
 
-- Standalone components, zoneless change detection, signals. There is no NgRx: state lives in `core/auth.service.ts` (Firebase Auth), `core/user-data.service.ts` (role and favorites) and `songs/song.service.ts`.
+- Standalone components, zoneless change detection, signals. There is no NgRx: state lives in `core/auth.service.ts` (Firebase Auth), `core/user-data.service.ts` (role and favorites), `core/edition.service.ts` (which edition is being read) and `songs/song.service.ts`.
 - Firebase is used through the plain SDK plus `rxfire`, provided in `core/firebase.ts`. `@angular/fire` has no release for Angular 22 yet.
 - The Firebase client config comes from `FIREBASE_*` environment variables. Locally, copy `.env.example` to `.env` (gitignored) and fill in the values. `scripts/write-firebase-config.mjs` turns them into `src/app/firebase-config.ts` and `src/environment.ts`, which are both generated and gitignored. `pnpm start`, `build` and `build:prd` run it first and fail if a variable is missing; `pnpm test` runs it with `--allow-missing`. Never commit real values.
-- There are three targets: `local` (`pnpm start`), `beta` (`pnpm build`, `deploy`) and `prd` (`pnpm build:prd`, `deploy:prd`). The script takes `--target=`, and the target picks the `FIRESTORE_SONGS_COLLECTION_<TARGET>` and `FIRESTORE_USER_DATA_COLLECTION_<TARGET>` variables, which end up in `environment.databases`. `environment.production` is true only for `prd`. The defaults are `songs-test`/`user-data-test` for local and beta, and `songs`/`user-data` for prd.
+- There are three targets: `local` (`pnpm start`), `beta` (`pnpm build`, `deploy`) and `prd` (`pnpm build:prd`, `deploy:prd`). The script takes `--target=`, and the target picks the `FIRESTORE_CODEX_COLLECTION_<TARGET>` and `FIRESTORE_USER_DATA_COLLECTION_<TARGET>` variables, which end up in `environment.databases` as `codex` and `userData`. `environment.production` is true only for `prd`. The defaults are `codex-test`/`user-data-test` for local and beta, and `codex`/`user-data` for prd. The old flat `songs`/`songs-test` collections are no longer read.
+- Songs are organised by Codex edition, and the reader can pick one (the picker in the navbar only shows when there are several; the choice is kept in `localStorage`, the default is the newest):
+  - `<codex>/<edition number>` holds `{number, year, sections, songCount, clubCount}`.
+  - `<codex>/<edition>/songs/<id>` and `<codex>/<edition>/clubs/<id>` hold the records of `data/output/json/`. The extracted id moves to `slug`, `clubId` becomes the club's Firestore id, and `position` is the book order.
+  - Document ids come from `data/firestore-id-map.json` (slug → id). They are the ids of the old flat collections, so old `/song/<id>` links and favorites keep working, and a song keeps its id in every edition. Old club links (`/song/<clubId>`) redirect to `/club/<id>`.
+- `scripts/import-edition.mjs --edition=N --year=YYYY [--target=…] [--dry-run]` writes one edition with firebase-admin. It overwrites documents and deletes those that are no longer in the data. A slug missing from the id map gets a new id, which is written back to the map (commit it). Credentials come from `FIREBASE_SERVICE_ACCOUNT` (path to a service account JSON outside the repo, never committed) or the application default credentials (`gcloud auth application-default login`).
+- The app is read-only for songs: there is no admin editor. Fix the data in `data/` and re-import.
+- Favorites in `user-data` are song ids. Documents written by the old app hold `DocumentReference`s to the old songs collection; `favoriteId()` in `user/user.ts` reads both, and removing a favorite also removes the legacy reference.
+- The Firestore security rules live in the Firebase console, not in the repo. The codex collections need public read access.
 - Styling is Bulma 1, configured in `src/styles.scss`.
 - `pnpm deploy` / `pnpm deploy:prd` build and then run `node deploy.js beta|prd`. It uploads `dist/` to S3, then deletes files that are no longer in the build (`--dry-run` shows what it would do). The buckets come from `S3_BUCKET_BETA`/`S3_BUCKET_PRD` and the region from `AWS_REGION` in `.env`; credentials use the standard AWS chain.
 - `pipeline.yml` is the old deploy setup, kept unchanged. It predates the `.env` setup: it writes `firebase-config.ts` from a secret, which the build now overwrites, so it would need `FIREBASE_*` params to be revived. The S3 buckets (`codex.brussels`, `beta.codex.brussels`, eu-west-3) were created by hand, so there is no infrastructure config for them in the repo.
@@ -62,6 +71,7 @@ pnpm lint                  # angular-eslint
   - `direction`: any other stage direction, e.g. "Ad fundum".
 - Lines are plain strings. Repeat markers are stored in a stanza's `repeats` as `{from, to, times, marker}` spans, with 0-based inclusive line indexes.
 - Songs in the club and official sections point to `clubs.json` through `clubId`.
+- `footnotes` holds the footnotes printed below a song, with their `*` marker, which also appears in the lyrics. `parse.py` recognises them by a leading `* `, in either the lyric or the direction font. There are three in this edition.
 - `sortTitle` comes from the book's index, e.g. `SMIDJE, ’T`.
 - Page numbers are printed page numbers. In this PDF they equal the PDF page index.
 - Decisions made with the user:
@@ -71,7 +81,6 @@ pnpm lint                  # angular-eslint
 
 ## Extraction pipeline (`data/src/codex_data/`)
 
-- `footnotes` holds the footnotes printed below a song, with their `*` marker, which also appears in the lyrics. `parse.py` recognises them by a leading `* `, in either the lyric or the direction font. There are three in this edition.
 1. **`layout.py`** turns one pdfplumber page into typed `Line`s. It relies on the fonts, not on the text layer. The book is LaTeX, so each Computer Modern font marks a role (the full table is in the module docstring):
    - CMB10 is a heading.
    - CMR9 is a verse.

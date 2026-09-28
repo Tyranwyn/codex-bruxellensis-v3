@@ -1,0 +1,30 @@
+@if (club(); as club) {
+  <div class="container song-detail">
+    <div class="song-top">
+      <button type="button" class="back-button plain-button" (click)="back()">
+        <fa-icon [icon]="icons.back" /> Back
+      </button>
+    </div>
+
+    <div class="song-content">
+      <app-club-card [club]="club" />
+
+      @if (songs().length) {
+        <ul class="club-songs">
+          @for (song of songs(); track song.id) {
+            <li>
+              <a [routerLink]="['/song', song.id]">{{ song.title }}</a>
+              <span class="song-page">{{ pagesLabel(song.pages) }}</span>
+            </li>
+          }
+        </ul>
+      }
+    </div>
+  </div>
+} @else if (club() === undefined) {
+  <div class="container song-detail">
+    <p class="has-text-centered">This club is not in this edition of the Codex.</p>
+  </div>
+} @else {
+  <progress class="progress is-small is-primary" max="100"></progress>
+}

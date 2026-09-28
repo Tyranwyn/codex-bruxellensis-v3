@@ -5,34 +5,43 @@ import {of} from 'rxjs';
 
 import {AuthService} from '../../core/auth.service';
 import {UserDataService} from '../../core/user-data.service';
-import {Category} from '../models/category';
+import {Club} from '../models/club';
 import {Song} from '../models/song';
 import {SongService} from '../song.service';
-import {matchesSearch, normalize, SongListComponent} from './song-list.component';
+import {listItems, normalize, SongListComponent} from './song-list.component';
 
 function song(overrides: Partial<Song>): Song {
   return {
-    id: 'id', title: '', associationName: '', associationInfo: '', battleCryName: '', battleCryInfo: '',
-    battleCry: '', bgInfo: '', category: Category.DUTCH, lyrics: '', page: 1, ...overrides
+    id: 'id', slug: 'slug', title: '', section: 'nederlandstalige-liederen', language: 'nl', clubId: null,
+    pages: {start: 1, end: 1}, position: 0, lyricist: null, melody: null, notes: null, footnotes: [],
+    stanzas: [{kind: 'verse', lines: ['la']}], ...overrides
   };
 }
 
+const CLUBS = new Map<string, Club>([['k', {
+  id: 'k', slug: 'antverpia', name: 'ANTVERPIA', motto: null, description: null, founded: 1977,
+  founders: [], colours: [], position: 0
+}]]);
+
 const SONGS = [
-  song({id: 'a', title: 'Brabançonne', category: Category.FRENCH, page: 90}),
-  song({id: 'b', title: 'De Vlaamse Leeuw', category: Category.DUTCH, page: 91}),
-  song({id: 'c', associationName: 'Antverpia', category: Category.ASSOCIATION, page: 33})
+  song({id: 'c', title: 'ANTVERPIA LIED', clubId: 'k', section: 'kringliederen', pages: {start: 33, end: 33}}),
+  song({id: 'a', title: 'LA BRABANÇONNE', section: 'officiele-liederen', pages: {start: 90, end: 90}}),
+  song({id: 'b', title: 'DE VLAAMSE LEEUW', sortTitle: 'VLAAMSE LEEUW, DE', pages: {start: 91, end: 91}})
 ];
 
-describe('song search', () => {
+describe('song list items', () => {
   it('normalize strips accents and case', () => {
     expect(normalize('Brabançonne É')).toBe('brabanconne e');
   });
 
-  it('matches on page, title and association name', () => {
-    expect(matchesSearch(SONGS[0], 'braban')).toBeTrue();
-    expect(matchesSearch(SONGS[0], '90')).toBeTrue();
-    expect(matchesSearch(SONGS[2], 'antverp')).toBeTrue();
-    expect(matchesSearch(SONGS[1], 'antverp')).toBeFalse();
+  it('puts each club before its first song and matches on page, title and club name', () => {
+    const items = listItems(SONGS, CLUBS);
+    expect(items.map(item => `${item.kind}/${item.id}`)).toEqual(['club/k', 'song/c', 'song/a', 'song/b']);
+    expect(items[0].section).toBe('kringliederen');
+    expect(items[1].searchText).toContain('antverpia');
+    expect(items[2].searchText).toContain('brabanconne');
+    expect(items[2].searchText).toContain('90');
+    expect(items[3].searchText).toContain('vlaamse leeuw, de');
   });
 });
 
@@ -45,9 +54,9 @@ describe('SongListComponent', () => {
       imports: [SongListComponent],
       providers: [
         provideRouter([]),
-        {provide: SongService, useValue: {all$: of(SONGS)}},
+        {provide: SongService, useValue: {all$: of(SONGS), clubs$: of(CLUBS)}},
         {provide: AuthService, useValue: {uid: signal(null)}},
-        {provide: UserDataService, useValue: {isAdmin: signal(false), isFavorite: () => false}}
+        {provide: UserDataService, useValue: {isFavorite: () => false}}
       ]
     }).compileComponents();
     fixture = TestBed.createComponent(SongListComponent);
@@ -55,21 +64,23 @@ describe('SongListComponent', () => {
     await fixture.whenStable();
   });
 
-  const ids = () => component.visibleSongs().map(s => s.id);
+  const ids = () => component.visibleItems().map(item => item.id);
 
-  it('shows all songs by default', () => {
-    expect(ids()).toEqual(['a', 'b', 'c']);
+  it('shows all songs and clubs by default', () => {
+    expect(ids()).toEqual(['k', 'c', 'a', 'b']);
   });
 
-  it('filters by category', () => {
-    fixture.componentRef.setInput('category', Category.DUTCH);
-    expect(ids()).toEqual(['b']);
+  it('filters by section', () => {
+    fixture.componentRef.setInput('section', 'kringliederen');
+    expect(ids()).toEqual(['k', 'c']);
   });
 
   it('narrows and widens the search again', () => {
     component.filter.set('vlaamse');
     expect(ids()).toEqual(['b']);
+    component.filter.set('antverp');
+    expect(ids()).toEqual(['k', 'c']);
     component.filter.set('');
-    expect(ids()).toEqual(['a', 'b', 'c']);
+    expect(ids()).toEqual(['k', 'c', 'a', 'b']);
   });
 });
