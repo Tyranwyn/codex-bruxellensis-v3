@@ -1,0 +1,75 @@
+<nav class="navbar" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/" (click)="closeMenu()">
+      <img src="assets/codexbxl-icon.png" class="svg" alt="Codex Bruxellensis logo">
+      <div class="nav-title">
+        <h1>Codex Bruxellensis</h1>
+        <h2>Vivat, Crescat, Floreat</h2>
+      </div>
+    </a>
+
+    @if (user()) {
+      <button type="button" class="login-mobile" aria-label="Account" (click)="accountOpen.set(true)">
+        <fa-icon [icon]="faUser" />
+      </button>
+    } @else {
+      <a class="login-mobile" routerLink="/login" aria-label="Login">
+        <fa-icon [icon]="faUser" />
+      </a>
+    }
+
+    <button type="button" class="navbar-burger" aria-label="menu" aria-controls="navbar-menu"
+            [attr.aria-expanded]="menuOpen()" [class.is-active]="menuOpen()"
+            (click)="menuOpen.set(!menuOpen())">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div id="navbar-menu" class="navbar-menu" [class.is-active]="menuOpen()">
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="/" routerLinkActive="is-active"
+         [routerLinkActiveOptions]="exactMatch" (click)="closeMenu()">
+        Home
+      </a>
+      @for (category of categories; track category) {
+        <a class="navbar-item" routerLink="/" [queryParams]="{category}" routerLinkActive="is-active"
+           [routerLinkActiveOptions]="exactMatch" (click)="closeMenu()">
+          {{ category | capitalize }}
+        </a>
+      }
+
+      @if (user()) {
+        <button type="button" class="navbar-item login-button" (click)="accountOpen.set(true)">
+          <div>{{ userName() }}</div>
+        </button>
+      } @else {
+        <a class="navbar-item login-button" routerLink="/login" routerLinkActive="is-active">
+          <div>Login</div>
+        </a>
+      }
+    </div>
+  </div>
+</nav>
+
+@if (user(); as user) {
+  <div class="modal" [class.is-active]="accountOpen()">
+    <div class="modal-background" (click)="accountOpen.set(false)" aria-hidden="true"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Account</p>
+        <button type="button" class="delete" aria-label="close" (click)="accountOpen.set(false)"></button>
+      </header>
+      <section class="modal-card-body">
+        <h2 class="title is-5">{{ user.displayName }}</h2>
+        <h3 class="subtitle is-6">{{ user.email }}</h3>
+      </section>
+      <footer class="modal-card-foot buttons">
+        <button type="button" class="button is-danger" (click)="logout()">Logout</button>
+        <button type="button" class="button" (click)="accountOpen.set(false)">Cancel</button>
+      </footer>
+    </div>
+  </div>
+}

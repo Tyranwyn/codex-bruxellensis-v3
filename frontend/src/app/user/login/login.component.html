@@ -1,0 +1,59 @@
+<div class="login-main">
+  <div class="login-container">
+    <div class="card login-card">
+      <div class="card-image">
+        <figure class="image">
+          <img class="svg logo" src="assets/codexbxl-icon.png" alt="Codex Bruxellensis logo">
+        </figure>
+      </div>
+      <div class="card-content">
+        @if (auth.error(); as error) {
+          <div class="notification is-danger">
+            <button type="button" class="delete" aria-label="Dismiss" (click)="auth.error.set(null)"></button>
+            {{ error }}
+          </div>
+        }
+        @if (auth.loading()) {
+          <p>Loading...</p>
+        } @else {
+          <form class="content" [formGroup]="form" (ngSubmit)="login()">
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Email" aria-label="Email" autocomplete="email"
+                       formControlName="email"
+                       [class.is-danger]="form.controls.email.touched && form.controls.email.invalid">
+                <span class="icon is-small is-left">
+                  <fa-icon [icon]="icons.envelope" />
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input" type="password" placeholder="Password" aria-label="Password"
+                       autocomplete="current-password" formControlName="password"
+                       [class.is-danger]="form.controls.password.touched && form.controls.password.invalid">
+                <span class="icon is-small is-left">
+                  <fa-icon [icon]="icons.lock" />
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control center login">
+                <button type="submit" class="button is-primary">Login</button>
+                <button type="button" class="button is-light" (click)="signup()">Signup</button>
+              </div>
+            </div>
+            <div class="providers">
+              @for (provider of providers; track provider.name) {
+                <button type="button" class="plain-button" [attr.aria-label]="'Login with ' + provider.name"
+                        (click)="loginWith(provider)">
+                  <fa-icon [icon]="provider.icon" />
+                </button>
+              }
+            </div>
+          </form>
+        }
+      </div>
+    </div>
+  </div>
+</div>

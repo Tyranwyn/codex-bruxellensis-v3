@@ -1,0 +1,11 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
+
+ignoredBuiltDependencies:
+  - '@firebase/util'
+  - aws-sdk
+  - es5-ext
+  - protobufjs

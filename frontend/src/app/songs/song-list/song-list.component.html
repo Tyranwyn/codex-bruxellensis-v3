@@ -1,0 +1,53 @@
+<div class="search-container">
+  <div class="control has-icons-left search">
+    <input class="input" type="search" placeholder="Search" aria-label="Search songs" [(ngModel)]="filter">
+    <span class="icon is-small is-left">
+      <fa-icon [icon]="icons.search" />
+    </span>
+  </div>
+</div>
+
+<div class="container">
+  @if (songs()) {
+    <div class="song-list">
+      @if (isAdmin()) {
+        <div class="card song-element">
+          <div class="card-content">
+            <button type="button" class="song-info plain-button" (click)="add()">
+              <span class="song-name">Add Song...</span>
+            </button>
+          </div>
+        </div>
+      }
+      <cdk-virtual-scroll-viewport itemSize="46.38" class="song-scroll">
+        <div *cdkVirtualFor="let song of visibleSongs(); trackBy: trackById">
+          <div class="card song-element">
+            <div class="card-content">
+              @if (loggedIn()) {
+                <button type="button" class="song-favorite plain-button" aria-label="Toggle favorite"
+                        (click)="toggleFavorite(song)">
+                  <fa-icon [icon]="isFavorite(song) ? icons.starSolid : icons.star" />
+                </button>
+              }
+              <a class="song-info" [routerLink]="['/song', song.id]">
+                <span class="song-name">{{ song.associationName || song.title }}</span>
+                <span class="song-page">p. {{ song.page }}</span>
+              </a>
+              @if (isAdmin()) {
+                <button type="button" class="song-edit plain-button" aria-label="Edit song" (click)="edit(song)">
+                  <fa-icon [icon]="icons.edit" />
+                </button>
+              }
+            </div>
+          </div>
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </div>
+  } @else {
+    <progress class="progress is-small is-primary" max="100"></progress>
+  }
+</div>
+
+@if (isAdmin()) {
+  <app-song-form [(open)]="formOpen" [song]="editedSong()" />
+}

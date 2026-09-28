@@ -1,0 +1,45 @@
+@if (song(); as song) {
+  <div class="container song-detail">
+    <div class="song-top">
+      <button type="button" class="back-button plain-button" (click)="back()">
+        <fa-icon [icon]="icons.back" /> Back
+      </button>
+      <div class="page">p. {{ song.page }}</div>
+    </div>
+
+    <div class="song-content">
+      @if (loggedIn()) {
+        <button type="button" class="favorite plain-button" aria-label="Toggle favorite" (click)="toggleFavorite()">
+          <fa-icon [icon]="isFavorite() ? icons.starSolid : icons.star" />
+        </button>
+      }
+
+      @if (song.associationName) {
+        <div class="association">
+          <p class="song-title">{{ song.associationName }}</p>
+          <p class="song-text">{{ song.associationInfo }}</p>
+          <hr>
+        </div>
+      }
+
+      @if (song.battleCryName) {
+        <div class="battle-cry">
+          <p class="song-title">{{ song.battleCryName }}</p>
+          <p class="song-subtitle">{{ song.battleCryInfo }}</p>
+          <p class="song-text">{{ song.battleCry }}</p>
+          <hr>
+        </div>
+      }
+
+      @if (song.title) {
+        <div class="song">
+          <p class="song-title">{{ song.title }}</p>
+          <p class="song-subtitle">{{ song.bgInfo }}</p>
+          <p class="song-text">{{ song.lyrics }}</p>
+        </div>
+      }
+    </div>
+  </div>
+} @else {
+  <progress class="progress is-small is-primary" max="100"></progress>
+}

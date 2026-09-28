@@ -1,0 +1,73 @@
+resources:
+  - name: codex-git-master
+    type: git
+    icon: github-circle
+    source:
+      uri: https://github.com/Tyranwyn/codex-bruxellensis-pwa
+      branch: master
+  - name: codex-git-develop
+    type: git
+    icon: github-circle
+    source:
+      uri: https://github.com/Tyranwyn/codex-bruxellensis-pwa
+      branch: develop
+
+jobs:
+  - name: beta-deploy
+    plan:
+      - get: codex-git-develop
+        trigger: true
+      - task: build
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source: { repository: node, tag: "12" }
+          inputs:
+            - name: codex-git-develop
+          params:
+            S3_BUCKET: beta.codex.brussels
+            AWS_ACCESS_KEY_ID: ((aws-access-key-id))
+            AWS_SECRET_ACCESS_KEY: ((aws-secret-access-key))
+            NG_CLI_ANALYTICS: ci
+          run:
+            path: /bin/sh
+            args:
+              - -c
+              - |
+                echo "Node Version: $(node --version)"
+                echo "NPM Version: $(npm --version)"
+                cd codex-git-develop
+                echo "((firebase-config))" > src/app/firebase-config.ts
+                npm install
+                npm run build
+                node deploy.js
+  - name: prod-deploy
+    plan:
+      - get: codex-git-master
+        trigger: true
+      - task: build
+        config:
+          platform: linux
+          image_resource:
+            type: registry-image
+            source: { repository: node, tag: "12" }
+          inputs:
+            - name: codex-git-master
+          params:
+            S3_BUCKET: codex.brussels
+            AWS_ACCESS_KEY_ID: ((aws-access-key-id))
+            AWS_SECRET_ACCESS_KEY: ((aws-secret-access-key))
+            NG_CLI_ANALYTICS: ci
+          run:
+            path: /bin/sh
+            args:
+              - -c
+              - |
+                echo "Node Version: $(node --version)"
+                echo "NPM Version: $(npm --version)"
+                cd codex-git-master
+                echo "((firebase-config))" > src/app/firebase-config.ts
+                npm install
+                npm run build:prd
+                node deploy.js

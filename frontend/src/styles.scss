@@ -1,0 +1,494 @@
+// Brand Colors
+
+$main: #000;
+$main-light: #45A342;
+$main-grey: #7a7a7a;
+$main-background: #F6F6F6;
+
+// Variables
+
+$shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+$shadow-hover: 0 10px 20px rgba(220, 220, 220, 0.5);
+
+$width-desktop: 1152px;
+$text-width-desktop: 700px;
+
+$width-tablet: 800px;
+$text-width-tablet: 70%;
+
+$width-mobile: 90%;
+$text-width-mobile: 90%;
+
+$breakpoint-desktop: 1152px;
+$breakpoint-tablet: 850px;
+$breakpoint-mobile: 400px;
+
+// Bulma, configured with the brand colors
+
+@use "bulma/sass/utilities" with (
+  $primary: $main,
+  $text: $main-grey,
+  $link: $main,
+  $family-primary: ('Poppins', sans-serif)
+);
+@use "bulma/sass/components/navbar" with (
+  $navbar-item-color: $main-grey,
+  $navbar-breakpoint: $breakpoint-desktop
+);
+@use "bulma/sass/base/generic" with (
+  $body-weight: 500,
+  $body-line-height: 1.5
+);
+@use "bulma/sass/elements/title" with (
+  $title-color: $main
+);
+@use "bulma/sass";
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: $main-background;
+}
+
+/*** CLASSES ***/
+
+.plain-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+textarea.textarea {
+  field-sizing: content;
+}
+
+.is-grey {
+  color: $main-grey;
+}
+
+.background-colored {
+  background-color: $main-background;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: $text-width-desktop;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    max-width: $text-width-tablet;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    max-width: $text-width-mobile;
+  }
+}
+
+.container {
+  position: initial;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  max-width: $width-desktop;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    max-width: $width-tablet;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    max-width: $width-mobile;
+  }
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  border-radius: 0;
+  height: 5px !important;
+}
+
+.modal {
+  z-index: 99999;
+}
+
+/*** HEADER  ***/
+
+header {
+  z-index: 10000;
+  box-shadow: $shadow;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+.navbar-menu.is-active {
+  box-shadow: none;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: $width-desktop;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    max-width: $width-tablet;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    max-width: $width-mobile;
+  }
+}
+
+.nav-title {
+  margin-left: 1em;
+  font-size: 0.8em;
+}
+
+.nav-title h1 {
+  color: $main;
+  font-weight: 700;
+}
+
+.nav-title h2 {
+  color: $main-grey;
+  font-weight: 500;
+}
+
+nav .navbar-item.is-active {
+  font-weight: 700;
+  color: $main;
+  background-color: transparent;
+}
+
+.svg {
+  filter: invert(1) invert(100%) sepia(56%) saturate(537%) hue-rotate(0deg) brightness(99%) contrast(100%);
+  max-height: 4rem !important;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-button {
+  @media only screen and (max-width: $breakpoint-desktop) {
+    display: none;
+  }
+}
+
+.login-button:hover {
+  background-color: #fff !important;
+}
+
+.login-button:hover div {
+  border: 2px solid $main;
+}
+
+.login-button div {
+  border: 2px solid $main-grey;
+  border-radius: 50px;
+  padding: 0.2em 1em;
+}
+
+.login-button:focus {
+  background-color: #fff !important;
+}
+
+.login-button:focus-within {
+  background-color: #fff !important;
+}
+
+.login-button:focus-within div {
+  border: 2px solid $main;
+}
+
+.navbar-burger {
+  margin-inline-start: 0;
+}
+
+.login-mobile {
+  margin-left: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  color: $main-grey;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    display: flex;
+  }
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding: 0 1em;
+  }
+}
+
+.login-mobile:hover {
+  background-color: $main-background;
+}
+
+/*** MAIN  ***/
+
+main {
+  padding-top: 6rem;
+  position: relative;
+  background-color: $main-background;
+}
+
+.card {
+  box-shadow: $shadow;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition-duration: 172ms;
+  will-change: transform, box-shadow;
+}
+
+.card:hover {
+  box-shadow: $shadow-hover;
+  transform: translateY(-4px);
+}
+
+.card:focus {
+  outline: none;
+  border: none;
+}
+
+.card-content {
+  padding: 0 1em;
+}
+
+/*** SEARCH ***/
+
+.search-container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  background-color: $main-background;
+  z-index: 2;
+}
+
+.search {
+  width: 100%;
+  max-width: $width-desktop;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    max-width: $width-tablet;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    max-width: $width-mobile;
+  }
+}
+
+.search .input {
+  border: none;
+  box-shadow: none;
+  box-shadow: $shadow;
+  border-radius: 10px;
+  transition-duration: 172ms;
+  will-change: transform, box-shadow;
+  padding: 0.8em 1em;
+  height: auto;
+}
+
+.search .input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  box-shadow: $shadow-hover;
+}
+
+.search .icon {
+  transition-duration: 172ms;
+  will-change: transform;
+  height: 100% !important;
+}
+
+/*** SONG LIST  ***/
+
+.song-element {
+  margin-top: 0.8em;
+}
+
+.song-scroll {
+  height: 70vh;
+}
+
+.song-element .card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-info {
+  padding: 0.7em;
+  flex-grow: 80;
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-info:focus {
+  outline: none;
+  border: none;
+}
+
+.song-favorite {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.song-name {
+  color: $main;
+}
+
+.song-edit {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.song-delete {
+  color: red;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-decoration: underline;
+  display: block;
+}
+
+/*** SONG DETAIL  ***/
+
+.song-top {
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: space-between;
+  color: $main;
+}
+
+.song-detail {
+  margin-top: 2rem;
+}
+
+.song-content {
+  background-color: white;
+  padding: 1.5em;
+  box-shadow: $shadow;
+  border-radius: 10px;
+  width: 590px;
+  margin: 0 auto;
+  margin-top: 2em;
+  white-space: pre-line;
+  max-width: $width-desktop;
+  @media only screen and (max-width: $breakpoint-desktop) {
+    max-width: $width-tablet;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    max-width: $width-mobile;
+  }
+}
+
+.song-content:hover {
+  box-shadow: $shadow-hover;
+}
+
+.song-content hr {
+  background-color: $main;
+}
+
+.song-content .favorite {
+  color: $main-grey !important;
+  margin-bottom: 0.7em;
+  display: block;
+}
+
+.song-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: $main;
+  margin-bottom: 0.5em !important;
+}
+
+.song-subtitle {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0.7em !important;
+}
+
+.song-text {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+/*** LOGIN ***/
+
+.login-main {
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 6rem);
+  width: 100%;
+}
+
+.login-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-background;
+}
+
+.login-card {
+  padding: 1.5em;
+  width: 30%;
+  @media only screen and (max-width: $breakpoint-desktop) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    width: 90%;
+  }
+}
+
+.login-card:hover {
+  box-shadow: $shadow-hover;
+  transform: translateY(0);
+}
+
+.login .button:first-child {
+  margin-right: 1em;
+}
+
+.login-card .card-content {
+  margin-top: 4em;
+}
+
+.login-card .svg {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.providers {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  height: 4em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.providers a {
+  font-size: 1.5em;
+}
