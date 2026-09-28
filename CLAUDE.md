@@ -4,11 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project layout
 
-The project has three parts, and data flows one way through them: **data → backend → frontend**.
+The project has two parts:
 
 - `data/`: a Python (uv) project that converts the songbook PDF into JSON, SQL and Markdown.
-- `backend/`: serves the data. Its tech stack is not decided yet.
-- `frontend/`: presents the songbook. Its tech stack is not decided yet.
+- `frontend/`: the Codex Bruxellensis PWA (Angular + Firebase), managed with pnpm. It still reads songs from Firestore with its own flat song model, not yet from `data/output/`.
+
+There is no backend for now.
 
 Git remote: `git@github.com:Tyranwyn/codex-bruxellensis-v3.git` (branch `main`). The generated `data/output/` is committed.
 
@@ -28,6 +29,25 @@ uv run pytest tests/test_layout.py::test_bracketed_repeats   # a single test
 - Files in `output/` are generated. Change the code and re-run `extract`; don't edit them by hand.
 - `extract` must finish with 0 warnings, and `tests/test_extract.py::test_no_warnings` enforces this.
 - If the output format changes, regenerate `schema/examples/antverpia-lied.json` from `output/json/songs.json`. A test compares the two.
+
+## Frontend (`frontend/`)
+
+Run these from `frontend/`. Angular 22 needs Node ≥ 24.15 (`.nvmrc`).
+
+```sh
+pnpm install
+pnpm start                 # dev server on :4200, uses the *-test Firestore collections
+pnpm build                 # development build (beta, test collections) → dist/
+pnpm build:prd             # production build with service worker → dist/
+pnpm test --watch=false    # Karma + Jasmine
+pnpm lint                  # angular-eslint
+```
+
+- Standalone components, zoneless change detection, signals. There is no NgRx: state lives in `core/auth.service.ts` (Firebase Auth), `core/user-data.service.ts` (role and favorites) and `songs/song.service.ts`.
+- Firebase is used through the plain SDK plus `rxfire`, provided in `core/firebase.ts`. `@angular/fire` has no release for Angular 22 yet.
+- `environments/environment*.ts` pick the Firestore collections: `songs-test`/`user-data-test` in dev, `songs`/`user-data` in production.
+- Styling is Bulma 1, configured in `src/styles.scss`.
+- `deploy.js` uploads `dist/` to S3. `serverless.yml` and `pipeline.yml` are the old deploy setup, kept unchanged.
 
 ## Data model (`data/schema/`)
 
