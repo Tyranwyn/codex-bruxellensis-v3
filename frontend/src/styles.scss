@@ -5,10 +5,19 @@ $main-light: #45A342;
 $main-grey: #7a7a7a;
 $main-background: #F6F6F6;
 
+// Dark theme colors
+
+$dark-main: #f2f2f2;
+$dark-grey: #a3a3a3;
+$dark-background: #121212;
+$dark-surface: #1e1e1e;
+
 // Variables
 
 $shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
 $shadow-hover: 0 10px 20px rgba(220, 220, 220, 0.5);
+$dark-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+$dark-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.6);
 
 $width-desktop: 1152px;
 $text-width-desktop: 700px;
@@ -32,7 +41,7 @@ $breakpoint-mobile: 400px;
   $family-primary: ('Poppins', sans-serif)
 );
 @use "bulma/sass/components/navbar" with (
-  $navbar-item-color: $main-grey,
+  $navbar-item-color: var(--codex-muted),
   $navbar-breakpoint: $breakpoint-desktop
 );
 @use "bulma/sass/base/generic" with (
@@ -40,14 +49,70 @@ $breakpoint-mobile: 400px;
   $body-line-height: 1.5
 );
 @use "bulma/sass/elements/title" with (
-  $title-color: $main
+  $title-color: var(--codex-strong)
 );
 @use "bulma/sass";
+
+/*** THEME ***/
+
+// Bulma follows the system scheme on its own and can be forced with data-theme
+// on <html>; ThemeService sets it. The codex colors follow the same switch.
+
+@mixin light-theme {
+  color-scheme: light;
+  --codex-strong: #{$main};
+  --codex-muted: #{$main-grey};
+  --codex-background: #{$main-background};
+  --codex-surface: #fff;
+  --codex-shadow: #{$shadow};
+  --codex-shadow-hover: #{$shadow-hover};
+  --codex-logo-filter: invert(1) invert(100%) sepia(56%) saturate(537%) hue-rotate(0deg) brightness(99%) contrast(100%);
+  // Bulma's [data-theme=light] block would reset the text to its own darker grey.
+  --bulma-text-l: 48%;
+  --bulma-body-background-color: var(--codex-background);
+  // Bulma's scheme is tinted blue; the codex greys are neutral (in dark too).
+  --bulma-scheme-s: 0%;
+}
+
+@mixin dark-theme {
+  color-scheme: dark;
+  --codex-strong: #{$dark-main};
+  --codex-muted: #{$dark-grey};
+  --codex-background: #{$dark-background};
+  --codex-surface: #{$dark-surface};
+  --codex-shadow: #{$dark-shadow};
+  --codex-shadow-hover: #{$dark-shadow-hover};
+  --codex-logo-filter: invert(1);
+  --bulma-text-l: 64%;
+  --bulma-body-background-color: var(--codex-background);
+  --bulma-scheme-main-l: 12%;
+  // The brand primary and link are black, which vanishes on a dark background.
+  --bulma-primary-l: 93%;
+  --bulma-primary-invert-l: 7%;
+  --bulma-primary-on-scheme-l: 93%;
+  --bulma-link-l: 93%;
+  --bulma-link-invert-l: 7%;
+  --bulma-link-on-scheme-l: 93%;
+}
+
+:root {
+  @include light-theme;
+}
+
+:root[data-theme=dark] {
+  @include dark-theme;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme=light]) {
+    @include dark-theme;
+  }
+}
 
 html {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  background-color: $main-background;
+  background-color: var(--codex-background);
 }
 
 /*** CLASSES ***/
@@ -66,11 +131,11 @@ textarea.textarea {
 }
 
 .is-grey {
-  color: $main-grey;
+  color: var(--codex-muted);
 }
 
 .background-colored {
-  background-color: $main-background;
+  background-color: var(--codex-background);
 }
 
 .center {
@@ -123,10 +188,10 @@ textarea.textarea {
 
 header {
   z-index: 10000;
-  box-shadow: $shadow;
+  box-shadow: var(--codex-shadow);
   width: 100%;
   position: fixed;
-  background-color: white;
+  background-color: var(--codex-surface);
 }
 
 .navbar-menu.is-active {
@@ -156,23 +221,23 @@ nav {
 }
 
 .nav-title h1 {
-  color: $main;
+  color: var(--codex-strong);
   font-weight: 700;
 }
 
 .nav-title h2, .nav-title h3 {
-  color: $main-grey;
+  color: var(--codex-muted);
   font-weight: 500;
 }
 
 nav .navbar-item.is-active {
   font-weight: 700;
-  color: $main;
+  color: var(--codex-strong);
   background-color: transparent;
 }
 
 .svg {
-  filter: invert(1) invert(100%) sepia(56%) saturate(537%) hue-rotate(0deg) brightness(99%) contrast(100%);
+  filter: var(--codex-logo-filter);
   max-height: 4rem !important;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -185,29 +250,29 @@ nav .navbar-item.is-active {
 }
 
 .login-button:hover {
-  background-color: #fff !important;
+  background-color: var(--codex-surface) !important;
 }
 
 .login-button:hover div {
-  border: 2px solid $main;
+  border: 2px solid var(--codex-strong);
 }
 
 .login-button div {
-  border: 2px solid $main-grey;
+  border: 2px solid var(--codex-muted);
   border-radius: 50px;
   padding: 0.2em 1em;
 }
 
 .login-button:focus {
-  background-color: #fff !important;
+  background-color: var(--codex-surface) !important;
 }
 
 .login-button:focus-within {
-  background-color: #fff !important;
+  background-color: var(--codex-surface) !important;
 }
 
 .login-button:focus-within div {
-  border: 2px solid $main;
+  border: 2px solid var(--codex-strong);
 }
 
 .navbar-burger {
@@ -220,7 +285,7 @@ nav .navbar-item.is-active {
   justify-content: center;
   align-items: center;
   padding: 0 2em;
-  color: $main-grey;
+  color: var(--codex-muted);
 
   @media only screen and (max-width: $breakpoint-desktop) {
     display: flex;
@@ -231,7 +296,40 @@ nav .navbar-item.is-active {
 }
 
 .login-mobile:hover {
-  background-color: $main-background;
+  background-color: var(--codex-background);
+}
+
+button.login-mobile {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.settings-mobile {
+  padding-right: 0.75em;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding-right: 0.5em;
+  }
+}
+
+.settings-mobile + .login-mobile {
+  margin-left: 0;
+  padding-left: 0.75em;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding-left: 0.5em;
+  }
+}
+
+.settings-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: $breakpoint-desktop) {
+    display: none;
+  }
 }
 
 /*** MAIN  ***/
@@ -239,11 +337,11 @@ nav .navbar-item.is-active {
 main {
   padding-top: 6rem;
   position: relative;
-  background-color: $main-background;
+  background-color: var(--codex-background);
 }
 
 .card {
-  box-shadow: $shadow;
+  box-shadow: var(--codex-shadow);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -252,7 +350,7 @@ main {
 }
 
 .card:hover {
-  box-shadow: $shadow-hover;
+  box-shadow: var(--codex-shadow-hover);
   transform: translateY(-4px);
 }
 
@@ -274,7 +372,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 6rem;
-  background-color: $main-background;
+  background-color: var(--codex-background);
   z-index: 2;
 }
 
@@ -294,7 +392,7 @@ main {
 .search .input {
   border: none;
   box-shadow: none;
-  box-shadow: $shadow;
+  box-shadow: var(--codex-shadow);
   border-radius: 10px;
   transition-duration: 172ms;
   will-change: transform, box-shadow;
@@ -306,7 +404,7 @@ main {
   outline: none;
   border: none;
   box-shadow: none;
-  box-shadow: $shadow-hover;
+  box-shadow: var(--codex-shadow-hover);
 }
 
 .search .icon {
@@ -350,7 +448,7 @@ main {
 }
 
 .song-name {
-  color: $main;
+  color: var(--codex-strong);
 }
 
 .club-element .song-name {
@@ -363,7 +461,7 @@ main {
   padding: 0 1.5em;
   display: flex;
   justify-content: space-between;
-  color: $main;
+  color: var(--codex-strong);
 }
 
 .song-detail {
@@ -371,9 +469,9 @@ main {
 }
 
 .song-content {
-  background-color: white;
+  background-color: var(--codex-surface);
   padding: 1.5em;
-  box-shadow: $shadow;
+  box-shadow: var(--codex-shadow);
   border-radius: 10px;
   width: 590px;
   margin: 0 auto;
@@ -389,15 +487,15 @@ main {
 }
 
 .song-content:hover {
-  box-shadow: $shadow-hover;
+  box-shadow: var(--codex-shadow-hover);
 }
 
 .song-content hr {
-  background-color: $main;
+  background-color: var(--codex-strong);
 }
 
 .song-content .favorite {
-  color: $main-grey !important;
+  color: var(--codex-muted) !important;
   margin-bottom: 0.7em;
   display: block;
 }
@@ -405,7 +503,7 @@ main {
 .song-title {
   font-size: 2em;
   font-weight: 700;
-  color: $main;
+  color: var(--codex-strong);
   margin-bottom: 0.5em !important;
 }
 
@@ -418,22 +516,22 @@ main {
 
   dt {
     font-weight: 700;
-    color: $main-grey;
+    color: var(--codex-muted);
   }
 }
 
 .song-notes {
   font-size: 0.9em;
   font-style: italic;
-  color: $main-grey;
+  color: var(--codex-muted);
   white-space: pre-line;
   margin-bottom: 1.25em;
 }
 
 .song-footnotes {
   font-size: 0.85em;
-  color: $main-grey;
-  border-top: 1px solid $main-background;
+  color: var(--codex-muted);
+  border-top: 1px solid var(--codex-background);
   padding-top: 0.75em;
   margin-top: 1.5em;
 
@@ -443,14 +541,14 @@ main {
 }
 
 .club-card {
-  background-color: $main-background;
+  background-color: var(--codex-background);
   border-radius: 10px;
   padding: 0.75em 1em;
   margin-bottom: 1.5em;
 
   .club-name {
     font-weight: 700;
-    color: $main;
+    color: var(--codex-strong);
   }
 
   .club-motto {
@@ -472,7 +570,7 @@ main {
   justify-content: space-between;
   gap: 1em;
   padding: 0.3em 0;
-  border-bottom: 1px dotted $main-grey;
+  border-bottom: 1px dotted var(--codex-muted);
 }
 
 /*** STANZAS ***/
@@ -488,7 +586,7 @@ main {
 
 .stanza.chorus-ref, .stanza.direction {
   font-size: 0.9em;
-  color: $main-grey;
+  color: var(--codex-muted);
 }
 
 .stanza .lines {
@@ -506,7 +604,7 @@ main {
 .stanza .mark, .stanza .bracket {
   font-style: normal;
   font-size: 0.85em;
-  color: $main-grey;
+  color: var(--codex-muted);
   white-space: nowrap;
 }
 
@@ -515,7 +613,7 @@ main {
 }
 
 .stanza .bracket {
-  border-left: 1px solid $main-grey;
+  border-left: 1px solid var(--codex-muted);
   padding-left: 0.4em;
   // Keeps brackets on adjacent lines apart.
   margin: 0.2em 0;
@@ -537,7 +635,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $main-background;
+  background-color: var(--codex-background);
 }
 
 .login-card {
@@ -553,7 +651,7 @@ main {
 }
 
 .login-card:hover {
-  box-shadow: $shadow-hover;
+  box-shadow: var(--codex-shadow-hover);
   transform: translateY(0);
 }
 

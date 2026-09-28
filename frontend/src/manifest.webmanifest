@@ -1,8 +1,8 @@
 {
   "name": "Codex-Bruxellensis",
   "short_name": "CodBx",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#ffffff",
+  "background_color": "#F6F6F6",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",

@@ -56,7 +56,7 @@ pnpm import:local          # load data/output/json into Firestore as edition 7 (
 - The app is read-only for songs: there is no admin editor. Fix the data in `data/` and re-import.
 - Favorites in `user-data` are song ids. Documents written by the old app hold `DocumentReference`s to the old songs collection; `favoriteId()` in `user/user.ts` reads both, and removing a favorite also removes the legacy reference.
 - The Firestore security rules live in the Firebase console, not in the repo. The codex collections need public read access.
-- Styling is Bulma 1, configured in `src/styles.scss`.
+- Styling is Bulma 1, configured in `src/styles.scss`. Colours are CSS variables (`--codex-*`) with a light and a dark set. The reader picks Light, Dark or Auto in the navbar's settings modal. `core/theme.service.ts` stores the choice in `localStorage` (`codex-theme`) and sets `data-theme` on `<html>` (none for Auto, which follows the system). An inline script in `index.html` applies the choice before the first paint. Use the variables, not literal colours, in new styles.
 - `pnpm deploy` / `pnpm deploy:prd` build and then run `node deploy.js beta|prd`. It uploads `dist/` to S3, then deletes files that are no longer in the build (`--dry-run` shows what it would do). The buckets come from `S3_BUCKET_BETA`/`S3_BUCKET_PRD` and the region from `AWS_REGION` in `.env`; credentials use the standard AWS chain.
 - `pipeline.yml` is the old deploy setup, kept unchanged. It predates the `.env` setup: it writes `firebase-config.ts` from a secret, which the build now overwrites, so it would need `FIREBASE_*` params to be revived. The S3 buckets (`codex.brussels`, `beta.codex.brussels`, eu-west-3) were created by hand, so there is no infrastructure config for them in the repo.
 

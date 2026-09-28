@@ -4,6 +4,7 @@ import {RouterOutlet} from '@angular/router';
 import {SwUpdate, VersionReadyEvent} from '@angular/service-worker';
 import {filter} from 'rxjs';
 
+import {ThemeService} from './core/theme.service';
 import {NavbarComponent} from './shared/navbar/navbar.component';
 
 @Component({
@@ -23,6 +24,11 @@ import {NavbarComponent} from './shared/navbar/navbar.component';
 export class AppComponent implements OnInit {
   private readonly swUpdate = inject(SwUpdate);
   private readonly destroyRef = inject(DestroyRef);
+
+  constructor() {
+    // Applies the chosen color scheme from startup on.
+    inject(ThemeService);
+  }
 
   ngOnInit(): void {
     if (!this.swUpdate.isEnabled) {

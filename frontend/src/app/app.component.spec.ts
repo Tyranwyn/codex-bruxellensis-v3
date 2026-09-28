@@ -34,8 +34,8 @@ describe('AppComponent', () => {
     const element = fixture.nativeElement as HTMLElement;
     expect(element.querySelector('.nav-title h1')?.textContent).toContain('Codex Bruxellensis');
     expect(element.querySelector('.nav-edition')?.textContent).toContain('Edition 7 (2022)');
-    // Home, the sections dropdown with its two sections, and login; no edition picker for a single edition.
-    expect(element.querySelectorAll('.navbar-end .navbar-item').length).toBe(5);
+    // Home, the sections dropdown with its two sections, settings and login; no edition picker for a single edition.
+    expect(element.querySelectorAll('.navbar-end .navbar-item').length).toBe(6);
     expect(element.querySelector('.navbar-end select')).toBeNull();
   });
 });

@@ -44,7 +44,18 @@
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#1976d2">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1e1e1e" media="(prefers-color-scheme: dark)">
+
+  <!-- Applies the theme chosen in the settings before the first paint (see ThemeService) -->
+  <script>
+    try {
+      var theme = localStorage.getItem('codex-theme');
+      if (theme === 'light' || theme === 'dark') {
+        document.documentElement.dataset.theme = theme;
+      }
+    } catch (e) {}
+  </script>
 
   <!-- Style -->
 
