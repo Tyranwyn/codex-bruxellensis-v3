@@ -10,8 +10,8 @@
 <div class="container">
   @if (items()) {
     <div class="song-list">
-      <cdk-virtual-scroll-viewport itemSize="46.38" class="song-scroll">
-        <div *cdkVirtualFor="let item of visibleItems(); trackBy: trackItem">
+      <div #scroller class="song-scroll">
+        @for (item of visibleItems(); track item.kind + '/' + item.id) {
           <div class="card song-element" [class.club-element]="item.kind === 'club'">
             <div class="card-content">
               @if (loggedIn() && item.kind === 'song') {
@@ -26,8 +26,8 @@
               </a>
             </div>
           </div>
-        </div>
-      </cdk-virtual-scroll-viewport>
+        }
+      </div>
     </div>
   } @else {
     <progress class="progress is-small is-primary" max="100"></progress>

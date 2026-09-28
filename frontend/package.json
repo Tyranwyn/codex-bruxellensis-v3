@@ -24,7 +24,6 @@
     "import:prd": "node scripts/import-edition.mjs --target=prd --edition=7 --year=2022"
   },
   "dependencies": {
-    "@angular/cdk": "^22.2.0",
     "@angular/common": "^22.2.0",
     "@angular/compiler": "^22.2.0",
     "@angular/core": "^22.2.0",

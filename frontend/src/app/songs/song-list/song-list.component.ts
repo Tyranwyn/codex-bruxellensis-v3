@@ -1,7 +1,6 @@
-import {CdkVirtualScrollViewport, ScrollingModule} from '@angular/cdk/scrolling';
 import {
-  afterNextRender, ChangeDetectionStrategy, Component, computed, DestroyRef, effect, inject, Injectable, Injector, input,
-  signal, untracked, viewChild
+  afterNextRender, ChangeDetectionStrategy, Component, computed, DestroyRef, effect, ElementRef, inject, Injectable,
+  Injector, input, signal, untracked, viewChild
 } from '@angular/core';
 import {toSignal} from '@angular/core/rxjs-interop';
 import {FormsModule} from '@angular/forms';
@@ -72,7 +71,7 @@ export class SongListState {
 
 @Component({
   selector: 'app-song-list',
-  imports: [FormsModule, RouterLink, ScrollingModule, FaIconComponent],
+  imports: [FormsModule, RouterLink, FaIconComponent],
   templateUrl: './song-list.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -86,7 +85,7 @@ export class SongListComponent {
   /** `?section=` query parameter. */
   readonly section = input<string>();
   readonly filter = signal('');
-  private readonly viewport = viewChild(CdkVirtualScrollViewport);
+  private readonly scroller = viewChild<ElementRef<HTMLElement>>('scroller');
 
   private readonly songs = toSignal(this.songService.all$);
   private readonly clubs = toSignal(this.songService.clubs$);
@@ -112,19 +111,19 @@ export class SongListComponent {
     if (inject(Router).currentNavigation()?.trigger === 'popstate') {
       this.restore();
     }
-    // The offset is tracked while scrolling: by the time the component is destroyed, the viewport is detached and reads 0.
+    // The offset is tracked while scrolling: by the time the component is destroyed, the list is detached and reads 0.
+    // A plain passive listener, not a template binding, so scrolling doesn't run change detection.
     let offset = 0;
     effect(onCleanup => {
-      const viewport = this.viewport();
-      if (viewport) {
-        const subscription = viewport.elementScrolled().subscribe(() => offset = viewport.measureScrollOffset());
-        onCleanup(() => subscription.unsubscribe());
+      const element = this.scroller()?.nativeElement;
+      if (element) {
+        const track = () => offset = element.scrollTop;
+        element.addEventListener('scroll', track, {passive: true});
+        onCleanup(() => element.removeEventListener('scroll', track));
       }
     });
     inject(DestroyRef).onDestroy(() => this.state.set(this.section(), this.filter(), offset));
   }
-
-  readonly trackItem = (_: number, item: ListItem) => `${item.kind}/${item.id}`;
 
   isFavorite(item: ListItem): boolean {
     return this.userData.isFavorite(item.id);
@@ -142,21 +141,13 @@ export class SongListComponent {
     }
     this.filter.set(saved.filter);
     const ref = effect(() => {
-      const viewport = this.viewport();
-      if (!viewport || this.visibleItems().length === 0) {
+      const element = this.scroller()?.nativeElement;
+      if (!element || this.visibleItems().length === 0) {
         return;
       }
       ref.destroy();
-      // The viewport sizes its content in a later render; scrolling before that gets clamped to 0.
-      let attempts = 10;
-      const scroll = () => {
-        viewport.scrollToOffset(saved.offset);
-        if (viewport.measureScrollOffset() < saved.offset && --attempts > 0) {
-          afterNextRender(scroll, {injector: this.injector});
-          viewport.checkViewportSize();
-        }
-      };
-      afterNextRender(scroll, {injector: this.injector});
+      // Scrolling before the rows are rendered gets clamped to 0.
+      afterNextRender(() => element.scrollTop = saved.offset, {injector: this.injector});
     }, {injector: this.injector});
   }
 }
