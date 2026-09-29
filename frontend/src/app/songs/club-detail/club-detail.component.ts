@@ -10,10 +10,11 @@ import {switchMap} from 'rxjs';
 import {ClubCardComponent} from '../club-card/club-card.component';
 import {SongService} from '../song.service';
 import {pagesLabel} from '../stanza/lyrics';
+import {SongTitlePipe, titleCase} from '../title-case';
 
 @Component({
   selector: 'app-club-detail',
-  imports: [RouterLink, FaIconComponent, ClubCardComponent],
+  imports: [RouterLink, FaIconComponent, ClubCardComponent, SongTitlePipe],
   templateUrl: './club-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -36,7 +37,7 @@ export class ClubDetailComponent {
     effect(() => {
       const club = this.club();
       if (club) {
-        title.setTitle(club.name);
+        title.setTitle(titleCase(club.name));
       }
     });
   }

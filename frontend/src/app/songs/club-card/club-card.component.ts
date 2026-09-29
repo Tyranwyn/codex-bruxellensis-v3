@@ -2,17 +2,18 @@ import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 import {Club} from '../models/club';
+import {SongTitlePipe} from '../title-case';
 
 /** A club's header from the book: name, motto, description, founding year, founders and colours. */
 @Component({
   selector: 'app-club-card',
-  imports: [RouterLink],
+  imports: [RouterLink, SongTitlePipe],
   template: `
     <aside class="club-card">
       @if (link()) {
-        <a class="club-name" [routerLink]="['/club', club().id]">{{ club().name }}</a>
+        <a class="club-name" [routerLink]="['/club', club().id]">{{ club().name | songTitle }}</a>
       } @else {
-        <h1 class="song-title">{{ club().name }}</h1>
+        <h1 class="song-title">{{ club().name | songTitle }}</h1>
       }
       @if (club().motto) {
         <p class="club-motto">{{ club().motto }}</p>

@@ -13,7 +13,7 @@
         <ul class="club-songs">
           @for (song of songs(); track song.id) {
             <li>
-              <a [routerLink]="['/song', song.id]">{{ song.title }}</a>
+              <a [routerLink]="['/song', song.id]">{{ song.title | songTitle }}</a>
               <span class="song-page">{{ pagesLabel(song.pages) }}</span>
             </li>
           }

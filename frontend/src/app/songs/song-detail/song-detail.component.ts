@@ -15,10 +15,11 @@ import {Song} from '../models/song';
 import {SongService} from '../song.service';
 import {pagesLabel} from '../stanza/lyrics';
 import {StanzaComponent} from '../stanza/stanza.component';
+import {SongTitlePipe, titleCase} from '../title-case';
 
 @Component({
   selector: 'app-song-detail',
-  imports: [FaIconComponent, ClubCardComponent, StanzaComponent],
+  imports: [FaIconComponent, ClubCardComponent, StanzaComponent, SongTitlePipe],
   templateUrl: './song-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -53,7 +54,7 @@ export class SongDetailComponent {
     effect(() => {
       const song = this.song();
       if (song) {
-        title.setTitle(song.title);
+        title.setTitle(titleCase(song.title));
       }
     });
   }

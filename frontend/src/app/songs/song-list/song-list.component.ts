@@ -16,6 +16,7 @@ import {environment} from '../../../environment';
 import {Club} from '../models/club';
 import {Song} from '../models/song';
 import {SongService} from '../song.service';
+import {titleCase} from '../title-case';
 
 /** A row in the list: a song, or a club header placed right before the club's first song. */
 export interface ListItem {
@@ -43,12 +44,12 @@ export function listItems(songs: readonly Song[], clubs: ReadonlyMap<string, Clu
     if (club && !placed.has(club.id)) {
       placed.add(club.id);
       items.push({
-        kind: 'club', id: club.id, name: club.name, page, section: song.section,
+        kind: 'club', id: club.id, name: titleCase(club.name), page, section: song.section,
         searchText: normalize(`${page} ${club.name}`)
       });
     }
     items.push({
-      kind: 'song', id: song.id, name: song.title, page, section: song.section,
+      kind: 'song', id: song.id, name: titleCase(song.title), page, section: song.section,
       searchText: normalize(`${page} ${song.title} ${song.sortTitle ?? ''} ${club?.name ?? ''}`)
     });
   }
