@@ -25,7 +25,7 @@ $text-width-desktop: 700px;
 $width-tablet: 800px;
 $text-width-tablet: 70%;
 
-$width-mobile: 90%;
+$width-mobile: calc(100% - 1.5rem);
 $text-width-mobile: 90%;
 
 $breakpoint-desktop: 1152px;
@@ -47,6 +47,10 @@ $breakpoint-mobile: 400px;
 @use "bulma/sass/base/generic" with (
   $body-weight: 500,
   $body-line-height: 1.5
+);
+// Caps Bulma's .container at $width-desktop on wide screens, so it lines up with the search bar.
+@use "bulma/sass/layout/container" with (
+  $container-max-width: $width-desktop + 64px
 );
 @use "bulma/sass/elements/title" with (
   $title-color: var(--codex-strong)
@@ -360,6 +364,10 @@ main {
 
 .card-content {
   padding: 0 1em;
+
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding: 0 0.5em;
+  }
 }
 
 /*** SEARCH ***/
@@ -478,6 +486,10 @@ main {
   justify-content: space-between;
   color: var(--codex-strong);
 
+  @media only screen and (max-width: $breakpoint-tablet) {
+    padding: 0 0.5em;
+  }
+
   .page {
     white-space: nowrap;
   }
@@ -501,7 +513,8 @@ main {
   }
 
   @media only screen and (max-width: $breakpoint-tablet) {
-    max-width: $width-mobile;
+    max-width: 100%;
+    padding: 1em;
   }
 }
 
